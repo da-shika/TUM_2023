@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/ics_behavior
+
+Name: ics_behavior
+Description: Description of ics_behavior
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/src/ics/ics_behavior/include
+Libs: -L${prefix}/lib -lics_behavior
+Requires: behavior_msgs roscpp ics_formulation control_core

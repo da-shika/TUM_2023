@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="usb_image_unpacker" 
+        type="republish" 
+        pkg="image_transport"
+        output="screen"
+        args="raw in:=/usb_camera/republished out:=/usb_camera/image_raw/raw_local" /> 
+
+</launch>

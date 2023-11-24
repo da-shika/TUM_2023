@@ -1,0 +1,3879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE scfg>
+<SkinConfig numberOfCells="132" numberOfPatchDriverSettings="1" numberOfPatchExtrinsics="1">
+    <patchDriverSettings patchId="3" prefix="/skin/upper_arm"/>
+    <patchExtrinsics patchId="3" baseFrame="l_upper_arm_link" dhFrame="l_arm_joint_2" jointId="2">
+        <tf_rootCell_base>
+            <pos>
+                <matrix rows="3" cols="1">
+                    <element row="0" col="0">-0.020015213639</element>
+                    <element row="1" col="0">0.063617222011</element>
+                    <element row="2" col="0">0.091800116003</element>
+                </matrix>
+            </pos>
+            <rot>
+                <matrix rows="3" cols="3">
+                    <element row="0" col="0">0.002093285382</element>
+                    <element row="0" col="1">0.953800145464</element>
+                    <element row="0" col="2">-0.300434519770</element>
+                    <element row="1" col="0">0.023322170892</element>
+                    <element row="1" col="1">0.300306894940</element>
+                    <element row="1" col="2">0.953557468219</element>
+                    <element row="2" col="0">0.999725809660</element>
+                    <element row="2" col="1">-0.009002853121</element>
+                    <element row="2" col="2">-0.021616061956</element>
+                </matrix>
+            </rot>
+        </tf_rootCell_base>
+        <tf_base_dh>
+            <pos>
+                <matrix rows="3" cols="1">
+                    <element row="0" col="0">0.425000000000</element>
+                    <element row="1" col="0">0.000000000000</element>
+                    <element row="2" col="0">0.135850000000</element>
+                </matrix>
+            </pos>
+            <rot>
+                <matrix rows="3" cols="3">
+                    <element row="0" col="0">-0.000000001795</element>
+                    <element row="0" col="1">0.000000000000</element>
+                    <element row="0" col="2">-1.000000000000</element>
+                    <element row="1" col="0">-1.000000000000</element>
+                    <element row="1" col="1">0.000000000000</element>
+                    <element row="1" col="2">0.000000001795</element>
+                    <element row="2" col="0">0.000000000000</element>
+                    <element row="2" col="1">1.000000000000</element>
+                    <element row="2" col="2">0.000000000000</element>
+                </matrix>
+            </rot>
+        </tf_base_dh>
+    </patchExtrinsics>
+    <cell id="181" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="181" size="4">
+            <neighbor port="1" id="182"/>
+            <neighbor port="2" id="197"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="16383"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.001929175215</element>
+                <element row="1" col="0">0.041752942667</element>
+                <element row="2" col="0">-0.109517755075</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.995611817728</element>
+                <element row="0" col="1">-0.046596785258</element>
+                <element row="0" col="2">0.081153237787</element>
+                <element row="1" col="0">-0.089272139461</element>
+                <element row="1" col="1">-0.733008292599</element>
+                <element row="1" col="2">0.674336212951</element>
+                <element row="2" col="0">0.028064096563</element>
+                <element row="2" col="1">-0.678621825897</element>
+                <element row="2" col="2">-0.733951513317</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="23" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="23" size="4">
+            <neighbor port="1" id="24"/>
+            <neighbor port="2" id="38"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="16383"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.000470819435</element>
+                <element row="1" col="0">-0.059756478740</element>
+                <element row="2" col="0">-0.050747589327</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998794204351</element>
+                <element row="0" col="1">0.040576942896</element>
+                <element row="0" col="2">-0.027634200919</element>
+                <element row="1" col="0">-0.034526734929</element>
+                <element row="1" col="1">0.180426974594</element>
+                <element row="1" col="2">-0.982982203000</element>
+                <element row="2" col="0">-0.034900457452</element>
+                <element row="2" col="1">0.982751046066</element>
+                <element row="2" col="2">0.181610405885</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="137" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="137" size="4">
+            <neighbor port="1" id="138"/>
+            <neighbor port="2" id="176"/>
+            <neighbor port="3" id="16383"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">-0.000200803949</element>
+                <element row="1" col="0">0.028691081267</element>
+                <element row="2" col="0">-0.011046540792</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998331212123</element>
+                <element row="0" col="1">0.036843556871</element>
+                <element row="0" col="2">0.044467327540</element>
+                <element row="1" col="0">-0.055471161342</element>
+                <element row="1" col="1">0.825909941628</element>
+                <element row="1" col="2">0.561066590148</element>
+                <element row="2" col="0">-0.016054319070</element>
+                <element row="2" col="1">-0.562596943324</element>
+                <element row="2" col="2">0.826575428017</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="138" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="138" size="4">
+            <neighbor port="1" id="139"/>
+            <neighbor port="2" id="166"/>
+            <neighbor port="3" id="175"/>
+            <neighbor port="4" id="137"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.024470572148</element>
+                <element row="1" col="0">0.037912713244</element>
+                <element row="2" col="0">-0.019819527205</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997839910098</element>
+                <element row="0" col="1">0.065631104509</element>
+                <element row="0" col="2">0.002841115408</element>
+                <element row="1" col="0">-0.045874332850</element>
+                <element row="1" col="1">0.665201187960</element>
+                <element row="1" col="2">0.745253597859</element>
+                <element row="2" col="0">0.047021903422</element>
+                <element row="2" col="1">-0.743774117362</element>
+                <element row="2" col="2">0.666775076725</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="24" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="24" size="4">
+            <neighbor port="1" id="25"/>
+            <neighbor port="2" id="39"/>
+            <neighbor port="3" id="37"/>
+            <neighbor port="4" id="23"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.024293992328</element>
+                <element row="1" col="0">-0.054145198620</element>
+                <element row="2" col="0">-0.038218219623</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.991817278201</element>
+                <element row="0" col="1">-0.049743356818</element>
+                <element row="0" col="2">0.117575869607</element>
+                <element row="1" col="0">0.127216226652</element>
+                <element row="1" col="1">0.462288199539</element>
+                <element row="1" col="2">-0.877556637627</element>
+                <element row="2" col="0">-0.010701324116</element>
+                <element row="2" col="1">0.885333394275</element>
+                <element row="2" col="2">0.464833585967</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="182" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="182" size="4">
+            <neighbor port="1" id="183"/>
+            <neighbor port="2" id="190"/>
+            <neighbor port="3" id="196"/>
+            <neighbor port="4" id="181"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.025909073126</element>
+                <element row="1" col="0">0.030127291578</element>
+                <element row="2" col="0">-0.117225154751</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998520852900</element>
+                <element row="0" col="1">0.053783337220</element>
+                <element row="0" col="2">-0.007966113314</element>
+                <element row="1" col="0">0.050421651316</element>
+                <element row="1" col="1">-0.861198168953</element>
+                <element row="1" col="2">0.505762168288</element>
+                <element row="2" col="0">0.020341175051</element>
+                <element row="2" col="1">-0.505415736231</element>
+                <element row="2" col="2">-0.862636174854</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="176" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="176" size="4">
+            <neighbor port="1" id="166"/>
+            <neighbor port="2" id="177"/>
+            <neighbor port="3" id="137"/>
+            <neighbor port="4" id="179"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.024234017720</element>
+                <element row="1" col="0">0.014947624113</element>
+                <element row="2" col="0">-0.002999814549</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998798280837</element>
+                <element row="0" col="1">0.041916371291</element>
+                <element row="0" col="2">0.025397086759</element>
+                <element row="1" col="0">-0.048087366885</element>
+                <element row="1" col="1">0.938231537121</element>
+                <element row="1" col="2">0.342650241350</element>
+                <element row="2" col="0">-0.009465693009</element>
+                <element row="2" col="1">-0.343459751017</element>
+                <element row="2" col="2">0.939119694228</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="38" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="38" size="4">
+            <neighbor port="1" id="39"/>
+            <neighbor port="2" id="127"/>
+            <neighbor port="3" id="23"/>
+            <neighbor port="4" id="132"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.023584590697</element>
+                <element row="1" col="0">-0.061100827781</element>
+                <element row="2" col="0">-0.065960765271</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996894987097</element>
+                <element row="0" col="1">0.078637204934</element>
+                <element row="0" col="2">-0.004071203833</element>
+                <element row="1" col="0">-0.000288112755</element>
+                <element row="1" col="1">-0.048059707685</element>
+                <element row="1" col="2">-0.998844423065</element>
+                <element row="2" col="0">-0.078741994460</element>
+                <element row="2" col="1">0.995744171209</element>
+                <element row="2" col="2">-0.047887825290</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="197" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="197" size="4">
+            <neighbor port="1" id="190"/>
+            <neighbor port="2" id="198"/>
+            <neighbor port="3" id="181"/>
+            <neighbor port="4" id="200"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.026187596989</element>
+                <element row="1" col="0">0.049561772610</element>
+                <element row="2" col="0">-0.098488678051</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999967398457</element>
+                <element row="0" col="1">0.002100902395</element>
+                <element row="0" col="2">0.007796680827</element>
+                <element row="1" col="0">-0.005393339156</element>
+                <element row="1" col="1">-0.544822519750</element>
+                <element row="1" col="2">0.838534038585</element>
+                <element row="2" col="0">0.006009485464</element>
+                <element row="2" col="1">-0.838548751226</element>
+                <element row="2" col="2">-0.544793426816</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="139" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="139" size="4">
+            <neighbor port="1" id="140"/>
+            <neighbor port="2" id="162"/>
+            <neighbor port="3" id="163"/>
+            <neighbor port="4" id="138"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.048401789281</element>
+                <element row="1" col="0">0.048792821661</element>
+                <element row="2" col="0">-0.031725908087</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999621824372</element>
+                <element row="0" col="1">-0.000269848846</element>
+                <element row="0" col="2">0.027497916649</element>
+                <element row="1" col="0">-0.022389823023</element>
+                <element row="1" col="1">0.572572873650</element>
+                <element row="1" col="2">0.819548046295</element>
+                <element row="2" col="0">-0.015965715249</element>
+                <element row="2" col="1">-0.819853786685</element>
+                <element row="2" col="2">0.572350298676</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="25" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="25" size="4">
+            <neighbor port="1" id="26"/>
+            <neighbor port="2" id="40"/>
+            <neighbor port="3" id="34"/>
+            <neighbor port="4" id="24"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.047394744794</element>
+                <element row="1" col="0">-0.047570338286</element>
+                <element row="2" col="0">-0.027946370413</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.994901823971</element>
+                <element row="0" col="1">0.023241161419</element>
+                <element row="0" col="2">0.098133628661</element>
+                <element row="1" col="0">0.061284607885</element>
+                <element row="1" col="1">0.633463262419</element>
+                <element row="1" col="2">-0.771342007155</element>
+                <element row="2" col="0">-0.080090932663</element>
+                <element row="2" col="1">0.773423650777</element>
+                <element row="2" col="2">0.628809429735</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="183" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="183" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="184"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="182"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.050243263980</element>
+                <element row="1" col="0">0.017728651961</element>
+                <element row="2" col="0">-0.121485119065</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998558865918</element>
+                <element row="0" col="1">-0.001035590356</element>
+                <element row="0" col="2">0.053657421187</element>
+                <element row="1" col="0">-0.013197880051</element>
+                <element row="1" col="1">-0.973848241357</element>
+                <element row="1" col="2">0.226815825658</element>
+                <element row="2" col="0">0.052019296977</element>
+                <element row="2" col="1">-0.227197117850</element>
+                <element row="2" col="2">-0.972458463063</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="175" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="175" size="4">
+            <neighbor port="1" id="163"/>
+            <neighbor port="2" id="138"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.001141576713</element>
+                <element row="1" col="0">0.047097590890</element>
+                <element row="2" col="0">-0.031721864652</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999663223864</element>
+                <element row="0" col="1">0.025946348770</element>
+                <element row="0" col="2">-0.000475225121</element>
+                <element row="1" col="0">-0.013739864665</element>
+                <element row="1" col="1">0.544728422892</element>
+                <element row="1" col="2">0.838499947175</element>
+                <element row="2" col="0">0.022014880704</element>
+                <element row="2" col="1">-0.838211030874</element>
+                <element row="2" col="2">0.544901470679</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="37" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="37" size="4">
+            <neighbor port="1" id="34"/>
+            <neighbor port="2" id="24"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">-0.000153186637</element>
+                <element row="1" col="0">-0.048483684646</element>
+                <element row="2" col="0">-0.026543632343</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999003190024</element>
+                <element row="0" col="1">-0.029875692687</element>
+                <element row="0" col="2">0.033167292760</element>
+                <element row="1" col="0">0.044609128519</element>
+                <element row="1" col="1">0.641057262869</element>
+                <element row="1" col="2">-0.766195543824</element>
+                <element row="2" col="0">0.001628488692</element>
+                <element row="2" col="1">0.766911356487</element>
+                <element row="2" col="2">0.641750979209</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="200" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="200" size="4">
+            <neighbor port="1" id="197"/>
+            <neighbor port="2" id="201"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.002105694866</element>
+                <element row="1" col="0">0.056324784831</element>
+                <element row="2" col="0">-0.086441726343</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998885477057</element>
+                <element row="0" col="1">0.011565900049</element>
+                <element row="0" col="2">0.045760612761</element>
+                <element row="1" col="0">-0.038958978384</element>
+                <element row="1" col="1">-0.345289538899</element>
+                <element row="1" col="2">0.937687225214</element>
+                <element row="2" col="0">0.026645857604</element>
+                <element row="2" col="1">-0.938424938012</element>
+                <element row="2" col="2">-0.344454110136</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="166" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="166" size="4">
+            <neighbor port="1" id="162"/>
+            <neighbor port="2" id="167"/>
+            <neighbor port="3" id="138"/>
+            <neighbor port="4" id="176"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.048103198254</element>
+                <element row="1" col="0">0.027055455135</element>
+                <element row="2" col="0">-0.010276792652</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999853001966</element>
+                <element row="0" col="1">-0.017104127655</element>
+                <element row="0" col="2">0.001193011378</element>
+                <element row="1" col="0">0.013540877383</element>
+                <element row="1" col="1">0.830406903936</element>
+                <element row="1" col="2">0.556992835264</element>
+                <element row="2" col="0">-0.010517561442</element>
+                <element row="2" col="1">-0.556894803991</element>
+                <element row="2" col="2">0.830516440649</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="39" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="39" size="4">
+            <neighbor port="1" id="40"/>
+            <neighbor port="2" id="114"/>
+            <neighbor port="3" id="24"/>
+            <neighbor port="4" id="38"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.047307924818</element>
+                <element row="1" col="0">-0.059397940540</element>
+                <element row="2" col="0">-0.053322438661</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999656159839</element>
+                <element row="0" col="1">0.018503676224</element>
+                <element row="0" col="2">0.018578914444</element>
+                <element row="1" col="0">0.014042818207</element>
+                <element row="1" col="1">0.220574988616</element>
+                <element row="1" col="2">-0.975268923761</element>
+                <element row="2" col="0">-0.022144104239</element>
+                <element row="2" col="1">0.975194487455</element>
+                <element row="2" col="2">0.220239302315</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="190" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="190" size="4">
+            <neighbor port="1" id="184"/>
+            <neighbor port="2" id="191"/>
+            <neighbor port="3" id="182"/>
+            <neighbor port="4" id="197"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.050265002660</element>
+                <element row="1" col="0">0.040764809549</element>
+                <element row="2" col="0">-0.109112412910</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999955992034</element>
+                <element row="0" col="1">0.009088381151</element>
+                <element row="0" col="2">-0.002327084604</element>
+                <element row="1" col="0">0.008136007695</element>
+                <element row="1" col="1">-0.716588206419</element>
+                <element row="1" col="2">0.697449028819</element>
+                <element row="2" col="0">0.004671121224</element>
+                <element row="2" col="1">-0.697437268684</element>
+                <element row="2" col="2">-0.716630613968</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="140" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="140" size="4">
+            <neighbor port="1" id="141"/>
+            <neighbor port="2" id="159"/>
+            <neighbor port="3" id="164"/>
+            <neighbor port="4" id="139"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.072288378175</element>
+                <element row="1" col="0">0.054471924779</element>
+                <element row="2" col="0">-0.044856783238</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999908647328</element>
+                <element row="0" col="1">0.002299505503</element>
+                <element row="0" col="2">0.013319507241</element>
+                <element row="1" col="0">-0.013245493078</element>
+                <element row="1" col="1">0.363053838652</element>
+                <element row="1" col="2">0.931674013351</element>
+                <element row="2" col="0">-0.002693308712</element>
+                <element row="2" col="1">-0.931765325881</element>
+                <element row="2" col="2">0.363051130798</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="26" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="26" size="4">
+            <neighbor port="1" id="27"/>
+            <neighbor port="2" id="41"/>
+            <neighbor port="3" id="35"/>
+            <neighbor port="4" id="25"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.070887562819</element>
+                <element row="1" col="0">-0.037261885187</element>
+                <element row="2" col="0">-0.019900468910</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999751369952</element>
+                <element row="0" col="1">0.022217247125</element>
+                <element row="0" col="2">-0.001895312477</element>
+                <element row="1" col="0">-0.018218736589</element>
+                <element row="1" col="1">0.764892949552</element>
+                <element row="1" col="2">-0.643899723065</element>
+                <element row="2" col="0">-0.012855968120</element>
+                <element row="2" col="1">0.643774160445</element>
+                <element row="2" col="2">0.765107544354</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="198" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="198" size="4">
+            <neighbor port="1" id="191"/>
+            <neighbor port="2" id="199"/>
+            <neighbor port="3" id="197"/>
+            <neighbor port="4" id="201"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.046957164198</element>
+                <element row="1" col="0">0.054653656460</element>
+                <element row="2" col="0">-0.085650390978</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999960092893</element>
+                <element row="0" col="1">0.006988065680</element>
+                <element row="0" col="2">0.005565928398</element>
+                <element row="1" col="0">-0.002884629396</element>
+                <element row="1" col="1">-0.337092470178</element>
+                <element row="1" col="2">0.941467123942</element>
+                <element row="2" col="0">0.008455266650</element>
+                <element row="2" col="1">-0.941445608353</element>
+                <element row="2" col="2">-0.337058859813</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="177" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="177" size="4">
+            <neighbor port="1" id="167"/>
+            <neighbor port="2" id="178"/>
+            <neighbor port="3" id="176"/>
+            <neighbor port="4" id="180"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.047897047589</element>
+                <element row="1" col="0">0.000870643087</element>
+                <element row="2" col="0">-0.001990371959</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996422667745</element>
+                <element row="0" col="1">-0.001970440672</element>
+                <element row="0" col="2">0.084486594012</element>
+                <element row="1" col="0">0.005208663579</element>
+                <element row="1" col="1">0.999259403900</element>
+                <element row="1" col="2">-0.038124972664</element>
+                <element row="2" col="0">-0.084348900573</element>
+                <element row="2" col="1">0.038428649215</element>
+                <element row="2" col="2">0.995694984366</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="127" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="127" size="4">
+            <neighbor port="1" id="114"/>
+            <neighbor port="2" id="128"/>
+            <neighbor port="3" id="38"/>
+            <neighbor port="4" id="133"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.045170344441</element>
+                <element row="1" col="0">-0.058863929173</element>
+                <element row="2" col="0">-0.081015043331</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999423133496</element>
+                <element row="0" col="1">0.031170273923</element>
+                <element row="0" col="2">0.013483851680</element>
+                <element row="1" col="0">0.021590619985</element>
+                <element row="1" col="1">-0.276671717351</element>
+                <element row="1" col="2">-0.960721919156</element>
+                <element row="2" col="0">-0.026215364983</element>
+                <element row="2" col="1">0.960458835579</element>
+                <element row="2" col="2">-0.277185100244</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="196" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="196" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="182"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.002391134296</element>
+                <element row="1" col="0">0.016772842279</element>
+                <element row="2" col="0">-0.123441966466</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996872924780</element>
+                <element row="0" col="1">0.007186163059</element>
+                <element row="0" col="2">0.078693906375</element>
+                <element row="1" col="0">-0.009796055929</element>
+                <element row="1" col="1">-0.976936424504</element>
+                <element row="1" col="2">0.213305554935</element>
+                <element row="2" col="0">0.078411792023</element>
+                <element row="2" col="1">-0.213409422328</element>
+                <element row="2" col="2">-0.973811074764</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="163" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="163" size="4">
+            <neighbor port="1" id="164"/>
+            <neighbor port="2" id="139"/>
+            <neighbor port="3" id="165"/>
+            <neighbor port="4" id="175"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.024847213813</element>
+                <element row="1" col="0">0.055488900548</element>
+                <element row="2" col="0">-0.044592934421</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998019127618</element>
+                <element row="0" col="1">0.059857842546</element>
+                <element row="0" col="2">-0.019361291120</element>
+                <element row="1" col="0">-0.002265016421</element>
+                <element row="1" col="1">0.341744385529</element>
+                <element row="1" col="2">0.939790213111</element>
+                <element row="2" col="0">0.062870427140</element>
+                <element row="2" col="1">-0.937884754991</element>
+                <element row="2" col="2">0.341203012510</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="34" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="34" size="4">
+            <neighbor port="1" id="35"/>
+            <neighbor port="2" id="25"/>
+            <neighbor port="3" id="36"/>
+            <neighbor port="4" id="37"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.023791767681</element>
+                <element row="1" col="0">-0.038293720028</element>
+                <element row="2" col="0">-0.016879402863</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999703718442</element>
+                <element row="0" col="1">0.024228752303</element>
+                <element row="0" col="2">0.002333001418</element>
+                <element row="1" col="0">-0.017105686700</element>
+                <element row="1" col="1">0.767503210789</element>
+                <element row="1" col="2">-0.640816835696</element>
+                <element row="2" col="0">-0.017316778463</element>
+                <element row="2" col="1">0.640587065894</element>
+                <element row="2" col="2">0.767690263188</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="199" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="199" size="4">
+            <neighbor port="1" id="195"/>
+            <neighbor port="2" id="141"/>
+            <neighbor port="3" id="198"/>
+            <neighbor port="4" id="164"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.071053438904</element>
+                <element row="1" col="0">0.057273873703</element>
+                <element row="2" col="0">-0.072221185457</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999606575912</element>
+                <element row="0" col="1">-0.021484448567</element>
+                <element row="0" col="2">0.018030858666</element>
+                <element row="1" col="0">-0.019611524753</element>
+                <element row="1" col="1">-0.075789114458</element>
+                <element row="1" col="2">0.996930989701</element>
+                <element row="2" col="0">-0.020051969762</element>
+                <element row="2" col="1">-0.996892385666</element>
+                <element row="2" col="2">-0.076180639990</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="179" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="179" size="4">
+            <neighbor port="1" id="176"/>
+            <neighbor port="2" id="180"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.000000000000</element>
+                <element row="1" col="0">0.000000000000</element>
+                <element row="2" col="0">0.000000000000</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">1.000000000000</element>
+                <element row="0" col="1">0.000000000000</element>
+                <element row="0" col="2">0.000000000000</element>
+                <element row="1" col="0">0.000000000000</element>
+                <element row="1" col="1">1.000000000000</element>
+                <element row="1" col="2">0.000000000000</element>
+                <element row="2" col="0">0.000000000000</element>
+                <element row="2" col="1">0.000000000000</element>
+                <element row="2" col="2">1.000000000000</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="132" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="132" size="4">
+            <neighbor port="1" id="38"/>
+            <neighbor port="2" id="133"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">-0.001200053704</element>
+                <element row="1" col="0">-0.058411079672</element>
+                <element row="2" col="0">-0.078059764386</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997800393584</element>
+                <element row="0" col="1">0.042548485480</element>
+                <element row="0" col="2">-0.050833069417</element>
+                <element row="1" col="0">-0.037413790526</element>
+                <element row="1" col="1">-0.271558187988</element>
+                <element row="1" col="2">-0.961694524688</element>
+                <element row="2" col="0">-0.054722781741</element>
+                <element row="2" col="1">0.961481033053</element>
+                <element row="2" col="2">-0.269368966732</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="184" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="184" size="4">
+            <neighbor port="1" id="185"/>
+            <neighbor port="2" id="192"/>
+            <neighbor port="3" id="183"/>
+            <neighbor port="4" id="190"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.074330146972</element>
+                <element row="1" col="0">0.029943104456</element>
+                <element row="2" col="0">-0.117693776872</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999992318651</element>
+                <element row="0" col="1">0.000306559468</element>
+                <element row="0" col="2">-0.003907513423</element>
+                <element row="1" col="0">0.002334965138</element>
+                <element row="1" col="1">-0.847319903200</element>
+                <element row="1" col="2">0.531077705782</element>
+                <element row="2" col="0">-0.003148106997</element>
+                <element row="2" col="1">-0.531082750296</element>
+                <element row="2" col="2">-0.847314110446</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="164" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="164" size="4">
+            <neighbor port="1" id="199"/>
+            <neighbor port="2" id="140"/>
+            <neighbor port="3" id="201"/>
+            <neighbor port="4" id="163"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.049433465035</element>
+                <element row="1" col="0">0.058413330534</element>
+                <element row="2" col="0">-0.057041918926</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999054390922</element>
+                <element row="0" col="1">0.028909157373</element>
+                <element row="0" col="2">0.032474368343</element>
+                <element row="1" col="0">-0.036265119224</element>
+                <element row="1" col="1">0.142082987778</element>
+                <element row="1" col="2">0.989190207044</element>
+                <element row="2" col="0">0.023982600087</element>
+                <element row="2" col="1">-0.989432506644</element>
+                <element row="2" col="2">0.142997026854</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="27" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="27" size="4">
+            <neighbor port="1" id="28"/>
+            <neighbor port="2" id="42"/>
+            <neighbor port="3" id="178"/>
+            <neighbor port="4" id="26"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.095395546820</element>
+                <element row="1" col="0">-0.026326097102</element>
+                <element row="2" col="0">-0.012959682545</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.994163312898</element>
+                <element row="0" col="1">0.060783868171</element>
+                <element row="0" col="2">0.089132646418</element>
+                <element row="1" col="0">-0.000700139744</element>
+                <element row="1" col="1">0.829794850550</element>
+                <element row="1" col="2">-0.558068110364</element>
+                <element row="2" col="0">-0.107883349465</element>
+                <element row="2" col="1">0.554748436114</element>
+                <element row="2" col="2">0.824994154850</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="201" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="201" size="4">
+            <neighbor port="1" id="198"/>
+            <neighbor port="2" id="164"/>
+            <neighbor port="3" id="200"/>
+            <neighbor port="4" id="165"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.025492174664</element>
+                <element row="1" col="0">0.059958489468</element>
+                <element row="2" col="0">-0.071913996498</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996398507911</element>
+                <element row="0" col="1">0.067995245925</element>
+                <element row="0" col="2">-0.050662214369</element>
+                <element row="1" col="0">0.059700130924</element>
+                <element row="1" col="1">-0.138254862015</element>
+                <element row="1" col="2">0.988595714889</element>
+                <element row="2" col="0">0.060215511297</element>
+                <element row="2" col="1">-0.988059836073</element>
+                <element row="2" col="2">-0.141816263307</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="162" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="162" size="4">
+            <neighbor port="1" id="159"/>
+            <neighbor port="2" id="168"/>
+            <neighbor port="3" id="139"/>
+            <neighbor port="4" id="166"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.072392543044</element>
+                <element row="1" col="0">0.039233440872</element>
+                <element row="2" col="0">-0.021568591421</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999438736682</element>
+                <element row="0" col="1">-0.000019726938</element>
+                <element row="0" col="2">0.033499421349</element>
+                <element row="1" col="0">-0.023422707082</element>
+                <element row="1" col="1">0.714517187355</element>
+                <element row="1" col="2">0.699225690151</element>
+                <element row="2" col="0">-0.023949705902</element>
+                <element row="2" col="1">-0.699617887553</element>
+                <element row="2" col="2">0.714115693010</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="40" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="40" size="4">
+            <neighbor port="1" id="41"/>
+            <neighbor port="2" id="77"/>
+            <neighbor port="3" id="25"/>
+            <neighbor port="4" id="39"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.071295508952</element>
+                <element row="1" col="0">-0.054082658432</element>
+                <element row="2" col="0">-0.040492131905</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999450620095</element>
+                <element row="0" col="1">-0.018746136957</element>
+                <element row="0" col="2">0.027332038728</element>
+                <element row="1" col="0">0.032885448594</element>
+                <element row="1" col="1">0.458302569436</element>
+                <element row="1" col="2">-0.888187650285</element>
+                <element row="2" col="0">0.004123743759</element>
+                <element row="2" col="1">0.888598524193</element>
+                <element row="2" col="2">0.458667262337</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="185" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="185" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="186"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="184"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.095504030414</element>
+                <element row="1" col="0">0.013096658864</element>
+                <element row="2" col="0">-0.128543157835</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998386245246</element>
+                <element row="0" col="1">-0.011493247617</element>
+                <element row="0" col="2">0.055613043106</element>
+                <element row="1" col="0">-0.025365601731</element>
+                <element row="1" col="1">-0.966438097446</element>
+                <element row="1" col="2">0.255644264659</element>
+                <element row="2" col="0">0.050808380737</element>
+                <element row="2" col="1">-0.256642375814</element>
+                <element row="2" col="2">-0.965170036514</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="141" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="141" size="4">
+            <neighbor port="1" id="142"/>
+            <neighbor port="2" id="160"/>
+            <neighbor port="3" id="199"/>
+            <neighbor port="4" id="140"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.095398340785</element>
+                <element row="1" col="0">0.056781605426</element>
+                <element row="2" col="0">-0.058883663963</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999569897268</element>
+                <element row="0" col="1">-0.029199008965</element>
+                <element row="0" col="2">-0.002727334207</element>
+                <element row="1" col="0">0.006309709884</element>
+                <element row="1" col="1">0.123310042830</element>
+                <element row="1" col="2">0.992348134930</element>
+                <element row="2" col="0">-0.028639274390</element>
+                <element row="2" col="1">-0.991938531973</element>
+                <element row="2" col="2">0.123441244119</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="36" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="36" size="4">
+            <neighbor port="1" id="180"/>
+            <neighbor port="2" id="34"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">-0.000141020719</element>
+                <element row="1" col="0">-0.026750987838</element>
+                <element row="2" col="0">-0.008891195992</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999880705238</element>
+                <element row="0" col="1">-0.015339511756</element>
+                <element row="0" col="2">-0.001809605404</element>
+                <element row="1" col="0">0.012521754708</element>
+                <element row="1" col="1">0.873600361589</element>
+                <element row="1" col="2">-0.486482901951</element>
+                <element row="2" col="0">0.009043282129</element>
+                <element row="2" col="1">0.486402207654</element>
+                <element row="2" col="2">0.873688223245</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="191" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="191" size="4">
+            <neighbor port="1" id="192"/>
+            <neighbor port="2" id="195"/>
+            <neighbor port="3" id="190"/>
+            <neighbor port="4" id="198"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.071405861059</element>
+                <element row="1" col="0">0.048061333994</element>
+                <element row="2" col="0">-0.098518451550</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999973984380</element>
+                <element row="0" col="1">0.000571130905</element>
+                <element row="0" col="2">-0.007190575290</element>
+                <element row="1" col="0">0.006381372203</element>
+                <element row="1" col="1">-0.534785961103</element>
+                <element row="1" col="2">0.844963463054</element>
+                <element row="2" col="0">-0.003362833970</element>
+                <element row="2" col="1">-0.844987366543</element>
+                <element row="2" col="2">-0.534775692913</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="178" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="178" size="4">
+            <neighbor port="1" id="174"/>
+            <neighbor port="2" id="27"/>
+            <neighbor port="3" id="177"/>
+            <neighbor port="4" id="35"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.072022303456</element>
+                <element row="1" col="0">-0.013763745460</element>
+                <element row="2" col="0">-0.005206566624</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998525372924</element>
+                <element row="0" col="1">0.016219112678</element>
+                <element row="0" col="2">0.051807528522</element>
+                <element row="1" col="0">-0.001329678130</element>
+                <element row="1" col="1">0.961347124838</element>
+                <element row="1" col="2">-0.275336044720</element>
+                <element row="2" col="0">-0.054270724923</element>
+                <element row="2" col="1">0.274861139396</element>
+                <element row="2" col="2">0.959951062537</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="128" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="128" size="4">
+            <neighbor port="1" id="115"/>
+            <neighbor port="2" id="129"/>
+            <neighbor port="3" id="127"/>
+            <neighbor port="4" id="134"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.069886260400</element>
+                <element row="1" col="0">-0.053917240491</element>
+                <element row="2" col="0">-0.096462590447</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999694637164</element>
+                <element row="0" col="1">-0.024444899839</element>
+                <element row="0" col="2">-0.003616531102</element>
+                <element row="1" col="0">-0.014515507849</element>
+                <element row="1" col="1">-0.462466873372</element>
+                <element row="1" col="2">-0.886517733080</element>
+                <element row="2" col="0">0.019998311359</element>
+                <element row="2" col="1">0.886299519297</element>
+                <element row="2" col="2">-0.462680483311</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="192" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="192" size="4">
+            <neighbor port="1" id="186"/>
+            <neighbor port="2" id="193"/>
+            <neighbor port="3" id="184"/>
+            <neighbor port="4" id="191"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.095665851559</element>
+                <element row="1" col="0">0.039106963403</element>
+                <element row="2" col="0">-0.107805597608</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999041925431</element>
+                <element row="0" col="1">-0.042879644378</element>
+                <element row="0" col="2">0.008750275997</element>
+                <element row="1" col="0">-0.036582297144</element>
+                <element row="1" col="1">-0.708504649424</element>
+                <element row="1" col="2">0.704757332193</element>
+                <element row="2" col="0">-0.024020132550</element>
+                <element row="2" col="1">-0.704402227312</element>
+                <element row="2" col="2">-0.709394485029</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="165" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="165" size="4">
+            <neighbor port="1" id="201"/>
+            <neighbor port="2" id="163"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.001180059024</element>
+                <element row="1" col="0">0.059321487309</element>
+                <element row="2" col="0">-0.058572337773</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999554040798</element>
+                <element row="0" col="1">-0.016468809424</element>
+                <element row="0" col="2">0.024909794084</element>
+                <element row="1" col="0">-0.021867135177</element>
+                <element row="1" col="1">0.164398606188</element>
+                <element row="1" col="2">0.986151573888</element>
+                <element row="2" col="0">-0.020335877761</element>
+                <element row="2" col="1">-0.986256496354</element>
+                <element row="2" col="2">0.163965165435</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="35" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="35" size="4">
+            <neighbor port="1" id="178"/>
+            <neighbor port="2" id="26"/>
+            <neighbor port="3" id="180"/>
+            <neighbor port="4" id="34"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.047942139381</element>
+                <element row="1" col="0">-0.026801842495</element>
+                <element row="2" col="0">-0.009541220322</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999262213023</element>
+                <element row="0" col="1">-0.000974392097</element>
+                <element row="0" col="2">0.038393751895</element>
+                <element row="1" col="0">0.019806264439</element>
+                <element row="1" col="1">0.869564017899</element>
+                <element row="1" col="2">-0.493422872052</element>
+                <element row="2" col="0">-0.032905037813</element>
+                <element row="2" col="1">0.493819267886</element>
+                <element row="2" col="2">0.868941763958</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="195" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="195" size="4">
+            <neighbor port="1" id="193"/>
+            <neighbor port="2" id="142"/>
+            <neighbor port="3" id="191"/>
+            <neighbor port="4" id="199"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.095136794786</element>
+                <element row="1" col="0">0.053997797782</element>
+                <element row="2" col="0">-0.085516133876</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998904664206</element>
+                <element row="0" col="1">0.035944591489</element>
+                <element row="0" col="2">0.029957606205</element>
+                <element row="1" col="0">-0.016409509511</element>
+                <element row="1" col="1">-0.330471386891</element>
+                <element row="1" col="2">0.943673349440</element>
+                <element row="2" col="0">0.043820084715</element>
+                <element row="2" col="1">-0.943131299867</element>
+                <element row="2" col="2">-0.329519576636</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="180" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="180" size="4">
+            <neighbor port="1" id="177"/>
+            <neighbor port="2" id="35"/>
+            <neighbor port="3" id="179"/>
+            <neighbor port="4" id="36"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.024099531391</element>
+                <element row="1" col="0">-0.013295842107</element>
+                <element row="2" col="0">-0.002638884666</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998073694198</element>
+                <element row="0" col="1">-0.017521008667</element>
+                <element row="0" col="2">0.059513991677</element>
+                <element row="1" col="0">0.033888470681</element>
+                <element row="1" col="1">0.957500536470</element>
+                <element row="1" col="2">-0.286433751876</element>
+                <element row="2" col="0">-0.051966070709</element>
+                <element row="2" col="1">0.287898831040</element>
+                <element row="2" col="2">0.956249857820</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="133" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="133" size="4">
+            <neighbor port="1" id="127"/>
+            <neighbor port="2" id="134"/>
+            <neighbor port="3" id="132"/>
+            <neighbor port="4" id="135"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.021968795476</element>
+                <element row="1" col="0">-0.053810096483</element>
+                <element row="2" col="0">-0.092587712645</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.995483936708</element>
+                <element row="0" col="1">0.064674769352</element>
+                <element row="0" col="2">-0.069490330008</element>
+                <element row="1" col="0">-0.028137408036</element>
+                <element row="1" col="1">-0.498098607844</element>
+                <element row="1" col="2">-0.866663754366</element>
+                <element row="2" col="0">-0.090664315055</element>
+                <element row="2" col="1">0.864705123769</element>
+                <element row="2" col="2">-0.494029382631</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="186" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="186" size="4">
+            <neighbor port="1" id="187"/>
+            <neighbor port="2" id="194"/>
+            <neighbor port="3" id="185"/>
+            <neighbor port="4" id="192"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.119188823444</element>
+                <element row="1" col="0">0.026030727372</element>
+                <element row="2" col="0">-0.122138872580</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998458236809</element>
+                <element row="0" col="1">0.051113355372</element>
+                <element row="0" col="2">0.021646575973</element>
+                <element row="1" col="0">0.033617455887</element>
+                <element row="1" col="1">-0.867139939398</element>
+                <element row="1" col="2">0.496928759643</element>
+                <element row="2" col="0">0.044170306863</element>
+                <element row="2" col="1">-0.495434910360</element>
+                <element row="2" col="2">-0.867521315927</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="142" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="142" size="4">
+            <neighbor port="1" id="143"/>
+            <neighbor port="2" id="153"/>
+            <neighbor port="3" id="195"/>
+            <neighbor port="4" id="141"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.119209454674</element>
+                <element row="1" col="0">0.056540420228</element>
+                <element row="2" col="0">-0.073034647868</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998750480704</element>
+                <element row="0" col="1">0.005094630863</element>
+                <element row="0" col="2">0.049714404647</element>
+                <element row="1" col="0">-0.049108234550</element>
+                <element row="1" col="1">-0.084396171684</element>
+                <element row="1" col="2">0.995221416321</element>
+                <element row="2" col="0">0.009265991173</element>
+                <element row="2" col="1">-0.996419254602</element>
+                <element row="2" col="2">-0.084040528712</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="28" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="28" size="4">
+            <neighbor port="1" id="29"/>
+            <neighbor port="2" id="43"/>
+            <neighbor port="3" id="174"/>
+            <neighbor port="4" id="27"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.118879325587</element>
+                <element row="1" col="0">-0.012863592359</element>
+                <element row="2" col="0">-0.008911893550</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998949411122</element>
+                <element row="0" col="1">0.034522985590</element>
+                <element row="0" col="2">0.030136978694</element>
+                <element row="1" col="0">-0.023024814142</element>
+                <element row="1" col="1">0.946704085678</element>
+                <element row="1" col="2">-0.321280612696</element>
+                <element row="2" col="0">-0.039622366822</element>
+                <element row="2" col="1">0.320249180525</element>
+                <element row="2" col="2">0.946504374222</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="193" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="193" size="4">
+            <neighbor port="1" id="194"/>
+            <neighbor port="2" id="143"/>
+            <neighbor port="3" id="192"/>
+            <neighbor port="4" id="195"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.119650447611</element>
+                <element row="1" col="0">0.047574845704</element>
+                <element row="2" col="0">-0.096789357288</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998796672935</element>
+                <element row="0" col="1">0.041374948405</element>
+                <element row="0" col="2">0.026330966140</element>
+                <element row="1" col="0">0.001441627720</element>
+                <element row="1" col="1">-0.561433969760</element>
+                <element row="1" col="2">0.827520283322</element>
+                <element row="2" col="0">0.049021707874</element>
+                <element row="2" col="1">-0.826486546318</element>
+                <element row="2" col="2">-0.560818028342</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="167" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="167" size="4">
+            <neighbor port="1" id="168"/>
+            <neighbor port="2" id="174"/>
+            <neighbor port="3" id="166"/>
+            <neighbor port="4" id="177"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.072008258230</element>
+                <element row="1" col="0">0.014175341266</element>
+                <element row="2" col="0">-0.005164957221</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998126115458</element>
+                <element row="0" col="1">0.027202618171</element>
+                <element row="0" col="2">0.054811268960</element>
+                <element row="1" col="0">-0.040932403353</element>
+                <element row="1" col="1">0.962652461395</element>
+                <element row="1" col="2">0.267628057059</element>
+                <element row="2" col="0">-0.045484019128</element>
+                <element row="2" col="1">-0.269370109949</element>
+                <element row="2" col="2">0.961962030368</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="41" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="41" size="4">
+            <neighbor port="1" id="42"/>
+            <neighbor port="2" id="78"/>
+            <neighbor port="3" id="26"/>
+            <neighbor port="4" id="40"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.095696631684</element>
+                <element row="1" col="0">-0.048478265996</element>
+                <element row="2" col="0">-0.031668632357</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999298889588</element>
+                <element row="0" col="1">-0.023807903327</element>
+                <element row="0" col="2">0.028894861259</element>
+                <element row="1" col="0">0.037419272097</element>
+                <element row="1" col="1">0.660583868270</element>
+                <element row="1" col="2">-0.749819145566</element>
+                <element row="2" col="0">-0.001235857493</element>
+                <element row="2" col="1">0.750374664231</element>
+                <element row="2" col="2">0.661011600455</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="187" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="187" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="188"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="186"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.143473387417</element>
+                <element row="1" col="0">0.013389226254</element>
+                <element row="2" col="0">-0.126365602387</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998743930530</element>
+                <element row="0" col="1">-0.005665074715</element>
+                <element row="0" col="2">0.049784215959</element>
+                <element row="1" col="0">-0.018594286770</element>
+                <element row="1" col="1">-0.964542795911</element>
+                <element row="1" col="2">0.263270673179</element>
+                <element row="2" col="0">0.046527558819</element>
+                <element row="2" col="1">-0.263865688912</element>
+                <element row="2" col="2">-0.963436601176</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="160" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="160" size="4">
+            <neighbor port="1" id="153"/>
+            <neighbor port="2" id="161"/>
+            <neighbor port="3" id="141"/>
+            <neighbor port="4" id="159"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.119880938279</element>
+                <element row="1" col="0">0.052919407229</element>
+                <element row="2" col="0">-0.046568446229</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997507649606</element>
+                <element row="0" col="1">-0.044753409856</element>
+                <element row="0" col="2">0.054549255573</element>
+                <element row="1" col="0">-0.033363135789</element>
+                <element row="1" col="1">0.382055255140</element>
+                <element row="1" col="2">0.923537050253</element>
+                <element row="2" col="0">-0.062172261883</element>
+                <element row="2" col="1">-0.923055206543</element>
+                <element row="2" col="2">0.379609925484</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="29" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="29" size="4">
+            <neighbor port="1" id="30"/>
+            <neighbor port="2" id="44"/>
+            <neighbor port="3" id="173"/>
+            <neighbor port="4" id="28"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.143387958128</element>
+                <element row="1" col="0">-0.000016422487</element>
+                <element row="2" col="0">-0.007228847690</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998963318528</element>
+                <element row="0" col="1">0.041716983634</element>
+                <element row="0" col="2">0.018220359820</element>
+                <element row="1" col="0">-0.041320253391</element>
+                <element row="1" col="1">0.998911726123</element>
+                <element row="1" col="2">-0.021633309350</element>
+                <element row="2" col="0">-0.019103007491</element>
+                <element row="2" col="1">0.020858012615</element>
+                <element row="2" col="2">0.999599929179</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="188" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="188" size="4">
+            <neighbor port="1" id="189"/>
+            <neighbor port="2" id="145"/>
+            <neighbor port="3" id="187"/>
+            <neighbor port="4" id="194"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.166008839340</element>
+                <element row="1" col="0">0.027412237602</element>
+                <element row="2" col="0">-0.119926614376</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996411099180</element>
+                <element row="0" col="1">0.040026480734</element>
+                <element row="0" col="2">0.074584195849</element>
+                <element row="1" col="0">0.004851824889</element>
+                <element row="1" col="1">-0.906690790423</element>
+                <element row="1" col="2">0.421768029084</element>
+                <element row="2" col="0">0.084506693378</element>
+                <element row="2" col="1">-0.419892476001</element>
+                <element row="2" col="2">-0.903630968577</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="159" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="159" size="4">
+            <neighbor port="1" id="160"/>
+            <neighbor port="2" id="169"/>
+            <neighbor port="3" id="140"/>
+            <neighbor port="4" id="162"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.096304895074</element>
+                <element row="1" col="0">0.047299683386</element>
+                <element row="2" col="0">-0.033057152873</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998038956172</element>
+                <element row="0" col="1">-0.008177456487</element>
+                <element row="0" col="2">0.062059416444</element>
+                <element row="1" col="0">-0.046925996607</element>
+                <element row="1" col="1">0.558400949455</element>
+                <element row="1" col="2">0.828242917561</element>
+                <element row="2" col="0">-0.041426957484</element>
+                <element row="2" col="1">-0.829530896865</element>
+                <element row="2" col="2">0.556922165424</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="130" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="130" size="4">
+            <neighbor port="1" id="123"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="129"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.116875745459</element>
+                <element row="1" col="0">-0.034325413716</element>
+                <element row="2" col="0">-0.115051953530</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999497533955</element>
+                <element row="0" col="1">-0.005141422063</element>
+                <element row="0" col="2">0.031276914761</element>
+                <element row="1" col="0">0.012382566986</element>
+                <element row="1" col="1">-0.845009323434</element>
+                <element row="1" col="2">-0.534608188625</element>
+                <element row="2" col="0">0.029177930917</element>
+                <element row="2" col="1">0.534726854655</element>
+                <element row="2" col="2">-0.844521070938</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="194" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="194" size="4">
+            <neighbor port="1" id="188"/>
+            <neighbor port="2" id="144"/>
+            <neighbor port="3" id="186"/>
+            <neighbor port="4" id="193"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.142658062884</element>
+                <element row="1" col="0">0.037460596284</element>
+                <element row="2" col="0">-0.112838272896</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998757446347</element>
+                <element row="0" col="1">0.019936467280</element>
+                <element row="0" col="2">0.045673850722</element>
+                <element row="1" col="0">-0.016262123217</element>
+                <element row="1" col="1">-0.735946477729</element>
+                <element row="1" col="2">0.676844387778</element>
+                <element row="2" col="0">0.047107395554</element>
+                <element row="2" col="1">-0.676746126100</element>
+                <element row="2" col="2">-0.734707815457</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="30" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="30" size="4">
+            <neighbor port="1" id="31"/>
+            <neighbor port="2" id="45"/>
+            <neighbor port="3" id="170"/>
+            <neighbor port="4" id="29"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.167964561073</element>
+                <element row="1" col="0">0.012521785274</element>
+                <element row="2" col="0">-0.009610214761</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998232728741</element>
+                <element row="0" col="1">0.045461641852</element>
+                <element row="0" col="2">0.038270855636</element>
+                <element row="1" col="0">-0.054540710430</element>
+                <element row="1" col="1">0.956593891949</element>
+                <element row="1" col="2">0.286275106833</element>
+                <element row="2" col="0">-0.023595130363</element>
+                <element row="2" col="1">-0.287856500719</element>
+                <element row="2" col="2">0.957382841301</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="189" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="189" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="146"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="188"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.189748796740</element>
+                <element row="1" col="0">0.014737205169</element>
+                <element row="2" col="0">-0.126250109252</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996555066699</element>
+                <element row="0" col="1">0.051257620522</element>
+                <element row="0" col="2">0.065197050359</element>
+                <element row="1" col="0">0.034948534130</element>
+                <element row="1" col="1">-0.972477814645</element>
+                <element row="1" col="2">0.230359501617</element>
+                <element row="2" col="0">0.075210364972</element>
+                <element row="2" col="1">-0.227287387159</element>
+                <element row="2" col="2">-0.970919072137</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="174" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="174" size="4">
+            <neighbor port="1" id="173"/>
+            <neighbor port="2" id="28"/>
+            <neighbor port="3" id="167"/>
+            <neighbor port="4" id="178"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.095925533059</element>
+                <element row="1" col="0">0.000230039214</element>
+                <element row="2" col="0">-0.004697058206</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997398796285</element>
+                <element row="0" col="1">-0.023056316540</element>
+                <element row="0" col="2">0.068293831615</element>
+                <element row="1" col="0">0.023531873150</element>
+                <element row="1" col="1">0.999704065694</element>
+                <element row="1" col="2">-0.006167007459</element>
+                <element row="2" col="0">-0.068131432651</element>
+                <element row="2" col="1">0.007758047599</element>
+                <element row="2" col="2">0.997646190081</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="134" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="134" size="4">
+            <neighbor port="1" id="128"/>
+            <neighbor port="2" id="131"/>
+            <neighbor port="3" id="133"/>
+            <neighbor port="4" id="136"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.045131354677</element>
+                <element row="1" col="0">-0.045782703709</element>
+                <element row="2" col="0">-0.105475361335</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998581096346</element>
+                <element row="0" col="1">0.044785401476</element>
+                <element row="0" col="2">-0.028810793708</element>
+                <element row="1" col="0">0.009401299489</element>
+                <element row="1" col="1">-0.680790831780</element>
+                <element row="1" col="2">-0.732417544118</element>
+                <element row="2" col="0">-0.052415737974</element>
+                <element row="2" col="1">0.731107455289</element>
+                <element row="2" col="2">-0.680245896154</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="153" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="153" size="4">
+            <neighbor port="1" id="152"/>
+            <neighbor port="2" id="154"/>
+            <neighbor port="3" id="142"/>
+            <neighbor port="4" id="160"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.143339530348</element>
+                <element row="1" col="0">0.055499390385</element>
+                <element row="2" col="0">-0.061098776249</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997040529185</element>
+                <element row="0" col="1">-0.023244601084</element>
+                <element row="0" col="2">0.073279408311</element>
+                <element row="1" col="0">-0.068598413856</element>
+                <element row="1" col="1">0.161304995065</element>
+                <element row="1" col="2">0.984517626142</element>
+                <element row="2" col="0">-0.034705054076</element>
+                <element row="2" col="1">-0.986630826139</element>
+                <element row="2" col="2">0.159233074875</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="31" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="31" size="4">
+            <neighbor port="1" id="32"/>
+            <neighbor port="2" id="46"/>
+            <neighbor port="3" id="171"/>
+            <neighbor port="4" id="30"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.191980455701</element>
+                <element row="1" col="0">0.025514501227</element>
+                <element row="2" col="0">-0.015049074846</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999831453545</element>
+                <element row="0" col="1">-0.013763560634</element>
+                <element row="0" col="2">0.012150263381</element>
+                <element row="1" col="0">0.005140974878</element>
+                <element row="1" col="1">0.845216875560</element>
+                <element row="1" col="2">0.534398730955</element>
+                <element row="2" col="0">-0.017624836988</element>
+                <element row="2" col="1">-0.534246195745</element>
+                <element row="2" col="2">0.845145175371</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="168" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="168" size="4">
+            <neighbor port="1" id="169"/>
+            <neighbor port="2" id="173"/>
+            <neighbor port="3" id="162"/>
+            <neighbor port="4" id="167"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.095980706747</element>
+                <element row="1" col="0">0.027557974108</element>
+                <element row="2" col="0">-0.012752243349</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998312273616</element>
+                <element row="0" col="1">0.054998072671</element>
+                <element row="0" col="2">-0.018649835118</element>
+                <element row="1" col="0">-0.036996278394</element>
+                <element row="1" col="1">0.849831232405</element>
+                <element row="1" col="2">0.525754840028</element>
+                <element row="2" col="0">0.044764715262</element>
+                <element row="2" col="1">-0.524177535221</element>
+                <element row="2" col="2">0.850431673820</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="45" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="45" size="4">
+            <neighbor port="1" id="46"/>
+            <neighbor port="2" id="82"/>
+            <neighbor port="3" id="30"/>
+            <neighbor port="4" id="44"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.191001822945</element>
+                <element row="1" col="0">-0.000441105422</element>
+                <element row="2" col="0">-0.008835189894</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999943244849</element>
+                <element row="0" col="1">-0.005790999335</element>
+                <element row="0" col="2">-0.008942673422</element>
+                <element row="1" col="0">0.005721594723</element>
+                <element row="1" col="1">0.999953465611</element>
+                <element row="1" col="2">-0.007767236770</element>
+                <element row="2" col="0">0.008987237343</element>
+                <element row="2" col="1">0.007715629586</element>
+                <element row="2" col="2">0.999929846852</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="169" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="169" size="4">
+            <neighbor port="1" id="161"/>
+            <neighbor port="2" id="170"/>
+            <neighbor port="3" id="159"/>
+            <neighbor port="4" id="168"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.120317877820</element>
+                <element row="1" col="0">0.038623713505</element>
+                <element row="2" col="0">-0.022369088690</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998533032844</element>
+                <element row="0" col="1">0.050427557930</element>
+                <element row="0" col="2">0.019719120685</element>
+                <element row="1" col="0">-0.049322928153</element>
+                <element row="1" col="1">0.696873231418</element>
+                <element row="1" col="2">0.715496294953</element>
+                <element row="2" col="0">0.022339003510</element>
+                <element row="2" col="1">-0.715419290161</element>
+                <element row="2" col="2">0.698338176093</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="131" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="131" size="4">
+            <neighbor port="1" id="129"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="134"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.068259803968</element>
+                <element row="1" col="0">-0.034263852558</element>
+                <element row="2" col="0">-0.115416822797</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996499419686</element>
+                <element row="0" col="1">0.071288441541</element>
+                <element row="0" col="2">-0.043667661590</element>
+                <element row="1" col="0">0.041769471056</element>
+                <element row="1" col="1">-0.877038011689</element>
+                <element row="1" col="2">-0.478601752338</element>
+                <element row="2" col="0">-0.072416972139</element>
+                <element row="2" col="1">0.475102393338</element>
+                <element row="2" col="2">-0.876945550186</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="152" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="152" size="4">
+            <neighbor port="1" id="151"/>
+            <neighbor port="2" id="155"/>
+            <neighbor port="3" id="143"/>
+            <neighbor port="4" id="153"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.167243585257</element>
+                <element row="1" col="0">0.054484276345</element>
+                <element row="2" col="0">-0.075114154418</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998900418936</element>
+                <element row="0" col="1">0.016496534120</element>
+                <element row="0" col="2">0.043884136208</element>
+                <element row="1" col="0">-0.041653188038</element>
+                <element row="1" col="1">-0.117318540329</element>
+                <element row="1" col="2">0.992220425118</element>
+                <element row="2" col="0">0.021516620902</element>
+                <element row="2" col="1">-0.992957312505</element>
+                <element row="2" col="2">-0.116502405846</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="32" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="32" size="4">
+            <neighbor port="1" id="33"/>
+            <neighbor port="2" id="47"/>
+            <neighbor port="3" id="172"/>
+            <neighbor port="4" id="31"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.215720771082</element>
+                <element row="1" col="0">0.036032210051</element>
+                <element row="2" col="0">-0.024678195250</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997258051940</element>
+                <element row="0" col="1">-0.018344822976</element>
+                <element row="0" col="2">0.071692714482</element>
+                <element row="1" col="0">-0.037274484128</element>
+                <element row="1" col="1">0.712398972324</element>
+                <element row="1" col="2">0.700784073068</element>
+                <element row="2" col="0">-0.063929575885</element>
+                <element row="2" col="1">-0.701534868486</element>
+                <element row="2" col="2">0.709761817531</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="173" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="173" size="4">
+            <neighbor port="1" id="170"/>
+            <neighbor port="2" id="29"/>
+            <neighbor port="3" id="168"/>
+            <neighbor port="4" id="174"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.119633942356</element>
+                <element row="1" col="0">0.014318501389</element>
+                <element row="2" col="0">-0.007699714766</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998312199650</element>
+                <element row="0" col="1">-0.011246919793</element>
+                <element row="0" col="2">0.056975949537</element>
+                <element row="1" col="0">-0.001606146467</element>
+                <element row="1" col="1">0.975346427763</element>
+                <element row="1" col="2">0.220673437783</element>
+                <element row="2" col="0">-0.058053185305</element>
+                <element row="2" col="1">-0.220392496798</element>
+                <element row="2" col="2">0.973682173520</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="115" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="115" size="4">
+            <neighbor port="1" id="113"/>
+            <neighbor port="2" id="116"/>
+            <neighbor port="3" id="114"/>
+            <neighbor port="4" id="128"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.093497731360</element>
+                <element row="1" col="0">-0.058693817498</element>
+                <element row="2" col="0">-0.082792120799</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998915416036</element>
+                <element row="0" col="1">-0.028676482688</element>
+                <element row="0" col="2">0.036683115267</element>
+                <element row="1" col="0">0.028591654457</element>
+                <element row="1" col="1">-0.244031807456</element>
+                <element row="1" col="2">-0.969345652616</element>
+                <element row="2" col="0">0.036749270747</element>
+                <element row="2" col="1">0.969343146822</element>
+                <element row="2" col="2">-0.242947226387</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="46" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="46" size="4">
+            <neighbor port="1" id="47"/>
+            <neighbor port="2" id="83"/>
+            <neighbor port="3" id="31"/>
+            <neighbor port="4" id="45"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.215905493430</element>
+                <element row="1" col="0">0.012966361821</element>
+                <element row="2" col="0">-0.008651400889</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999267597036</element>
+                <element row="0" col="1">0.022927971853</element>
+                <element row="0" col="2">-0.030636214216</element>
+                <element row="1" col="0">-0.010855421760</element>
+                <element row="1" col="1">0.937578273525</element>
+                <element row="1" col="2">0.347604863074</element>
+                <element row="2" col="0">0.036693723349</element>
+                <element row="2" col="1">-0.347017707215</element>
+                <element row="2" col="2">0.937140481223</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="161" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="161" size="4">
+            <neighbor port="1" id="154"/>
+            <neighbor port="2" id="171"/>
+            <neighbor port="3" id="160"/>
+            <neighbor port="4" id="169"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.144454779404</element>
+                <element row="1" col="0">0.046283582193</element>
+                <element row="2" col="0">-0.033616099468</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.995759659728</element>
+                <element row="0" col="1">-0.021086233223</element>
+                <element row="0" col="2">0.089543681108</element>
+                <element row="1" col="0">-0.060312851712</element>
+                <element row="1" col="1">0.585340775314</element>
+                <element row="1" col="2">0.808540992574</element>
+                <element row="2" col="0">-0.069462651664</element>
+                <element row="2" col="1">-0.810513138403</element>
+                <element row="2" col="2">0.581586960394</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="136" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="136" size="4">
+            <neighbor port="1" id="134"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="135"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.021383841274</element>
+                <element row="1" col="0">-0.034667405442</element>
+                <element row="2" col="0">-0.110970850556</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998948855036</element>
+                <element row="0" col="1">-0.044243029825</element>
+                <element row="0" col="2">-0.011989133976</element>
+                <element row="1" col="0">-0.043885748668</element>
+                <element row="1" col="1">-0.847566384643</element>
+                <element row="1" col="2">-0.528871690193</element>
+                <element row="2" col="0">0.013237299024</element>
+                <element row="2" col="1">0.528841921499</element>
+                <element row="2" col="2">-0.848617107994</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="151" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="151" size="4">
+            <neighbor port="1" id="148"/>
+            <neighbor port="2" id="156"/>
+            <neighbor port="3" id="144"/>
+            <neighbor port="4" id="152"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.191636525070</element>
+                <element row="1" col="0">0.050311296008</element>
+                <element row="2" col="0">-0.087620974381</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997678929785</element>
+                <element row="0" col="1">0.045501698504</element>
+                <element row="0" col="2">0.050659140311</element>
+                <element row="1" col="0">-0.031336950477</element>
+                <element row="1" col="1">-0.353695556034</element>
+                <element row="1" col="2">0.934835519852</element>
+                <element row="2" col="0">0.060454516775</element>
+                <element row="2" col="1">-0.934253203942</element>
+                <element row="2" col="2">-0.351448719341</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="82" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="82" size="4">
+            <neighbor port="1" id="83"/>
+            <neighbor port="2" id="88"/>
+            <neighbor port="3" id="45"/>
+            <neighbor port="4" id="81"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.214844714800</element>
+                <element row="1" col="0">-0.015782432396</element>
+                <element row="2" col="0">-0.010752711842</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999147923384</element>
+                <element row="0" col="1">0.017010246765</element>
+                <element row="0" col="2">-0.037604237817</element>
+                <element row="1" col="0">-0.028052897795</element>
+                <element row="1" col="1">0.948193104326</element>
+                <element row="1" col="2">-0.316453585591</element>
+                <element row="2" col="0">0.030273125411</element>
+                <element row="2" col="1">0.317238850731</element>
+                <element row="2" col="2">0.947862357869</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="170" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="170" size="4">
+            <neighbor port="1" id="171"/>
+            <neighbor port="2" id="30"/>
+            <neighbor port="3" id="169"/>
+            <neighbor port="4" id="173"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.143720172130</element>
+                <element row="1" col="0">0.026522638501</element>
+                <element row="2" col="0">-0.013863887010</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998254276597</element>
+                <element row="0" col="1">0.029451499675</element>
+                <element row="0" col="2">0.051195785200</element>
+                <element row="1" col="0">-0.051462557092</element>
+                <element row="1" col="1">0.859076651536</element>
+                <element row="1" col="2">0.509253288653</element>
+                <element row="2" col="0">-0.028982830657</element>
+                <element row="2" col="1">-0.510998939288</element>
+                <element row="2" col="2">0.859092590804</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="42" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="42" size="4">
+            <neighbor port="1" id="43"/>
+            <neighbor port="2" id="79"/>
+            <neighbor port="3" id="27"/>
+            <neighbor port="4" id="41"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.119197681973</element>
+                <element row="1" col="0">-0.037449038542</element>
+                <element row="2" col="0">-0.021827253265</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998907558889</element>
+                <element row="0" col="1">-0.044395966997</element>
+                <element row="0" col="2">-0.014583789240</element>
+                <element row="1" col="0">0.027088887588</element>
+                <element row="1" col="1">0.804434637193</element>
+                <element row="1" col="2">-0.593423210410</element>
+                <element row="2" col="0">0.038077302471</element>
+                <element row="2" col="1">0.592379871871</element>
+                <element row="2" col="2">0.804758477084</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="33" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="33" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="157"/>
+            <neighbor port="4" id="32"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.238647639106</element>
+                <element row="1" col="0">0.043069097536</element>
+                <element row="2" col="0">-0.034670454016</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996118072084</element>
+                <element row="0" col="1">0.062577793309</element>
+                <element row="0" col="2">0.061909662019</element>
+                <element row="1" col="0">-0.086373385896</element>
+                <element row="1" col="1">0.559140160993</element>
+                <element row="1" col="2">0.824561652379</element>
+                <element row="2" col="0">0.016983070265</element>
+                <element row="2" col="1">-0.826708110610</element>
+                <element row="2" col="2">0.562374675084</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="154" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="154" size="4">
+            <neighbor port="1" id="155"/>
+            <neighbor port="2" id="172"/>
+            <neighbor port="3" id="153"/>
+            <neighbor port="4" id="161"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.168346222852</element>
+                <element row="1" col="0">0.050954148207</element>
+                <element row="2" col="0">-0.046842731672</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.994128645403</element>
+                <element row="0" col="1">0.022912488395</element>
+                <element row="0" col="2">0.105750906681</element>
+                <element row="1" col="0">-0.106733640421</element>
+                <element row="1" col="1">0.368248355983</element>
+                <element row="1" col="2">0.923580574892</element>
+                <element row="2" col="0">-0.017781068325</element>
+                <element row="2" col="1">-0.929445085087</element>
+                <element row="2" col="2">0.368531772602</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="116" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="116" size="4">
+            <neighbor port="1" id="117"/>
+            <neighbor port="2" id="123"/>
+            <neighbor port="3" id="115"/>
+            <neighbor port="4" id="129"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.117228994383</element>
+                <element row="1" col="0">-0.052987084255</element>
+                <element row="2" col="0">-0.095947155293</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998048464980</element>
+                <element row="0" col="1">0.061862703999</element>
+                <element row="0" col="2">-0.008501023751</element>
+                <element row="1" col="0">0.022521873834</element>
+                <element row="1" col="1">-0.483592607282</element>
+                <element row="1" col="2">-0.875003403068</element>
+                <element row="2" col="0">-0.058241108762</element>
+                <element row="2" col="1">0.873104344300</element>
+                <element row="2" col="2">-0.484042123388</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="47" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="47" size="4">
+            <neighbor port="1" id="48"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="32"/>
+            <neighbor port="4" id="46"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.239886506631</element>
+                <element row="1" col="0">0.024997307590</element>
+                <element row="2" col="0">-0.015301539666</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997147154472</element>
+                <element row="0" col="1">-0.019494231483</element>
+                <element row="0" col="2">0.072921377295</element>
+                <element row="1" col="0">-0.023270080677</element>
+                <element row="1" col="1">0.839629126334</element>
+                <element row="1" col="2">0.542661435479</element>
+                <element row="2" col="0">-0.071805679949</element>
+                <element row="2" col="1">-0.542810192563</element>
+                <element row="2" col="2">0.836780161797</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="171" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="171" size="4">
+            <neighbor port="1" id="172"/>
+            <neighbor port="2" id="31"/>
+            <neighbor port="3" id="161"/>
+            <neighbor port="4" id="170"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.167851920082</element>
+                <element row="1" col="0">0.036692093454</element>
+                <element row="2" col="0">-0.023032171177</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999197891131</element>
+                <element row="0" col="1">-0.006262651206</element>
+                <element row="0" col="2">0.039551909677</element>
+                <element row="1" col="0">-0.022887363319</element>
+                <element row="1" col="1">0.721159633942</element>
+                <element row="1" col="2">0.692390750208</element>
+                <element row="2" col="0">-0.032859442471</element>
+                <element row="2" col="1">-0.692740616373</element>
+                <element row="2" col="2">0.720437849830</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="113" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="113" size="4">
+            <neighbor port="1" id="84"/>
+            <neighbor port="2" id="117"/>
+            <neighbor port="3" id="77"/>
+            <neighbor port="4" id="115"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.116379263610</element>
+                <element row="1" col="0">-0.061821175415</element>
+                <element row="2" col="0">-0.071974905672</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.994590238800</element>
+                <element row="0" col="1">0.079834627682</element>
+                <element row="0" col="2">0.066458175618</element>
+                <element row="1" col="0">0.072025542813</element>
+                <element row="1" col="1">-0.069007294809</element>
+                <element row="1" col="2">-0.995012720746</element>
+                <element row="2" col="0">-0.074850371183</element>
+                <element row="2" col="1">0.994416625709</element>
+                <element row="2" col="2">-0.074384114217</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="147" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="147" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="146"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.237366921373</element>
+                <element row="1" col="0">0.014862356597</element>
+                <element row="2" col="0">-0.126194736435</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999639917750</element>
+                <element row="0" col="1">0.004177367171</element>
+                <element row="0" col="2">-0.026506309525</element>
+                <element row="1" col="0">0.011042316031</element>
+                <element row="1" col="1">-0.964332284977</element>
+                <element row="1" col="2">0.264464196834</element>
+                <element row="2" col="0">-0.024456125977</element>
+                <element row="2" col="1">-0.264661659017</element>
+                <element row="2" col="2">-0.964031173847</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="88" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="88" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="82"/>
+            <neighbor port="4" id="87"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.238565904486</element>
+                <element row="1" col="0">-0.028843688340</element>
+                <element row="2" col="0">-0.016548522782</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999766153148</element>
+                <element row="0" col="1">0.020958215047</element>
+                <element row="0" col="2">-0.005328437147</element>
+                <element row="1" col="0">-0.020429532105</element>
+                <element row="1" col="1">0.834587864978</element>
+                <element row="1" col="2">-0.550495894490</element>
+                <element row="2" col="0">-0.007090362357</element>
+                <element row="2" col="1">0.550476020235</element>
+                <element row="2" col="2">0.834820865759</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="155" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="155" size="4">
+            <neighbor port="1" id="156"/>
+            <neighbor port="2" id="157"/>
+            <neighbor port="3" id="152"/>
+            <neighbor port="4" id="154"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.191709593067</element>
+                <element row="1" col="0">0.054847445241</element>
+                <element row="2" col="0">-0.061481421557</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998659012077</element>
+                <element row="0" col="1">-0.012830674014</element>
+                <element row="0" col="2">0.050155272920</element>
+                <element row="1" col="0">-0.047405403266</element>
+                <element row="1" col="1">0.162721271203</element>
+                <element row="1" col="2">0.985532605062</element>
+                <element row="2" col="0">-0.020806377353</element>
+                <element row="2" col="1">-0.986588648679</element>
+                <element row="2" col="2">0.161894820668</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="123" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="123" size="4">
+            <neighbor port="1" id="119"/>
+            <neighbor port="2" id="124"/>
+            <neighbor port="3" id="116"/>
+            <neighbor port="4" id="130"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.140421326938</element>
+                <element row="1" col="0">-0.043797180866</element>
+                <element row="2" col="0">-0.107922571830</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996814158681</element>
+                <element row="0" col="1">0.044711428793</element>
+                <element row="0" col="2">0.066048627455</element>
+                <element row="1" col="0">0.079172825304</element>
+                <element row="1" col="1">-0.654916964138</element>
+                <element row="1" col="2">-0.751542037292</element>
+                <element row="2" col="0">0.009653848293</element>
+                <element row="2" col="1">0.754377000060</element>
+                <element row="2" col="2">-0.656370432754</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="149" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="149" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="146"/>
+            <neighbor port="4" id="148"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.237617006455</element>
+                <element row="1" col="0">0.037677161365</element>
+                <element row="2" col="0">-0.111886979880</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999211724554</element>
+                <element row="0" col="1">-0.026557222002</element>
+                <element row="0" col="2">-0.029506668279</element>
+                <element row="1" col="0">0.002227399821</element>
+                <element row="1" col="1">-0.704601878133</element>
+                <element row="1" col="2">0.709599346125</element>
+                <element row="2" col="0">-0.039635441254</element>
+                <element row="2" col="1">-0.709105709532</element>
+                <element row="2" col="2">-0.703987304222</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="83" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="83" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="46"/>
+            <neighbor port="4" id="82"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.239464316662</element>
+                <element row="1" col="0">-0.001115978917</element>
+                <element row="2" col="0">-0.006705940629</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996675920894</element>
+                <element row="0" col="1">0.033143311415</element>
+                <element row="0" col="2">0.074421969998</element>
+                <element row="1" col="0">-0.032744400602</element>
+                <element row="1" col="1">0.999442136330</element>
+                <element row="1" col="2">-0.006574219162</element>
+                <element row="2" col="0">-0.074598344078</element>
+                <element row="2" col="1">0.004115463138</element>
+                <element row="2" col="2">0.997205169473</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="172" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="172" size="4">
+            <neighbor port="1" id="157"/>
+            <neighbor port="2" id="32"/>
+            <neighbor port="3" id="154"/>
+            <neighbor port="4" id="171"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.191478536062</element>
+                <element row="1" col="0">0.044776208362</element>
+                <element row="2" col="0">-0.035029583149</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.992861433148</element>
+                <element row="0" col="1">-0.033465336160</element>
+                <element row="0" col="2">0.114482513260</element>
+                <element row="1" col="0">-0.072067200999</element>
+                <element row="1" col="1">0.596493177394</element>
+                <element row="1" col="2">0.799376136661</element>
+                <element row="2" col="0">-0.095039429222</element>
+                <element row="2" col="1">-0.801920170964</element>
+                <element row="2" col="2">0.589823317863</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="78" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="78" size="4">
+            <neighbor port="1" id="79"/>
+            <neighbor port="2" id="84"/>
+            <neighbor port="3" id="41"/>
+            <neighbor port="4" id="77"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.118315156534</element>
+                <element row="1" col="0">-0.055105088704</element>
+                <element row="2" col="0">-0.042901869699</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.996527237530</element>
+                <element row="0" col="1">-0.029140146546</element>
+                <element row="0" col="2">0.078002030225</element>
+                <element row="1" col="0">0.082861441127</element>
+                <element row="1" col="1">0.439434976411</element>
+                <element row="1" col="2">-0.894444455000</element>
+                <element row="2" col="0">-0.008212577816</element>
+                <element row="2" col="1">0.897801622501</element>
+                <element row="2" col="2">0.440323517655</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="156" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="156" size="4">
+            <neighbor port="1" id="150"/>
+            <neighbor port="2" id="158"/>
+            <neighbor port="3" id="151"/>
+            <neighbor port="4" id="155"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.214844495090</element>
+                <element row="1" col="0">0.054645884477</element>
+                <element row="2" col="0">-0.073811819569</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998227525108</element>
+                <element row="0" col="1">-0.045195919079</element>
+                <element row="0" col="2">-0.038718690772</element>
+                <element row="1" col="0">0.034259949384</element>
+                <element row="1" col="1">-0.095570644449</element>
+                <element row="1" col="2">0.994832904456</element>
+                <element row="2" col="0">-0.048662757676</element>
+                <element row="2" col="1">-0.994396088497</element>
+                <element row="2" col="2">-0.093852837982</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="157" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="157" size="4">
+            <neighbor port="1" id="158"/>
+            <neighbor port="2" id="33"/>
+            <neighbor port="3" id="155"/>
+            <neighbor port="4" id="172"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.215457791362</element>
+                <element row="1" col="0">0.050579545399</element>
+                <element row="2" col="0">-0.047743092589</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998902120299</element>
+                <element row="0" col="1">0.044621430209</element>
+                <element row="0" col="2">-0.014264712662</element>
+                <element row="1" col="0">-0.002803954091</element>
+                <element row="1" col="1">0.360905522268</element>
+                <element row="1" col="2">0.932598167400</element>
+                <element row="2" col="0">0.046762077613</element>
+                <element row="2" col="1">-0.931534289204</element>
+                <element row="2" col="2">0.360634407863</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="124" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="124" size="4">
+            <neighbor port="1" id="125"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="123"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.164518345382</element>
+                <element row="1" col="0">-0.035886993138</element>
+                <element row="2" col="0">-0.117380519200</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999792092889</element>
+                <element row="0" col="1">0.009443223263</element>
+                <element row="0" col="2">0.018071981911</element>
+                <element row="1" col="0">0.017538270557</element>
+                <element row="1" col="1">-0.850346504548</element>
+                <element row="1" col="2">-0.525930823654</element>
+                <element row="2" col="0">0.010400964460</element>
+                <element row="2" col="1">0.526138430204</element>
+                <element row="2" col="2">-0.850335329268</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="150" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="150" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="148"/>
+            <neighbor port="4" id="156"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.238299399343</element>
+                <element row="1" col="0">0.052354151524</element>
+                <element row="2" col="0">-0.088413406881</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999492848384</element>
+                <element row="0" col="1">-0.028766970792</element>
+                <element row="0" col="2">-0.013656771947</element>
+                <element row="1" col="0">0.004459383536</element>
+                <element row="1" col="1">-0.298195776696</element>
+                <element row="1" col="2">0.954494312534</element>
+                <element row="2" col="0">-0.031530301727</element>
+                <element row="2" col="1">-0.954071139985</element>
+                <element row="2" col="2">-0.297916263270</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="158" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="158" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="156"/>
+            <neighbor port="4" id="157"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.239430466149</element>
+                <element row="1" col="0">0.054122364519</element>
+                <element row="2" col="0">-0.061161014889</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998515360654</element>
+                <element row="0" col="1">-0.044097856576</element>
+                <element row="0" col="2">0.031975828123</element>
+                <element row="1" col="0">-0.023062747860</element>
+                <element row="1" col="1">0.189554412534</element>
+                <element row="1" col="2">0.981599324750</element>
+                <element row="2" col="0">-0.049347585553</element>
+                <element row="2" col="1">-0.980879454232</element>
+                <element row="2" col="2">0.188255974847</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="84" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="84" size="4">
+            <neighbor port="1" id="85"/>
+            <neighbor port="2" id="118"/>
+            <neighbor port="3" id="78"/>
+            <neighbor port="4" id="113"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.140727348584</element>
+                <element row="1" col="0">-0.059261252863</element>
+                <element row="2" col="0">-0.059003336596</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998452145103</element>
+                <element row="0" col="1">-0.018180860949</element>
+                <element row="0" col="2">0.052562060798</element>
+                <element row="1" col="0">0.055254955310</element>
+                <element row="1" col="1">0.216515376753</element>
+                <element row="1" col="2">-0.974714307653</element>
+                <element row="2" col="0">0.006340650896</element>
+                <element row="2" col="1">0.976109905659</element>
+                <element row="2" col="2">0.217184825026</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="43" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="43" size="4">
+            <neighbor port="1" id="44"/>
+            <neighbor port="2" id="80"/>
+            <neighbor port="3" id="28"/>
+            <neighbor port="4" id="42"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.142501497792</element>
+                <element row="1" col="0">-0.026393179671</element>
+                <element row="2" col="0">-0.015234061958</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998830328588</element>
+                <element row="0" col="1">0.046804423824</element>
+                <element row="0" col="2">0.012137569900</element>
+                <element row="1" col="0">-0.034636970735</element>
+                <element row="1" col="1">0.867744627169</element>
+                <element row="1" col="2">-0.495801918388</element>
+                <element row="2" col="0">-0.033738034189</element>
+                <element row="2" col="1">0.494801584405</element>
+                <element row="2" col="2">0.868350814544</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="117" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="117" size="4">
+            <neighbor port="1" id="118"/>
+            <neighbor port="2" id="119"/>
+            <neighbor port="3" id="113"/>
+            <neighbor port="4" id="116"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.139074040741</element>
+                <element row="1" col="0">-0.057880293051</element>
+                <element row="2" col="0">-0.087460582550</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.995879428995</element>
+                <element row="0" col="1">0.090288069856</element>
+                <element row="0" col="2">-0.008498667298</element>
+                <element row="1" col="0">0.022108583876</element>
+                <element row="1" col="1">-0.332603111357</element>
+                <element row="1" col="2">-0.942807711485</element>
+                <element row="2" col="0">-0.087950971701</element>
+                <element row="2" col="1">0.938734911867</element>
+                <element row="2" col="2">-0.333228737985</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="79" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="79" size="4">
+            <neighbor port="1" id="80"/>
+            <neighbor port="2" id="85"/>
+            <neighbor port="3" id="42"/>
+            <neighbor port="4" id="78"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.142711650593</element>
+                <element row="1" col="0">-0.047259535659</element>
+                <element row="2" col="0">-0.032365617030</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.994102265779</element>
+                <element row="0" col="1">0.101845863575</element>
+                <element row="0" col="2">0.037257284470</element>
+                <element row="1" col="0">-0.030389599598</element>
+                <element row="1" col="1">0.591406587450</element>
+                <element row="1" col="2">-0.805800670487</element>
+                <element row="2" col="0">-0.104101668621</element>
+                <element row="2" col="1">0.799916038340</element>
+                <element row="2" col="2">0.591013683596</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="85" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="85" size="4">
+            <neighbor port="1" id="86"/>
+            <neighbor port="2" id="91"/>
+            <neighbor port="3" id="79"/>
+            <neighbor port="4" id="84"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.165143433671</element>
+                <element row="1" col="0">-0.053792098580</element>
+                <element row="2" col="0">-0.047157807993</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.990725096104</element>
+                <element row="0" col="1">0.096174888485</element>
+                <element row="0" col="2">0.095990493144</element>
+                <element row="1" col="0">0.052601898682</element>
+                <element row="1" col="1">0.379894914044</element>
+                <element row="1" col="2">-0.923532833492</element>
+                <element row="2" col="0">-0.125286967416</element>
+                <element row="2" col="1">0.920016437412</element>
+                <element row="2" col="2">0.371312443486</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="44" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="44" size="4">
+            <neighbor port="1" id="45"/>
+            <neighbor port="2" id="81"/>
+            <neighbor port="3" id="29"/>
+            <neighbor port="4" id="43"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.166929066852</element>
+                <element row="1" col="0">-0.014122024874</element>
+                <element row="2" col="0">-0.010586176713</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998314247387</element>
+                <element row="0" col="1">0.019171883045</element>
+                <element row="0" col="2">0.054782317999</element>
+                <element row="1" col="0">-0.000199633650</element>
+                <element row="1" col="1">0.944997379927</element>
+                <element row="1" col="2">-0.327077837949</element>
+                <element row="2" col="0">-0.058039845031</element>
+                <element row="2" col="1">0.326515529235</element>
+                <element row="2" col="2">0.943408175477</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="118" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="118" size="4">
+            <neighbor port="1" id="91"/>
+            <neighbor port="2" id="120"/>
+            <neighbor port="3" id="84"/>
+            <neighbor port="4" id="117"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.164654648539</element>
+                <element row="1" col="0">-0.062451961218</element>
+                <element row="2" col="0">-0.070128271836</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.994627951909</element>
+                <element row="0" col="1">0.083692204804</element>
+                <element row="0" col="2">0.060916763993</element>
+                <element row="1" col="0">0.067657296704</element>
+                <element row="1" col="1">-0.080215496374</element>
+                <element row="1" col="2">-0.994478740016</element>
+                <element row="2" col="0">-0.078343649922</element>
+                <element row="2" col="1">0.993257815976</element>
+                <element row="2" col="2">-0.085446963202</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="91" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="91" size="4">
+            <neighbor port="1" id="90"/>
+            <neighbor port="2" id="92"/>
+            <neighbor port="3" id="85"/>
+            <neighbor port="4" id="118"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.189102624133</element>
+                <element row="1" col="0">-0.060563234637</element>
+                <element row="2" col="0">-0.057182182277</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999945599916</element>
+                <element row="0" col="1">-0.010393208760</element>
+                <element row="0" col="2">0.000882281519</element>
+                <element row="1" col="0">0.003234016381</element>
+                <element row="1" col="1">0.228505614031</element>
+                <element row="1" col="2">-0.973537223476</element>
+                <element row="2" col="0">0.009916569319</element>
+                <element row="2" col="1">0.973487116282</element>
+                <element row="2" col="2">0.228526795114</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="81" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="81" size="4">
+            <neighbor port="1" id="82"/>
+            <neighbor port="2" id="87"/>
+            <neighbor port="3" id="44"/>
+            <neighbor port="4" id="80"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.190452453322</element>
+                <element row="1" col="0">-0.027425727028</element>
+                <element row="2" col="0">-0.017021032051</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998384723058</element>
+                <element row="0" col="1">0.043256856263</element>
+                <element row="0" col="2">-0.036834618907</element>
+                <element row="1" col="0">-0.055989467309</element>
+                <element row="1" col="1">0.859207326192</element>
+                <element row="1" col="2">-0.508554766145</element>
+                <element row="2" col="0">0.009650094001</element>
+                <element row="2" col="1">0.509795660049</element>
+                <element row="2" col="2">0.860241396749</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="119" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="119" size="4">
+            <neighbor port="1" id="120"/>
+            <neighbor port="2" id="125"/>
+            <neighbor port="3" id="117"/>
+            <neighbor port="4" id="123"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.164071541559</element>
+                <element row="1" col="0">-0.055162265283</element>
+                <element row="2" col="0">-0.096650687799</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999574027095</element>
+                <element row="0" col="1">-0.005064651276</element>
+                <element row="0" col="2">0.028742193100</element>
+                <element row="1" col="0">0.023037115860</element>
+                <element row="1" col="1">-0.467709287610</element>
+                <element row="1" col="2">-0.883582092155</element>
+                <element row="2" col="0">0.017918025830</element>
+                <element row="2" col="1">0.883867847357</element>
+                <element row="2" col="2">-0.467393381168</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="86" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="86" size="4">
+            <neighbor port="1" id="87"/>
+            <neighbor port="2" id="90"/>
+            <neighbor port="3" id="80"/>
+            <neighbor port="4" id="85"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.189087276265</element>
+                <element row="1" col="0">-0.048149174228</element>
+                <element row="2" col="0">-0.036343726958</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.995843482696</element>
+                <element row="0" col="1">0.090063098558</element>
+                <element row="0" col="2">-0.013579258048</element>
+                <element row="1" col="0">-0.063609301909</element>
+                <element row="1" col="1">0.580998094458</element>
+                <element row="1" col="2">-0.811415473692</element>
+                <element row="2" col="0">-0.065189068729</element>
+                <element row="2" col="1">0.808906578360</element>
+                <element row="2" col="2">0.584312016652</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="92" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="92" size="4">
+            <neighbor port="1" id="93"/>
+            <neighbor port="2" id="94"/>
+            <neighbor port="3" id="91"/>
+            <neighbor port="4" id="120"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.212910791541</element>
+                <element row="1" col="0">-0.061327718317</element>
+                <element row="2" col="0">-0.071268851871</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998693325275</element>
+                <element row="0" col="1">0.035464593661</element>
+                <element row="0" col="2">0.036795443296</element>
+                <element row="1" col="0">0.038471536722</element>
+                <element row="1" col="1">-0.047798425889</element>
+                <element row="1" col="2">-0.998115850663</element>
+                <element row="2" col="0">-0.033639008801</element>
+                <element row="2" col="1">0.998227215156</element>
+                <element row="2" col="2">-0.049100346311</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="90" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="90" size="4">
+            <neighbor port="1" id="89"/>
+            <neighbor port="2" id="93"/>
+            <neighbor port="3" id="86"/>
+            <neighbor port="4" id="91"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.213489552495</element>
+                <element row="1" col="0">-0.056342042391</element>
+                <element row="2" col="0">-0.044674816422</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997428554998</element>
+                <element row="0" col="1">0.070170137706</element>
+                <element row="0" col="2">0.014574959663</element>
+                <element row="1" col="0">-0.014242993084</element>
+                <element row="1" col="1">0.393394381202</element>
+                <element row="1" col="2">-0.919259483490</element>
+                <element row="2" col="0">-0.070238271782</element>
+                <element row="2" col="1">0.916688067236</element>
+                <element row="2" col="2">0.393382221973</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="120" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="120" size="4">
+            <neighbor port="1" id="92"/>
+            <neighbor port="2" id="121"/>
+            <neighbor port="3" id="118"/>
+            <neighbor port="4" id="119"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.188354598404</element>
+                <element row="1" col="0">-0.059807286341</element>
+                <element row="2" col="0">-0.084050685415</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998735463059</element>
+                <element row="0" col="1">0.048399360233</element>
+                <element row="0" col="2">0.013600616055</element>
+                <element row="1" col="0">0.026686204854</element>
+                <element row="1" col="1">-0.281105127619</element>
+                <element row="1" col="2">-0.959305870771</element>
+                <element row="2" col="0">-0.042606587501</element>
+                <element row="2" col="1">0.958455741886</element>
+                <element row="2" col="2">-0.282041255043</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="87" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="87" size="4">
+            <neighbor port="1" id="88"/>
+            <neighbor port="2" id="89"/>
+            <neighbor port="3" id="81"/>
+            <neighbor port="4" id="86"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.214270859025</element>
+                <element row="1" col="0">-0.039762809919</element>
+                <element row="2" col="0">-0.024171783889</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997953304390</element>
+                <element row="0" col="1">-0.023592481093</element>
+                <element row="0" col="2">-0.059435655062</element>
+                <element row="1" col="0">-0.019395011246</element>
+                <element row="1" col="1">0.774002552090</element>
+                <element row="1" col="2">-0.632885363156</element>
+                <element row="2" col="0">0.060934684667</element>
+                <element row="2" col="1">0.632742794660</element>
+                <element row="2" col="2">0.771960828029</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="121" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="121" size="4">
+            <neighbor port="1" id="94"/>
+            <neighbor port="2" id="122"/>
+            <neighbor port="3" id="120"/>
+            <neighbor port="4" id="125"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.212352736440</element>
+                <element row="1" col="0">-0.054221161657</element>
+                <element row="2" col="0">-0.096706925619</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997849963588</element>
+                <element row="0" col="1">-0.053986919668</element>
+                <element row="0" col="2">0.037159960596</element>
+                <element row="1" col="0">0.008416370747</element>
+                <element row="1" col="1">-0.456736840478</element>
+                <element row="1" col="2">-0.889562040137</element>
+                <element row="2" col="0">0.064997037395</element>
+                <element row="2" col="1">0.887962201366</element>
+                <element row="2" col="2">-0.455300465709</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="89" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="89" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="87"/>
+            <neighbor port="4" id="90"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.238157123219</element>
+                <element row="1" col="0">-0.049309065280</element>
+                <element row="2" col="0">-0.034183574965</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998038094721</element>
+                <element row="0" col="1">0.032968566189</element>
+                <element row="0" col="2">0.053226263528</element>
+                <element row="1" col="0">0.023109791555</element>
+                <element row="1" col="1">0.596116408663</element>
+                <element row="1" col="2">-0.802565364850</element>
+                <element row="2" col="0">-0.058188478413</element>
+                <element row="2" col="1">0.802220855479</element>
+                <element row="2" col="2">0.594184988041</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="94" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="94" size="4">
+            <neighbor port="1" id="95"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="92"/>
+            <neighbor port="4" id="121"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.236709595898</element>
+                <element row="1" col="0">-0.058098002023</element>
+                <element row="2" col="0">-0.085107483185</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999631210569</element>
+                <element row="0" col="1">-0.009594583117</element>
+                <element row="0" col="2">0.025404464798</element>
+                <element row="1" col="0">0.021155910366</element>
+                <element row="1" col="1">-0.311371135350</element>
+                <element row="1" col="2">-0.950052863544</element>
+                <element row="2" col="0">0.017025578212</element>
+                <element row="2" col="1">0.950239948669</element>
+                <element row="2" col="2">-0.311053322825</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="93" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="93" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="90"/>
+            <neighbor port="4" id="92"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.236478670067</element>
+                <element row="1" col="0">-0.060216605438</element>
+                <element row="2" col="0">-0.059653998348</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997461189284</element>
+                <element row="0" col="1">0.065481199291</element>
+                <element row="0" col="2">0.027989076649</element>
+                <element row="1" col="0">0.016866991280</element>
+                <element row="1" col="1">0.164612908112</element>
+                <element row="1" col="2">-0.986214020935</element>
+                <element row="2" col="0">-0.069185840151</element>
+                <element row="2" col="1">0.984182301722</element>
+                <element row="2" col="2">0.163090516280</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="125" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="125" size="4">
+            <neighbor port="1" id="121"/>
+            <neighbor port="2" id="126"/>
+            <neighbor port="3" id="119"/>
+            <neighbor port="4" id="124"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.188669199187</element>
+                <element row="1" col="0">-0.046376979823</element>
+                <element row="2" col="0">-0.108637682046</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999880990758</element>
+                <element row="0" col="1">0.012667748320</element>
+                <element row="0" col="2">-0.008805252600</element>
+                <element row="1" col="0">0.002201253717</element>
+                <element row="1" col="1">-0.682062206384</element>
+                <element row="1" col="2">-0.731290845768</element>
+                <element row="2" col="0">-0.015269538399</element>
+                <element row="2" col="1">0.731184432804</element>
+                <element row="2" col="2">-0.682008919606</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="126" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="126" size="4">
+            <neighbor port="1" id="122"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="125"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.212753521695</element>
+                <element row="1" col="0">-0.036119336724</element>
+                <element row="2" col="0">-0.117813067861</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998009315768</element>
+                <element row="0" col="1">-0.028330438257</element>
+                <element row="0" col="2">-0.056345291798</element>
+                <element row="1" col="0">-0.052418309847</element>
+                <element row="1" col="1">-0.869401761173</element>
+                <element row="1" col="2">-0.491317512880</element>
+                <element row="2" col="0">-0.035067455459</element>
+                <element row="2" col="1">0.493292979818</element>
+                <element row="2" col="2">-0.869156090487</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="122" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="122" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="121"/>
+            <neighbor port="4" id="126"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.236556223509</element>
+                <element row="1" col="0">-0.045535749975</element>
+                <element row="2" col="0">-0.106992673119</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997533932990</element>
+                <element row="0" col="1">0.017004018275</element>
+                <element row="0" col="2">0.068094903600</element>
+                <element row="1" col="0">0.062231061728</element>
+                <element row="1" col="1">-0.662926372749</element>
+                <element row="1" col="2">-0.746093773778</element>
+                <element row="2" col="0">0.032455315282</element>
+                <element row="2" col="1">0.748491474685</element>
+                <element row="2" col="2">-0.662349730002</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="135" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="135" size="4">
+            <neighbor port="1" id="133"/>
+            <neighbor port="2" id="136"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">-0.002657625114</element>
+                <element row="1" col="0">-0.045039974426</element>
+                <element row="2" col="0">-0.101913632873</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998844536777</element>
+                <element row="0" col="1">0.034536503247</element>
+                <element row="0" col="2">-0.033418876314</element>
+                <element row="1" col="0">0.000852098753</element>
+                <element row="1" col="1">-0.708001155840</element>
+                <element row="1" col="2">-0.706210759800</element>
+                <element row="2" col="0">-0.048050653256</element>
+                <element row="2" col="1">0.705366283057</element>
+                <element row="2" col="2">-0.707212515054</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="129" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="129" size="4">
+            <neighbor port="1" id="116"/>
+            <neighbor port="2" id="130"/>
+            <neighbor port="3" id="128"/>
+            <neighbor port="4" id="131"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.092836223521</element>
+                <element row="1" col="0">-0.044898405964</element>
+                <element row="2" col="0">-0.106326429298</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999696330468</element>
+                <element row="0" col="1">-0.001886515815</element>
+                <element row="0" col="2">-0.024570061194</element>
+                <element row="1" col="0">-0.019352347751</element>
+                <element row="1" col="1">-0.677366336164</element>
+                <element row="1" col="2">-0.735391279026</element>
+                <element row="2" col="0">-0.015255605052</element>
+                <element row="2" col="1">0.735643451469</element>
+                <element row="2" col="2">-0.677197149156</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="77" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="77" size="4">
+            <neighbor port="1" id="78"/>
+            <neighbor port="2" id="113"/>
+            <neighbor port="3" id="40"/>
+            <neighbor port="4" id="114"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.094467039832</element>
+                <element row="1" col="0">-0.060448302939</element>
+                <element row="2" col="0">-0.055805117360</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999874155967</element>
+                <element row="0" col="1">0.013611572283</element>
+                <element row="0" col="2">-0.008148455680</element>
+                <element row="1" col="0">-0.010709302115</element>
+                <element row="1" col="1">0.200191961775</element>
+                <element row="1" col="2">-0.979698162338</element>
+                <element row="2" col="0">-0.011703977024</element>
+                <element row="2" col="1">0.979662137444</element>
+                <element row="2" col="2">0.200312539251</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="114" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="114" size="4">
+            <neighbor port="1" id="77"/>
+            <neighbor port="2" id="115"/>
+            <neighbor port="3" id="39"/>
+            <neighbor port="4" id="127"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.069877441457</element>
+                <element row="1" col="0">-0.061131339401</element>
+                <element row="2" col="0">-0.068564360230</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.997016542883</element>
+                <element row="0" col="1">0.075946997521</element>
+                <element row="0" col="2">-0.013786471061</element>
+                <element row="1" col="0">-0.008483177026</element>
+                <element row="1" col="1">-0.069713931634</element>
+                <element row="1" col="2">-0.997530953627</element>
+                <element row="2" col="0">-0.076720589963</element>
+                <element row="2" col="1">0.994671815879</element>
+                <element row="2" col="2">-0.068861671284</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="80" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="80" size="4">
+            <neighbor port="1" id="81"/>
+            <neighbor port="2" id="86"/>
+            <neighbor port="3" id="43"/>
+            <neighbor port="4" id="79"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.165981418880</element>
+                <element row="1" col="0">-0.038075215551</element>
+                <element row="2" col="0">-0.024742557931</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998908210603</element>
+                <element row="0" col="1">0.028674463517</element>
+                <element row="0" col="2">0.036880373249</element>
+                <element row="1" col="0">0.002635435568</element>
+                <element row="1" col="1">0.753612231468</element>
+                <element row="1" col="2">-0.657313972970</element>
+                <element row="2" col="0">-0.046641625919</element>
+                <element row="2" col="1">0.656693520391</element>
+                <element row="2" col="2">0.752713875923</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="143" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="143" size="4">
+            <neighbor port="1" id="144"/>
+            <neighbor port="2" id="152"/>
+            <neighbor port="3" id="193"/>
+            <neighbor port="4" id="142"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.143481777161</element>
+                <element row="1" col="0">0.052443351532</element>
+                <element row="2" col="0">-0.089298706926</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998385911948</element>
+                <element row="0" col="1">0.012878876565</element>
+                <element row="0" col="2">0.055314603513</element>
+                <element row="1" col="0">-0.048040067848</element>
+                <element row="1" col="1">-0.328002014459</element>
+                <element row="1" col="2">0.943454731501</element>
+                <element row="2" col="0">0.030293938413</element>
+                <element row="2" col="1">-0.944589229797</element>
+                <element row="2" col="2">-0.326853888223</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="144" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="144" size="4">
+            <neighbor port="1" id="145"/>
+            <neighbor port="2" id="151"/>
+            <neighbor port="3" id="194"/>
+            <neighbor port="4" id="143"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.166939669660</element>
+                <element row="1" col="0">0.044551368014</element>
+                <element row="2" col="0">-0.101722939726</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.992632587921</element>
+                <element row="0" col="1">-0.074925947950</element>
+                <element row="0" col="2">0.095218946233</element>
+                <element row="1" col="0">-0.120216530735</element>
+                <element row="1" col="1">-0.510984319107</element>
+                <element row="1" col="2">0.851142180464</element>
+                <element row="2" col="0">-0.015117246304</element>
+                <element row="2" col="1">-0.856318356659</element>
+                <element row="2" col="2">-0.516227024587</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="145" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="145" size="4">
+            <neighbor port="1" id="146"/>
+            <neighbor port="2" id="148"/>
+            <neighbor port="3" id="188"/>
+            <neighbor port="4" id="144"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.189769435242</element>
+                <element row="1" col="0">0.038884698121</element>
+                <element row="2" col="0">-0.111357873243</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999695763189</element>
+                <element row="0" col="1">-0.012499845547</element>
+                <element row="0" col="2">-0.021263464496</element>
+                <element row="1" col="0">0.005975130604</element>
+                <element row="1" col="1">-0.713671645776</element>
+                <element row="1" col="2">0.700454909205</element>
+                <element row="2" col="0">-0.023930709879</element>
+                <element row="2" col="1">-0.700368857015</element>
+                <element row="2" col="2">-0.713379832381</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="146" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="146" size="4">
+            <neighbor port="1" id="147"/>
+            <neighbor port="2" id="149"/>
+            <neighbor port="3" id="189"/>
+            <neighbor port="4" id="145"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.213510143136</element>
+                <element row="1" col="0">0.027720436484</element>
+                <element row="2" col="0">-0.120298127535</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999722774714</element>
+                <element row="0" col="1">-0.023545091729</element>
+                <element row="0" col="2">-0.000048720276</element>
+                <element row="1" col="0">-0.020156561708</element>
+                <element row="1" col="1">-0.856911849052</element>
+                <element row="1" col="2">0.515068729369</element>
+                <element row="2" col="0">-0.012169089461</element>
+                <element row="2" col="1">-0.514924957260</element>
+                <element row="2" col="2">-0.857148879514</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="148" patch="3" segment="4">
+        <rootCellId>179</rootCellId>
+        <neighbors id="148" size="4">
+            <neighbor port="1" id="149"/>
+            <neighbor port="2" id="150"/>
+            <neighbor port="3" id="145"/>
+            <neighbor port="4" id="151"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.213978699843</element>
+                <element row="1" col="0">0.047082684847</element>
+                <element row="2" col="0">-0.100728000501</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.998295124815</element>
+                <element row="0" col="1">-0.020839289452</element>
+                <element row="0" col="2">0.054521259939</element>
+                <element row="1" col="0">-0.057060645616</element>
+                <element row="1" col="1">-0.545044483648</element>
+                <element row="1" col="2">0.836463145372</element>
+                <element row="2" col="0">0.012285214369</element>
+                <element row="2" col="1">-0.838148098405</element>
+                <element row="2" col="2">-0.545304354144</element>
+            </matrix>
+        </rot>
+    </cell>
+</SkinConfig>

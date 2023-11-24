@@ -1,0 +1,25 @@
+# control via interactive marker
+marker_target:
+  mass: [1,1,1,1,1,1]
+  spring: [10,10,10,10,10,10]
+  damping: [6,6,6,6,6,6]
+  parent_frame: world
+  topic_pre_fix: /teleop
+  frames:
+    - h1/box_link
+
+# control via joystick
+joy_target:
+  joy_topic: /joy_exp_mng
+  topic: /teleop/box_link
+  parent_frame: world
+  target_frame: h1/box_link
+  mass: [1,1,1,1,1,1]
+  spring: [1,1,1,1,1,1]
+  damping: [6,6,6,6,6,6]
+  # acc_lb: [-1000,-1000,-1000,-1000,-1000,-1000]
+  # acc_ub: [1000,1000,1000,1000,1000,1000]
+  acc_lb: [-0.01,-0.01,-0.01,-0.01,-0.01,-0.01]
+  acc_ub: [0.01,0.01,0.01,0.01,0.01,0.01]
+  vel_lb: [-0.03,-0.03,-0.03,-0.03,-0.03,-0.03]
+  vel_ub: [0.03,0.03,0.03,0.03,0.03,0.03]

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- omnibase driver parameter -->
+<rosparam command="load" file="$(find tomm_hardware_real)/configs/omnibase/omnibase_driver.yaml" />
+
+<!-- omnibase driver -->
+<node name="test_base_configs_loading" pkg="tomm_hardware_real" type="test_base_configs_loading" output="screen"/>
+
+</launch>

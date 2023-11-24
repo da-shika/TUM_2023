@@ -1,0 +1,5 @@
+uint8 ID_LEFT_FOOT=0
+uint8 ID_RIGHT_FOOT=1
+uint8 ID_LEFT_HAND=2
+uint8 ID_RIGHT_HAND=3
+uint8 id

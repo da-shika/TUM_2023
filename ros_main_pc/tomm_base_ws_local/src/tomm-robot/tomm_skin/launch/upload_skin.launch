@@ -1,0 +1,13 @@
+<launch>
+
+  <!-- right leg -->
+  <param name="left_hand_back" textfile="$(find tomm_skin)/launch/configs/left_hand/left_hand_back.xml"/>
+  <!-- <param name="left_hand_inside" textfile="$(find tomm_skin)/launch/configs/left_hand/left_hand_inside.xml"/>
+  <param name="left_hand_outside" textfile="$(find tomm_skin)/launch/configs/left_hand/left_hand_outside.xml"/>
+  <param name="left_hand_palm" textfile="$(find tomm_skin)/launch/configs/left_hand/left_hand_palm.xml"/> -->
+  <param name="right_hand_back" textfile="$(find tomm_skin)/launch/configs/right_hand/right_hand_back.xml"/>
+  <!-- <param name="right_hand_inside" textfile="$(find tomm_skin)/launch/configs/right_hand/right_hand_inside.xml"/>
+  <param name="right_hand_outside" textfile="$(find tomm_skin)/launch/configs/right_hand/right_hand_outside.xml"/>
+  <param name="right_hand_palm" textfile="$(find tomm_skin)/launch/configs/right_hand/right_hand_palm.xml"/> -->
+
+</launch>

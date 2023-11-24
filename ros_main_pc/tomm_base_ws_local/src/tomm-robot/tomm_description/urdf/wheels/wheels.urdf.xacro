@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="tom">
+
+<xacro:include filename="$(find tomm_description)/urdf/wheels/wheels.transmission.xacro"/>
+
+<xacro:macro name="cyl_inertia" params="mass r h">
+    <inertial>
+        <mass value="${mass}" />
+        <inertia ixx="${(1/12)*mass*(3*r*r+h*h)}" ixy="0.0" ixz="0.0" iyy="${(1/12)*mass*(3*r*r+h*h)}" iyz="0.0" izz="${(1/2)*mass*r*r}" />
+    </inertial>
+</xacro:macro>
+
+<xacro:macro name="wheel" params="parent prefix reflect *origin">
+    <link name="${prefix}wheel_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://tomm_description/meshes/wheels/wheels.dae"/>
+            </geometry>
+            <material name="white">
+                <color rgba="1 1 1 1"/>
+            </material>
+        </visual>
+        <xacro:cyl_inertia mass="2.0" r="${wheel_radius}" h="${wheel_length}"/>
+    </link>
+    
+    <gazebo reference="${prefix}wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <!-- continuous not working! -->
+    <joint name="${prefix}wheel_joint" type="fixed">
+        <parent link="${parent}"/>
+        <child link="${prefix}wheel_link" />
+        <dynamics damping="0" friction="0"/>
+        <xacro:insert_block name="origin" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <!--xacro:wheels_transmission prefix="${prefix}"/-->
+
+</xacro:macro>
+   
+</robot>

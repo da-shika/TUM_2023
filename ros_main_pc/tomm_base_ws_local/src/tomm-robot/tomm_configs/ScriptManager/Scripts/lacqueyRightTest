@@ -1,0 +1,132 @@
+def driverProg():
+  HOSTNAME = "192.168.1.3"
+  CMD_PORT = 50001
+  TRAJ_PORT = 50002  
+  GRIPPER_PORT = 50003
+  
+  MSG_OUT = 1
+  MSG_QUIT = 2
+  MSG_JOINT_STATES = 3
+  MSG_MOVEJ = 4
+  MSG_WAYPOINT_FINISHED = 5
+  MSG_STOPJ = 6
+  MSG_SERVOJ = 7
+  MSG_PARK_ROBOT = 8
+  MSG_GO_HOME = 9
+  MSG_ENTER_TRAJ_FOLLOW = 10
+  MSG_EXIT_TRAJ_FOLLOW = 11
+
+  MSG_ENTER_TRAJ_FOLLOW_V = 12
+  MSG_EXIT_TRAJ_FOLLOW_V = 13
+
+  MSG_GRIPPER_ENABLE = 20
+  MSG_GRIPPER_DISABLE = 21
+  MSG_GRIPPER_OPEN = 22
+  MSG_GRIPPER_CLOSE = 23
+
+  MSG_GRIPPER_START = 24
+  MSG_GRIPPER_STOP = 25
+
+  def send_out(msg):
+    enter_critical
+    socket_send_int(MSG_OUT)
+    socket_send_string(msg)
+    socket_send_string("~")
+    exit_critical
+  end
+
+  def setGripperThreadState(newVal):
+    enter_critical
+    GRIPPER_THREAD_STATE = newVal
+    exit_critical
+  end 
+
+  thread gripperThread():
+    textmsg("started gripper thread")
+
+    while GRIPPER_THREAD_STATE:
+      params = socket_read_binary_integer(1, "socket_gripper")
+      if params[0] == 0:
+        textmsg("Socket gripper read timed out.")
+      else:
+        mtype = params[1]
+        if mtype == MSG_GRIPPER_ENABLE:
+          textmsg("Received MSG_GRIPPER_ENABLE")
+          set_tool_voltage(12)
+          set_tool_digital_out(1,False)
+
+        elif mtype == MSG_GRIPPER_DISABLE:
+          textmsg("Received MSG_GRIPPER_DISABLE")
+          set_tool_voltage(0)
+          set_tool_digital_out(1,True)
+
+        elif mtype == MSG_GRIPPER_OPEN:
+          textmsg("Received MSG_GRIPPER_OPEN")
+          set_tool_digital_out(0,True)
+
+        elif mtype == MSG_GRIPPER_CLOSE:
+          textmsg("Received MSG_GRIPPER_CLOSE")
+          set_tool_digital_out(0,False)
+        
+        else:
+
+        end
+      end
+    end
+
+    textmsg("stopped gripper thread")
+  end
+
+  socket_open(HOSTNAME, CMD_PORT, "socket_0")
+  socket_open(HOSTNAME, GRIPPER_PORT, "socket_gripper")
+  sync()
+
+  setGripperThreadState(True)
+  thread_gripper = run gripperThread()
+
+  while True:
+    ll = socket_read_binary_integer(1)
+    
+    if ll[0] == 0:
+      #textmsg("Main Thread Received nothing")
+      #send_out("Received nothing")
+    elif ll[0] > 1:
+      textmsg("Received too many things")
+      #send_out("Received too many things")
+    else:
+      mtype = ll[1]
+      if mtype == MSG_QUIT:
+        textmsg("Received QUIT")
+        break
+
+      elif mtype == MSG_GRIPPER_START:
+        textmsg("Received MSG_GRIPPER_START")
+        setGripperThreadState(True)
+        thread_gripper = run gripperThread()
+
+      elif mtype == MSG_GRIPPER_STOP:
+        textmsg("Received MSG_GRIPPER_STOP")
+        setGripperThreadState(False)
+
+      else:
+
+      end
+    end
+  end
+
+  # Stop threads
+  setGripperThreadState(False)
+
+  sleep(1)
+  # kill thread_state
+  textmsg("CLOSING SOCKETS!")
+
+  socket_close("socket_0")
+  socket_close("socket_traj")
+
+  sleep(3)
+
+  textmsg("QUITED!")
+
+end
+driverProg()

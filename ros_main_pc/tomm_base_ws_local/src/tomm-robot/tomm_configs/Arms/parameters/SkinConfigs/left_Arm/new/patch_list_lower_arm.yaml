@@ -1,0 +1,11 @@
+patch_list:
+ [
+  'p6.xml',
+  'p7.xml',
+  'p8.xml',
+  'p9.xml',
+  'p10.xml',
+  'p11.xml',
+  'p12.xml',
+  'p13.xml',
+ ]

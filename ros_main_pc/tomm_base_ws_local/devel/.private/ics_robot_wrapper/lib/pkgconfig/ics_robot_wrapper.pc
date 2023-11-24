@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/ics_robot_wrapper
+
+Name: ics_robot_wrapper
+Description: Description of ics_robot_wrapper
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/src/ics/ics_robot_wrapper/include
+Libs: -L${prefix}/lib -lics_robot_wrapper
+Requires: control_core control_core_msgs dynamic_reconfigure roscpp rosparam_handler urdf ics_tsid_common skin_model

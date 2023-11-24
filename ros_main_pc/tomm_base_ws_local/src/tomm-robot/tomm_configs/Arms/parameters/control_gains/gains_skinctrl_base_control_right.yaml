@@ -1,0 +1,36 @@
+# Gains for the Proportional-Derivative Joint Space Controller
+# P and D gains for each axis.
+skin_torque: 
+ #proportial
+ gains_p: [100.0, 100.0, 100.0, 100.0, 100.0, 100.0]
+ 
+ #derivative
+ gains_d: [5.0, 5.0, 5.0, 5.0, 5.0, 5.0]
+
+ #integral
+ gains_i: [0.10, 0.10, 0.10, 0.10, 0.10, 0.10]
+
+ #Hand wrench
+ wrench_p: [0.025, 0.025, 0.025, 0.25, 0.25, 0.25]
+
+ #Proportional Factor to compute the increments in the Xef_wd
+ p_xef: [0.00001, 0.00001, 0.00001]
+
+ #Amplification Factor for the wrist joints
+ taus_xef: [1, 1, 1, 2, 2, 2] 
+
+ #Arm
+ arm:
+  #proximity threshold
+  proxy_threshold: 0.05
+  
+  #force threshold
+  force_threshold: 0.08
+
+  #Proximity Gains (for each joint)
+  proxy_gains: [0.10, 0.150, 0.10, 0.10, 0.10, 0.10]
+
+  #Force Gains
+  force_gains: [0.40, 0.40, 0.40, 0.40, 0.40, 0.40]
+
+

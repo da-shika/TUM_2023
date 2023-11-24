@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/install
+
+Name: ics_formulation
+Description: Description of ics_formulation
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lics_formulation
+Requires: ics_robot_wrapper ics_tsid_tasks ics_tsid_wrapper roscpp

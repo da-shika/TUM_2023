@@ -1,0 +1,1 @@
+/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/walking_core/share/walking_core/cmake/walking_coreConfig-version.cmake

@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/tomm_nav_stack
+
+Name: tomm_nav_stack
+Description: Description of tomm_nav_stack
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

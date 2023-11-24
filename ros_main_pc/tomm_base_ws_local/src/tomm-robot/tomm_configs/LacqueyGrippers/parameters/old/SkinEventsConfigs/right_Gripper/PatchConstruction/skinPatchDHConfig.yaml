@@ -1,0 +1,21 @@
+# ordered lists of patch configs (for adding dh trafos)
+skin_patch_dh_config:
+
+ # patch file names (ommitting .xml file type)
+ filenames: [
+   'rightWrist1PatchExtTFId','rightWrist2PatchExtTFId','rightWrist3PatchExtTFId',
+   'rightGripperRingPatchExtTFId', 'rightGripperPalmPatchExtTFId'
+ ]
+ 
+ # dh frame names
+ dh_frames: [
+   'r_arm_joint_3', 'r_arm_joint_4', 'r_arm_joint_5',
+   'r_arm_joint_6', 'r_arm_joint_6'
+ ]
+
+ # parameter names for urdf links wrt dh links in 'tstatic_URDFi_linki.yaml'
+ dh_params: [
+   '~arm/joint_3', '~arm/joint_4', '~arm/joint_5',
+   '~gripper/palm', '~gripper/palm'
+ ]
+

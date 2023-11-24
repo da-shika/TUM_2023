@@ -1,0 +1,210 @@
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200   1) [MOTION_SERVER_SETTINGS]
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200   2) ;PC_ADDRESS = 192.168.1.3;192.168.1.2;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200   3) ;PC_CMD_PORT = 50004;50001;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200   4) ;PC_TRAJ_PORT = 50005;50002;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200   5) ;ROBOT_ADDRESS = 192.168.1.6;192.168.0.11;192.168.1.10;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200   6) ;ROBOT_SCRIPT_PORT = 30001;30003;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200   7) ;ROBOT_STATE_PORT = 30003;30004;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200   8) ;UR_SCRIPT= "/home/tom/ros/workspaces/indigo_ws_lli/src/tom_robot/tom_configs/Arms/parameters/Scripts/progTOM_left_multiThread";
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200   9) ;MOTION_COMMAND = VELOCITY;POSITION;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200  10) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  11) PC_ADDRESS = 192.168.1.3;192.168.1.2;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  12) PC_CMD_PORT = 50004;50001;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  13) PC_TRAJ_PORT = 50005;50002;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200  14) ROBOT_ADDRESS = 192.168.1.7;192.168.0.11;192.168.1.10;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  15) ROBOT_SCRIPT_PORT = 30001;30003;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  16) ROBOT_STATE_PORT = 30003;30004;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  17) MOTION_COMMAND = VELOCITY;POSITION;
+64112ef3 (Florian Bergner 2018-03-26 16:55:09 +0200  18) ROBOT_VERSION = 3.1;1.8;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  19) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  20) [ROBOT_EXECUTION_PARAMETERS]
+4bd79214 (Quentin         2016-07-25 17:01:59 +0200  21) ROBOT_TYPE=real;sim;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  22) SOFTWARE_DOF = 6;//6 is the standard
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  23) CONTROL_PERIOD = 2; [ms]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  24) MAX_JOINT_VEL = 90;[deg/s]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  25) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  26) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  27) NUMBER_CONTROLS = 2; 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  28) CONTROL_W_1 = 1.0; //Weight for control 1 Gcontrol
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  29) CONTROL_W_2 = 1.0; //Weight for control 2  PIDcontrol
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  30) CONTROL_W_3 = 0.0; //Weight for control 3  SKINcontrol
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  31) CONTROL_W_4 = 0.0; //Weight for control 4  JointImpcontrol
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  32) CONTROL_W_5 = 0.0; //Weight for control 5  xImpcontrol
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  33) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  34) ;HOME POSITION ORANGES
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  35) QHOME_1 = -162.07; [deg] -0.87
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  36) QHOME_2 =  -62.65; [deg] -1.52
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  37) QHOME_3 =   80.36; [deg]	1.17
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  38) QHOME_4 = -139.08; [deg]	0.17
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  39) QHOME_5 =   55.93; [deg]	1.58
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  40) QHOME_6 =   -8.25; [deg]	0.78
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  41) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  42) ;HOME POSITION TEST SKIN COMPLIANCE
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  43) ;QHOME_1 =  160.64; [deg] -0.87
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  44) ;QHOME_2 = -172.20; [deg] -1.52
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  45) ;QHOME_3 =  -88.27; [deg]	1.17
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  46) ;QHOME_4 =  -32.25; [deg]	0.17
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  47) ;QHOME_5 =  -56.26; [deg]	1.58
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  48) ;QHOME_6 =   12.19; [deg]	0.78
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  49) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  50) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  51) ;PARK POSITION L= 0.79,-1.54,-1.45,-3.15,-1.58,-1.54
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  52) QPARK_1 =  0.0;90.0; [deg] -0.87
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  53) QPARK_2 =-45.0;-135.0;[deg] -1.52
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  54) QPARK_3 =  0.0; [deg]	1.17
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  55) QPARK_4 =-90.0; -150.0;[deg]	0.17
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  56) QPARK_5 =  0.0;  120.0;[deg]	1.58
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  57) QPARK_6 =  45.0;45.0; [deg]	0.78
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  58) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  59) ARM_GROUP = left;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  60) JOINT_NAME_1 = l_shoulder_pan_joint;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  61) JOINT_NAME_2 = l_shoulder_lift_joint;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  62) JOINT_NAME_3 = l_elbow_joint;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  63) JOINT_NAME_4 = l_wrist_1_joint;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  64) JOINT_NAME_5 = l_wrist_2_joint;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  65) JOINT_NAME_6 = l_wrist_3_joint;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  66) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  67) JOINT_TOPIC = left_arm_joint_states;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  68) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  69) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  70) [ROBOT_KINEMATIC_PARAMETERS]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  71) L1=0.089159;//0.118;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  72) L2=-0.425;//-0.6127;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  73) L3=-0.39225;//-0.5716;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  74) L4=0.10915;//0.1639;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  75) L5=0.09465;//0.1157;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  76) L6=0.08230;//0.0922;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  77) 
+35012934 (Tomm the Robot  2017-06-09 12:40:17 +0200  78) L_EEF=0.154; // added offset to compensate z error in real robot
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  79) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  80) ;// Robot base (cf 0) wrt world cf (e.g torso_link)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  81) RX0_W=-149.319; [deg]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  82) RY0_W=-35.930; [deg]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  83) RZ0_W=30.681; [deg]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  84) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  85) QX=0.863;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  86) QY=0.321;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  87) QZ=0.220;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  88) QW=-0.321;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  89) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  90) ;//added -0.011031 0.023455 -0.011523 to compensate the error in calibration of the arm
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  91) TX0_W=-0.011031;0; 		[m]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  92) TY0_W= 0.258455;0.248455;	[m]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  93) TZ0_W=-0.011523;0; 		[m]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  94) 
+f3ba3c9e (Emmanuel Dean   2016-07-09 02:09:57 +0200  95) base_name=l_base_link;torso_link;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  96) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  97) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  98) [ROBOT_DYNAMIC_PARAMETERS]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200  99) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 100) g=9.81;0.00;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 101) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 102) L7=0.045;//0.118;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 103) L8=-0.2125;//-0.310;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 104) L9=-0.20;//-0.27;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 105) L10=0.055;//0.09;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 106) L11=0.05;//0.06;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 107) L12=0.14;//0.046;
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 108) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 109) ;MASS PARAMETERS
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 110) m1 = 6.134018600000000e+000;001; % link 1: mass m [Kg ]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 111) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 112) I111 = 7.439629000000000e+000; % link 1: inertia tensor Ixx [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 113) I112 = 1.308878000000000e+000; % link 1: inertia tensor Ixy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 114) I113 = -2.075930000000000e-001; % link 1: inertia tensor Ixz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 115) I122 = 1.343930000000000e+000; % link 1: inertia tensor Iyy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 116) I123 = 8.012920000000000e-001; % link 1: inertia tensor Iyz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 117) I133 = 7.589690000000000e+000; % link 1: inertia tensor Izz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 118) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 119) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 120) m2 = 2.796187700000000e+000;001; % link 2: mass m [Kg ]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 121) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 122) I211 = 6.470250000000000e-001; % link 2: inertia tensor Ixx [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 123) I212 = 7.286600000000000e-002; % link 2: inertia tensor Ixy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 124) I213 = 8.490040000000000e-001; % link 2: inertia tensor Ixz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 125) I222 = 2.614907000000000e+000; % link 2: inertia tensor Iyy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 126) I223 = -4.767100000000000e-002; % link 2: inertia tensor Iyz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 127) I233 = 2.081713000000000e+000; % link 2: inertia tensor Izz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 128) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 129) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 130) m3 = 2.062812300000000e+000;001; % link 3: mass m [Kg ]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 131) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 132) I311 = 2.371920000000000e-001; % link 3: inertia tensor Ixx [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 133) I312 = -8.851000000000000e-003; % link 3: inertia tensor Ixy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 134) I313 = 6.303900000000000e-002; % link 3: inertia tensor Ixz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 135) I322 = 2.874950000000000e-001; % link 3: inertia tensor Iyy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 136) I323 = -2.462000000000000e-003; % link 3: inertia tensor Iyz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 137) I333 = 3.712900000000000e-001; % link 3: inertia tensor Izz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 138) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 139) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 140) m4 = 1.970102300000000e+000;001; % link 4: mass m [Kg ]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 141) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 142) I411 = 1.535260000000000e+000; % link 4: inertia tensor Ixx [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 143) I412 = 7.250000000000000e-004; % link 4: inertia tensor Ixy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 144) I413 = -5.893000000000000e-003; % link 4: inertia tensor Ixz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 145) I422 = 8.744700000000000e-002; % link 4: inertia tensor Iyy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 146) I423 = 5.790000000000000e-003; % link 4: inertia tensor Iyz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 147) I433 = 1.561065000000000e+000; % link 4: inertia tensor Izz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 148) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 149) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 150) m5 = 2.020671000000000e+000; % link 5: mass m [Kg ]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 151) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 152) I511 = 3.867000000000000e-003; % link 5: inertia tensor Ixx [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 153) I512 = 4.000000000000000e-006; % link 5: inertia tensor Ixy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 154) I513 = 7.140000000000000e-004; % link 5: inertia tensor Ixz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 155) I522 = 3.656000000000000e-003; % link 5: inertia tensor Iyy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 156) I523 = -6.000000000000000e-006; % link 5: inertia tensor Iyz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 157) I533 = 3.066000000000000e-003; % link 5: inertia tensor Izz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 158) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 159) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 160) m6 = 2.411590000000000e+000;-001; % link 6: mass m [Kg ]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 161) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 162) I611 = 1.911000000000000e-003; % link 6: inertia tensor Ixx [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 163) I612 = 0.000000000000000e+000; % link 6: inertia tensor Ixy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 164) I613 = -7.000000000000000e-006; % link 6: inertia tensor Ixz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 165) I622 = 1.905000000000000e-003; % link 6: inertia tensor Iyy [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 166) I623 = 1.000000000000000e-006; % link 6: inertia tensor Iyz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 167) I633 = 1.180000000000000e+000;-004; % link 6: inertia tensor Izz [Kg*m^2] (DH modified Frame)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 168) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 169) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 170) ;FRICTION PARAMETERS
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 171) Bm1 = 18.0;3.0;1.532978076105451e-002;3; % motor 1: viscous friction [Nm/(rad/sec)]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 172) Bm2 = 18.0;3.0;2.012500134411516e-002;3; % motor 2: viscous friction [Nm/(rad/sec)]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 173) Bm3 = 18.0;3.0;2.129032703900865e-002;3; % motor 3: viscous friction [Nm/(rad/sec)]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 174) Bm4 = 18.0;1.0;6.696102084328538e-003;4; % motor 4: viscous friction [Nm/(rad/sec)]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 175) Bm5 = 18.0;1.0;7.822042011449373e-003;4; % motor 5: viscous friction [Nm/(rad/sec)]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 176) Bm6 = 18.0;1.0;4.545141749795404e-003;4; % motor 6: viscous friction [Nm/(rad/sec)]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 177) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 178) ;BUTTER FILTER (SAMPLE TIME IS TAKEN FROM CONTROL_PERIOD)
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 179) CUT_OFF_FREQ = 20.0; [Hz]
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 180)  
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 181) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 182) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 183) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 184) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 185) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 186) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 187) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 188) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 189) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 190) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 191) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 192) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 193) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 194) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 195) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 196) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 197) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 198) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 199) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 200) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 201) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 202) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 203) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 204) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 205) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 206) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 207) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 208) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 209) 
+^7e4fe26 (Emmanuel Dean   2016-05-31 20:13:10 +0200 210)  

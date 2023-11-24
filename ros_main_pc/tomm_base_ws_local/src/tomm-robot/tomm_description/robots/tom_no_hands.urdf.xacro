@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!--
+
+	Author: Emmanuel Dean dean@tum.de
+  
+  This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to
+  Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+-->
+<robot name="tomm" xmlns:xacro="http://www.ros.org/wiki/xacro"
+        xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+        xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+        xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+  
+  <!-- Parameters -->
+  <xacro:arg name="skin_version" default="full"/>
+
+  <xacro:property name="skin_version" value="$(arg skin_version)" />
+  <xacro:if value="${skin_version not in ['full','hands', 'left', 'right']}">
+    <xacro:wrong_skin_version/>
+  </xacro:if>
+
+	<!--Common definitions -->
+	<xacro:include filename="$(find tomm_description)/urdf/common.xacro"/>
+  <xacro:include filename="$(find tomm_description)/urdf/materials.urdf.xacro"/>
+	
+	<!-- ROS_Control plugins -->
+  <xacro:include filename="$(find tomm_description)/urdf/gazebo.urdf.xacro" />
+  
+	<!-- xacro macros Base -->
+	<xacro:include filename="$(find tomm_description)/urdf/base/base.urdf.xacro"/>
+
+	<!-- xacro macros Sensors -->
+	<xacro:include filename="$(find tomm_description)/urdf/sensors/lidar.urdf.xacro"/>
+
+  <!-- camera sensor -->
+  <xacro:include filename="$(find tomm_description)/urdf/sensors/asus_xtiion_pro.urdf.xacro"/>
+
+  <!-- xacro gazbeo plugin macros Sensors -->
+  <xacro:include filename="$(find tomm_description)/urdf/sensors/lidar.gazebo.xacro" />
+  <xacro:include filename="$(find tomm_description)/urdf/sensors/ftsensor.gazebo.xacro" />
+  
+	<!--xacro macros Arms-->
+	<xacro:include filename="$(find tomm_description)/urdf/arm/arms.urdf.xacro"/>
+
+  <!--xacro macros Hands-->
+  <xacro:include filename="$(find tomm_description)/urdf/hand/no_hands.urdf.xacro"/>
+
+	<!-- robot base, includes base, torso, wheels and logos -->
+	<xacro:tom_base_v0 name="base" />
+
+	<!-- robot head, includes the left camera -->
+	<link name="tom_left_camera_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+       <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="orange">
+         <color rgba="0.45 0.45 0.45 1.0"/>
+       </material>
+    </visual>
+  </link>
+  
+  <link name="tom_head_link">
+    <visual>
+      <origin rpy="1.57079632679 0 -1.57079632679" xyz="1 1.255 -0.838"/>
+      <geometry>
+        <mesh filename="package://tomm_description/meshes/head/head.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="green">
+         <color rgba="0.0 0.8 0.0 1"/>
+       </material>
+    </visual>
+  </link>
+  
+  <joint name="table_head_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="torso_link"/>
+    <child link="tom_head_link"/>
+  </joint>
+  
+  <joint name="tom_left_camera_joint" type="fixed">
+    <origin rpy="-2.43606 -0.193804 -1.648299" xyz="0.075241 0.032279 0.211305"/>
+    <parent link="torso_link"/>
+    <child link="tom_left_camera_link"/>
+  </joint>	
+
+	<!-- Arms -->
+	<!-- Left Arm -->
+	<xacro:tom_arm_v0 right_arm="false"/>
+	<!-- Right Arm -->
+	<xacro:tom_arm_v0 right_arm="true"/>
+
+	<!-- Hands -->
+	<!-- Left Hand -->
+	<xacro:tom_no_hand right_hand="false"/>
+  <!-- Right hand -->
+	<xacro:tom_no_hand right_hand="true"/>
+
+	<!-- sensors frames -->
+	<xacro:tom_lidar_v0 name="laser" />
+
+  <!-- sensor gazbeo plugins -->
+  <xacro:tom_ft_gazebo name="right_wrist_ft" joint="r_wrist_3" ros_topic="tomm/right_wrist_ft" update_rate="200"/>
+  <xacro:tom_ft_gazebo name="left_wrist_ft" joint="l_wrist_3" ros_topic="tomm/left_wrist_ft" update_rate="200"/>
+
+  <xacro:tom_laser_gazebo prefix="tomm/" name="front_lidar" link="front_laser_scanner" ros_topic="tomm/front_scan" update_rate="50" min_angle="0.0" max_angle="3.141" nrays="180"/>
+  <xacro:tom_laser_gazebo prefix="tomm/" name="rear_lidar" link="rear_laser_scanner" ros_topic="tomm/rear_scan" update_rate="50" min_angle="0.0" max_angle="3.141" nrays="180"/>
+
+  <xacro:sensor_asus_xtion_pro name="tomm/asus" parent="torso_link">
+      <origin xyz="0.11 0.0225 0.0" rpy="0 ${20*DEG2RAD} 0" />
+  </xacro:sensor_asus_xtion_pro>
+
+  <!-- skin sensing -->
+  <xacro:if value="${skin_version == 'full'}">
+    <xacro:include filename="$(find tomm_description)/urdf/skin/full_skin.urdf.xacro" />
+  </xacro:if>
+  <xacro:if value="${skin_version == 'hands'}">
+    <xacro:include filename="$(find tomm_description)/urdf/skin/hands_skin.urdf.xacro" />
+  </xacro:if>
+  <xacro:if value="${skin_version == 'right'}">
+    <xacro:include filename="$(find tomm_description)/urdf/skin/right_skin.urdf.xacro" />
+  </xacro:if>
+  <xacro:if value="${skin_version == 'left'}">
+    <xacro:include filename="$(find tomm_description)/urdf/skin/left_skin.urdf.xacro" />
+  </xacro:if>
+
+</robot>

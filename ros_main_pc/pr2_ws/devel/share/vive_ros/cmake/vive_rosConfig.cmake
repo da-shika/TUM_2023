@@ -1,0 +1,1 @@
+/home/genki/ros/workspace/pr2_ws/devel/.private/vive_ros/share/vive_ros/cmake/vive_rosConfig.cmake

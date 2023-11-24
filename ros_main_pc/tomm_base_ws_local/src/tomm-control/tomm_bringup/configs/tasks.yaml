@@ -1,0 +1,120 @@
+################################################################################
+# primary tasks
+################################################################################
+
+left_hand_contact:
+  type: "contact"
+  joint: "hand_link_left"
+  kp: 30                                                                        
+  kd: 11                                                                        
+  #weight: 10000
+  weight_reg: 0.001
+  lxn: 0.08
+  lyn: 0.065
+  lxp: 0.12
+  lyp: 0.065
+  lz: 0.0     
+  mu: 0.3
+  normal: [0,0,1]
+  fmin: 5.0
+  fmax: 1500
+  mask: [1,1,1,1,1,1]
+
+right_hand_contact:
+  type: "contact"
+  joint: "hand_link_right"
+  kp: 30                                                                        
+  kd: 11                                                                        
+  #weight: 10000
+  weight_reg: 0.001
+  lxn: 0.08
+  lyn: 0.065
+  lxp: 0.12
+  lyp: 0.065
+  lz: 0.0
+  mu: 0.3
+  normal: [0,0,1]
+  fmin: 5.0
+  fmax: 1500
+  mask: [1,1,1,1,1,1]
+
+left_hand_motion:
+  type: "se3"
+  frame: "hand_link_left"
+  kp: 30
+  weight: 500
+  mask: [1,1,1,1,1,1]
+
+right_hand_motion:
+  type: "se3"
+  frame: "hand_link_right"
+  kp: 30
+  weight: 500
+  mask: [1,1,1,1,1,1]
+
+base_motion:
+  type: "se3"
+  frame: "base_link"
+  kp: 30
+  weight: 500
+  mask: [1,1,1,1,1,1]
+
+head_task:
+  type: "se3"
+  frame: "torso_link"
+  kp: 3
+  weight: 500
+  mask: [0,0,0,0,0,1] # only care about yaw orientation        
+
+posture_task:
+  type: "posture_mobile"
+  weight: 0.1          # 0.01
+  kp: [ 1,1,1,          # mobile base
+        1,1,1,1,1,1,    # larm
+        1,1,1,1,1,1]    # rarm
+  posture: [0, 0, 0,
+            -2.82879, -1.09472, 1.39832, -2.43066, 0.97291, -0.140744,    
+             2.81405, -2.02808, -1.4306, -0.672856, -1.00667, 0.162432]
+  mask: [0,0,0,1,1,1,1,1,1,1,1,1,1,1,1]
+
+bounds:
+  type: "bound_mobile"
+  dt: 0.005
+  weight: -1
+  mask: [0,0,0,1,1,1,1,1,1,1,1,1,1,1,1]
+
+self_collision_constraint:
+  type: "self_collision_constraint"
+  dt: 0.005 
+  v_damp: 0.8         # velocity limit when constrain started
+  d_min: 0.03         # constraint fully limiting 
+  d_start: 0.06       # start clamping velocity
+  weight: -1          # keep as constraint
+
+################################################################################
+# skin tasks
+################################################################################
+
+left_hand_skin_force_equality:
+  type: "skin_contact_soft"
+  dt: 0.005
+  topic: "/left_hand_patch"
+  frame: "hand_link_left"
+  kf: [2, 2, 1, 100, 100, 100]
+  kp: [0, 0, 0, 0, 0, 0]
+  kd: [10, 10, 50, 30, 30, 10]
+  ki: [0, 0, 0, 0, 0, 0]
+  mask: [0,0,1,1,1,0]
+  weight: -1
+
+right_hand_skin_force_equality:
+  type: "skin_contact_soft"
+  dt: 0.005
+  topic: "/right_hand_patch"
+  frame: "hand_link_right"
+  kf: [2, 2, 1, 100, 100, 100]
+  kp: [0, 0, 0, 0, 0, 0]
+  kd: [10, 10, 50, 30, 30, 10]
+  ki: [0, 0, 0, 0, 0, 0]
+  mask: [0,0,1,1,1,0]
+  weight: -1

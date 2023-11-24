@@ -1,0 +1,3 @@
+Vector position
+Vector velocity
+Vector acceleration

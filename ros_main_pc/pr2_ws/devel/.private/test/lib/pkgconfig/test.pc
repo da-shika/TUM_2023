@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspace/pr2_ws/devel/.private/test
+
+Name: test
+Description: Description of test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

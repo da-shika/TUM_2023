@@ -1,0 +1,18 @@
+<launch>
+
+  <!-- right arm -->
+  <param name="tomm_p101e" textfile="$(find tomm_configs)/Arms/parameters/SkinConfigs/right_Arm/p1e.xml"/>
+  <param name="tomm_p102e" textfile="$(find tomm_configs)/Arms/parameters/SkinConfigs/right_Arm/p2e.xml"/>
+  <param name="tomm_p103e" textfile="$(find tomm_configs)/Arms/parameters/SkinConfigs/right_Arm/p3e.xml"/>
+
+  <!-- left arm -->
+  <param name="tomm_p201e" textfile="$(find tomm_configs)/Arms/parameters/SkinConfigs/left_Arm/old/p201e.xml"/>
+  <param name="tomm_p202e" textfile="$(find tomm_configs)/Arms/parameters/SkinConfigs/left_Arm/old/p202e.xml"/>
+
+  <!-- right hand -->
+  <param name="tomm_p301e" textfile="$(find tomm_configs)/Hands/parameters/SkinConfigs/right_Hand/rightHand_PalmBack_PatchExt.xml"/>
+
+  <!-- left hand -->
+  <param name="tomm_p401e" textfile="$(find tomm_configs)/Hands/parameters/SkinConfigs/left_Hand/leftHand_PalmBack_PatchExt.xml"/>
+
+</launch>

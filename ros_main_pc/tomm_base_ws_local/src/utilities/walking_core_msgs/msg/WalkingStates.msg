@@ -1,0 +1,9 @@
+std_msgs/Header header
+WalkingPhase phase
+control_core_msgs/BodyId stance_foot
+control_core_msgs/BodyId swing_foot
+std_msgs/Float64 elapsed
+std_msgs/Float64 left_foot_ratio
+FootStep cur_step
+FootStep target_step
+FootStep next_step

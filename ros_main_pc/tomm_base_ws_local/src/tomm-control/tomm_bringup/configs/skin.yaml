@@ -1,0 +1,6 @@
+skin_contact_generator: 
+  cluster_tolerance:  0.03      # min distance between clusters
+  cluster_min_size:   4         # min number of cells in cluster (3)
+  cluster_max_size:   100       # max number of cells in cluster (100)
+  active_distance:    0.04     # minimum distance in meters (0.02)
+  masked_patches: []

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <arg name="left_foot_patch" default="p812e"/>
+  <arg name="right_foot_patch" default="p712e"/>
+  <arg name="left_hand_patch" default="p507e"/>
+  <arg name="right_hand_patch" default="p407e"/>
+
+  <!-- Contact generation over end-effector patches -->
+  <node type="patch_contact_gen_node" name="left_foot_contact" pkg="skin_contact_generator" 
+        output="screen" args="left_foot $(arg left_foot_patch)"/>
+  <node type="patch_contact_gen_node" name="right_foot_contact" pkg="skin_contact_generator" 
+        output="screen" args="right_foot $(arg right_foot_patch)"/>
+  <node type="patch_contact_gen_node" name="left_hand_contact" pkg="skin_contact_generator" 
+        output="screen" args="left_hand $(arg left_hand_patch)"/>
+  <node type="patch_contact_gen_node" name="right_hand_contact" pkg="skin_contact_generator" 
+        output="screen" args="right_hand $(arg right_hand_patch)"/>
+
+</launch>

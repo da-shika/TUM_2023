@@ -1,0 +1,9 @@
+geometry_msgs/PoseArray targets  # target poses wrt frame_id in header field
+std_msgs/String[] motion_tasks       # motion task names for the movement
+std_msgs/Float64 period           # time period of the motion
+---
+geometry_msgs/PoseArray cmd
+geometry_msgs/PoseArray real
+---
+geometry_msgs/PoseArray cmd
+geometry_msgs/PoseArray real

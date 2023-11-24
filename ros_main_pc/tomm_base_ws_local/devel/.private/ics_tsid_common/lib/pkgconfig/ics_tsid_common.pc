@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/ics_tsid_common
+
+Name: ics_tsid_common
+Description: Description of ics_tsid_common
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/src/ics/ics_tsid_common/include
+Libs: -L${prefix}/lib -lics_tsid_common
+Requires: control_core control_core_msgs roscpp urdf

@@ -1,0 +1,8 @@
+patch_list:
+ [
+  'p1.xml',
+  'p2.xml',
+  'p3.xml',
+  'p4.xml',
+  'p5.xml',
+ ]

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- joy -->
+  <!--node name="gamepad"
+        pkg="joy"
+        type="joy_node"
+        output="screen">
+    <remap from="/joy" to="/joy_exp_mng" />
+  </node-->   
+
+  <!-- Load parameters -->
+  <rosparam command="load" file="$(find joy_target)/configs/right_hand_joy.yaml"/>
+
+  <!-- node -->
+  <node name="right_hand_joy"
+        pkg="joy_target"
+        type="joy_target_node"
+        output="screen"/>    
+
+</launch>
+

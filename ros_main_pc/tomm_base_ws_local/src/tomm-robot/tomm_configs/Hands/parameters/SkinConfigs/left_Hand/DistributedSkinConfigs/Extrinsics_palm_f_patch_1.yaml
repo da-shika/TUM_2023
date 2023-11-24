@@ -1,0 +1,13 @@
+# This file has been automatically generated using cellularskin_tutorials/create_new_patch.launch
+skinpatch_1_extrinsics:
+ #Reference frame for the patch TF
+ base_frame: '/l_hand_base_link'
+ 
+ #Pose of Patch palm_f_patch_1 wrt CF /l_hand_base_link
+ pose:
+  #RPY (XYZ) in DEG
+  rotation: [3, 92, -108]
+  
+  #Position (XYZ) in m
+  translation: [0.012, 0.015, -0.015]
+ config_file: 'palm_f_patch_1.ini'

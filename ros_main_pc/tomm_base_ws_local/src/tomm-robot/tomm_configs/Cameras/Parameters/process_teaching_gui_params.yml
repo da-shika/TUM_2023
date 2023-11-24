@@ -1,0 +1,3 @@
+vision_topics:
+ vision_info: '/tom/head/vision/manager/visual_info'
+ context_pub: '/tom/head/vision/manager/context'

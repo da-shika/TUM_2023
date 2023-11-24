@@ -1,0 +1,14 @@
+-I/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/ur_script_manager/include
+-I/home/genki/ros/workspaces/tomm_base_ws_local/src/tomm-robot/ur_script_manager/include
+-I/opt/ros/noetic/include
+-I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/opt/ros/noetic/include
+-I/usr/include
+-I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="ur_script_manager"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/genki/ros/workspaces/tomm_base_ws_local/build/ur_script_manager/include/ur_script_manager/moc_ConsoleReader.cpp
+/home/genki/ros/workspaces/tomm_base_ws_local/src/tomm-robot/ur_script_manager/include/ur_script_manager/ConsoleReader.h

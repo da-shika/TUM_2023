@@ -1,0 +1,14 @@
+# This file has been automatically generated using cellularskin_tutorials/create_new_patch.launch
+# This file was manually edited. Changed skinpatch_14 to skinpatch_27
+skinpatch_27_extrinsics:
+ # Reference frame for the patch TF
+ base_frame: '/r_hand_link_thumb_3_tip'
+
+ # Pose of Patch thumb_distp_l_f_patch_14 wrt CF /r_hand_link_thumb_3_tip
+ pose:
+  # RPY (XYZ) in DEG
+  rotation: [180, 90, 90]
+
+  # Position (XYZ) in m
+  translation: [0.012, 0, -0.03]
+ config_file: 'thumb_distp_l_f_patch_14.ini'

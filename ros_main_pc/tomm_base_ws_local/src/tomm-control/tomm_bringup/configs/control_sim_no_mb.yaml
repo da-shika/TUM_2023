@@ -1,0 +1,55 @@
+################################################################################
+# global parameter
+################################################################################
+prefix:           tomm
+tf_prefix:        tomm
+simulation:       true
+loop_rate:        200.0
+publish_rate:     200.0
+homing_period:    12
+handprint_x:      [-0.05, 0.05]
+handprint_y:      [-0.05, 0.05]
+home_posture:     [-2.56335,-1.20144,1.94197,-2.62531,0.834484,1.06287,
+                    2.59558,-2.00927,-1.92181,-0.382787,-0.854829,-1.13818]
+
+################################################################################
+# robot model parameter
+################################################################################
+robot:
+  base_type: fixed                                                             
+  has_collision_model: true
+  has_skin_model: false
+  urdf_file: $(find tomm_bringup)/robots/tomm.urdf
+  srdf_file: $(find tomm_bringup)/robots/tomm.srdf
+  package_path: $(find tomm_description)
+  additional_frames:
+    hand_link_left:
+      parent: l_ee_link
+      pose: [0.075, -0.0247, 0.0247, -0.92389, 0, 0, 0.38268]
+    hand_link_right:
+      parent: r_ee_link
+      pose: [0.103, 0.0247, 0.0247, 0.92389, 0, 0, 0.38268]
+
+################################################################################
+# inverse dynamics formulation parameter
+################################################################################
+formulation:
+  use_close_loop: true
+  tasks:
+    posture: posture_task
+    base: base_motion
+    bounds: bounds
+    left_hand:
+      contact: left_hand_contact
+      motion: left_hand_motion
+    right_hand:
+      contact: right_hand_contact
+      motion: right_hand_motion
+    additional_tasks:
+      - self_collision_constraint 
+
+################################################################################
+# hardware interface
+################################################################################
+hardware_interface:
+  joint_discontinuity_theshold: 0.1

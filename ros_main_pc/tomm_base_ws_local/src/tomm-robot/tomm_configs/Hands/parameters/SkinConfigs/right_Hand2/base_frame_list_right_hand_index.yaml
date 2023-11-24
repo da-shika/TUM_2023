@@ -1,0 +1,11 @@
+#list of urdf frame names used as reference for the skin patches
+base_frame_list:
+ [
+  'world',
+  'base_link',
+  'r_hand_link_index_0',
+  'r_hand_link_index_1',
+  'r_hand_link_index_2',
+  'r_hand_link_index_3',
+ ]
+

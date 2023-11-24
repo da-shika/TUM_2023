@@ -1,0 +1,21 @@
+<library path="lib/libtomm_hardware_gazebo">
+
+  <class
+    name="tomm_hardware_gazebo/TOMMHardwareGazebo"
+    type="gazebo_ros_control::TOMMHardwareGazebo"
+    base_class_type="gazebo_ros_control::RobotHWSim">
+    <description>
+      TOMM generic robot simulation interface.
+    </description>
+  </class>
+
+  <class
+    name="gazebo_ros_control/TOMMDefaultRobotHWSim"
+    type="gazebo_ros_control::TOMMDefaultRobotHWSim"
+    base_class_type="gazebo_ros_control::RobotHWSim">
+    <description>
+      A default robot simulation interface which constructs joint handles from an SDF/URDF.
+    </description>
+  </class>
+
+</library>

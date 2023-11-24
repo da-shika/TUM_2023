@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+from rosparam_handler.parameter_generator_catkin import *
+gen = ParameterGenerator()
+
+gen.add_parameter_type(package="control_core", header="types.h", namespace="cc", primitve_type="double", is_eigen=True)
+
+gen.add("topic", paramtype="std::string")
+
+#Syntax : Package, Node, Config Name
+exit(gen.generate("tomm_basic_behaviors", "", "MoveBase"))

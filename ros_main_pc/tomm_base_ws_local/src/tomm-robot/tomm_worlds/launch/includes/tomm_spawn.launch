@@ -1,0 +1,47 @@
+<launch>
+  
+  <arg name="ns" default="tomm" />
+  <arg name="robot" default="full"/>
+  <arg name="skin"  default="full"/>
+  <arg name="gzpose" default="-x 3.0 -y 0.0 -z 0.0 -R 0.0 -P 0.0 -Y 3.1415"/>
+
+  <group ns="$(arg ns)">
+    <!-- tomm hardware gazebo parameters -->
+    <rosparam command="load" file="$(find tomm_worlds)/configs/tomm_hardware_gazebo.yaml"/>
+    <!-- PID gains -->
+    <rosparam command="load" file="$(find tomm_worlds)/configs/pids.yaml"/>
+  </group>
+
+  <!-- Robot skin -->
+  <include file="$(find tomm_configs)/launch/tomm_upload_full_skin.launch"/>
+
+  <!-- Load the URDF into the ROS Parameter Server -->
+  <include file="$(find tomm_description)/launch/upload_tomm.launch">
+    <arg name="robot" value="$(arg robot)"/>
+    <arg name="skin_version" value="$(arg skin)"/>
+  </include>
+
+  <!-- Spawn it -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -model tom_body -param robot_description $(arg gzpose) -unpause"/>
+
+  <group ns="$(arg ns)">
+    <!-- Load gzpose into param server-->
+    <param name="gzpose" type="string" value="$(arg gzpose)"/>
+
+    <!-- Load zero values for arms -->
+    <rosparam command="load" file="$(find tomm_worlds)/configs/zeros.yaml" subst_value="True"/>
+
+    <!-- Load controllers -->
+    <rosparam command="load" file="$(find tomm_worlds)/configs/controllers.yaml" subst_value="True"/>
+
+    <!-- Started controllers -->
+    <!--node name="controller_spawner"
+          pkg="controller_manager"
+          type="spawner"
+          output="screen"
+          args="joint_state_controller"/-->
+  </group>
+
+
+</launch>

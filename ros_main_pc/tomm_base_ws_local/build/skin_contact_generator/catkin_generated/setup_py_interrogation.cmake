@@ -1,0 +1,7 @@
+set(skin_contact_generator_SETUP_PY_SETUP_MODULE "distutils.core")
+set(skin_contact_generator_SETUP_PY_VERSION "0.0.0")
+set(skin_contact_generator_SETUP_PY_SCRIPTS "")
+set(skin_contact_generator_SETUP_PY_PACKAGES "")
+set(skin_contact_generator_SETUP_PY_PACKAGE_DIRS "")
+set(skin_contact_generator_SETUP_PY_MODULES "")
+set(skin_contact_generator_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="ns" default="/tomm" />
+
+  <group ns="$(arg ns)">
+    <node pkg="tomm_skin" type="both_arm" name="both_arm" output="screen">
+      <!-- skin config -->
+
+      <!-- left arm -->
+      <param name="left_upper_arm_config_file" value="$(find tomm_skin)/launch/configs/left_arm/p3edh.xml" />
+      <param name="left_lower_arm_config_file" value="$(find tomm_skin)/launch/configs/left_arm/p7edh.xml" />
+      <param name="left_hand_config_file" value="$(find tomm_skin)/launch/configs/left_hand/left_hand_back.xml" />
+
+      <!-- right arm -->
+      <param name="right_upper_arm_config_file" value="$(find tomm_skin)/launch/configs/right_arm/p2edh.xml" />
+      <param name="right_lower_arm_config_file" value="$(find tomm_skin)/launch/configs/right_arm/p3edh.xml" />
+      <param name="right_hand_config_file" value="$(find tomm_skin)/launch/configs/right_hand/right_hand_back.xml" />
+    </node>
+  </group>
+
+</launch>

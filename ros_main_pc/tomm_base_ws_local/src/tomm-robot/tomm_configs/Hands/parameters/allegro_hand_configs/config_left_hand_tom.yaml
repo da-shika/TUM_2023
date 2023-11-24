@@ -1,0 +1,37 @@
+#Allegro Hand (Left) Configuration Parameters
+#This parameters define topics, etc.
+
+hand_parameters:
+ hand_name: 'left'
+ joint_cmd_topic: '/tom/joint_desired_cmd'
+ x_cmd_topic: '/tom/arm_left/hand/x_desired_cmd'
+ feedback_topic: '/tom/arm_left/hand/action_server/feedback'
+ joint_ct_init_idx: 32
+ DOF: 16
+ publish_fk: true
+ #              tx  ty        tz      a_x(Deg)
+ Index_offset: [0, -0.044981, 0.014102, 5.0]
+ Middle_offset: [0, 0, 0.0164, 0.0]
+ Ring_offset: [0, 0.044981, 0.014102, -5.0]
+ Thumb_offset: [-0.0182, -0.019333, -0.044987, -5.0]
+
+home_position: [90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0]
+
+open_position: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10.0, 0.0, 0.0, 90.0]
+grasp_position: [0.0, 75.2387, 17.6069, 43.1628, 0.0, 74.3995, 23.5979, 34.0339, 0.0, 95.0, 30.0, 0.0, 82.5977, 0.0, 1.98344, 43.6459]
+tri_position: [0.0, 75.0, 0.0, 10.0, 0.0, 75.0, 0.0, 10.0, 0.0, 80.0, 45.0, 0.0, 85.0, 0.0, -15.0, 10.0]
+
+finger_push_position: [0.0, -10.0, 0.0, 0.0, 0.0, 80.0, 0.0, 0.0, 0.0, 80.0, 0.0, 0.0, 10.0, 0.0, 0.0, 90.0]
+push_position: [0.0, 80.0, 0.0, 0.0, 0.0, 80.0, 0.0, 0.0, 0.0, 80.0, 0.0, 0.0, 10.0, 0.0, 0.0, 90.0]
+side_push_position: [0.0, 75.3261997536, 32.7310520291, -7.317744033, 0.0, 67.2735838797, 51.9244321085, -17.1659473983, 0.0, 76.2126110369, 41.6448507913, -9.252441536, 78.3794481626, 0.0, 13.848579645, 22.4452792192]
+
+position_filter_coefficients_A: [0.0, -0.3695, 0.1958]
+position_filter_coefficients_B: [0.2066, 0.4131, 0.2066]
+
+velocity_filter_coefficients_A: [0.0, -1.7786, 0.8008]
+velocity_filter_coefficients_B: [0.0055, 0.0111, 0.0055]
+
+fingerIMR_mass: [0.05, 0.18, 0.26, 0.17]
+fingerTHB_mass: [0.05, 0.03, 0.30, 0.40]
+
+gravity_w: [0.0, 0.0, 9.81]

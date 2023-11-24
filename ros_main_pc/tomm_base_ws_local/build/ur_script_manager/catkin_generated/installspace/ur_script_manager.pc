@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/install
+
+Name: ur_script_manager
+Description: Description of ur_script_manager
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lur_script_manager
+Requires: roscpp std_msgs message_runtime

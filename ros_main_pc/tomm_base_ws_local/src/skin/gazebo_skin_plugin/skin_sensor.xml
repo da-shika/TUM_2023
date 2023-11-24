@@ -1,0 +1,9 @@
+<library path="lib/libskin_sensor">
+  <class name="sensors/skin_sensor"
+         type="gazebo::sensors::SkinSensor"
+         base_class_type="gazebo::sensors::Sensor">
+    <description> 
+      An example Gazebo custom skin sensor.
+    </description>
+  </class>
+</library>

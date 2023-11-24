@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+from rosparam_handler.parameter_generator_catkin import *
+gen = ParameterGenerator()
+
+gen.add_parameter_type(package="control_core", header="types.h", namespace="cc", primitve_type="double", is_eigen=True)
+
+gen.add("kp", paramtype="cc::VectorX", min=0.0, max=1000, configurable=True)
+gen.add("kd", paramtype="cc::VectorX", min=0.0, max=1000, configurable=True)
+gen.add("kp_factor", paramtype="double", min=0.0, max=5.0, default=1.0, configurable=True)
+gen.add("kd_factor", paramtype="double", min=0.0, max=5.0, default=1.0, configurable=True)
+
+gen.add("alpha_proximity", paramtype="double", min=0.0, max=1.0, default=0.5, configurable=True)
+gen.add("fd_normal", paramtype="double", min=-1.6, max=1.5, default=0.0, configurable=True)
+
+#Syntax : Package, Node, Config Name
+exit(gen.generate("ics_tsid_tasks", "", "TaskSkinCompliance"))

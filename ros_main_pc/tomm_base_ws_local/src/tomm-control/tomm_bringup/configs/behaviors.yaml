@@ -1,0 +1,119 @@
+move_base:
+  topic: /cmd_vel
+
+################################################################################
+# teleoperation 
+################################################################################
+
+teleop_right_hand:
+  initial_spline_goal_pose: [1.0, -0.3, 1.0, 0.49024, 0.50966, -0.49328, 0.50654]       # Move to intial pose
+  initial_spline_period: 15.0
+  task_name: right_hand_motion
+  topic: teleop/hand_link_right_pose
+  tasks:
+    - right_hand_motion
+
+teleop_left_hand:
+  initial_spline_goal_pose: [1.0, 0.3, 1.0, -0.49925, 0.49845, 0.48234, 0.51928]         # Move to intial pose
+  initial_spline_period: 15.0
+  task_name: left_hand_motion
+  topic: teleop/hand_link_left_pose
+  tasks:
+    - left_hand_motion
+
+teleop_head:
+  task_name: head_task
+  topic: teleop/torso_link_pose
+  tasks:
+    - head_task
+
+teleop_joints:
+  topic: teleop/joints
+
+################################################################################
+# not integrated jet 
+################################################################################
+
+default:
+  tasks:
+    - base_motion
+    - posture_task
+    # - compliance_task
+
+base_circle:
+  time: 30
+  period: 10
+  radius: 0.05
+  tasks:
+    - base_motion
+    - left_hand_motion
+    - right_hand_motion
+
+hand_reach:
+  duration: 10
+  tasks:
+    - posture_task
+    - right_hand_motion
+    # - base_motion
+
+hand_approach:
+  fd: 5.0
+  tasks:
+    - left_hand_skin_force_equality
+    - left_hand_motion
+    - right_hand_skin_force_equality
+    - right_hand_motion
+
+box_manipulation:
+  right_hand_base_pose: [1.1, -0.2, 0.83, -0.5, -0.5, 0.5, -0.5]
+  left_hand_base_pose: [1.1, 0.2, 0.87, -0.5, 0.5, 0.5, 0.5]
+  fd: 0.3
+  Kf: [2, 2, 2, 150, 150, 150]
+  Kp: [30, 30, 10, 20, 20, 20]
+  Kd: [10, 10, 20, 20, 20, 10]    
+  Ki: [0, 0, 0, 0, 0, 0]   
+  ki_delta_v: 6.0
+  ki_delta_f: 6.0
+
+box_compliant:
+  right_hand_base_pose: [1.1, -0.2, 0.83, -0.5, -0.5, 0.5, -0.5]
+  left_hand_base_pose: [1.1, 0.2, 0.87, -0.5, 0.5, 0.5, 0.5]
+  fd: 0.3
+  Kf: [2, 2, 5, 100, 100, 100]
+  Kp: [30, 30, 10, 20, 20, 20]
+  Kd: [10, 10, 60, 20, 20, 10]    
+  Ki: [0, 0, 0, 0, 0, 0]   
+  ki_delta_v: 10.0 
+  ki_delta_f: 1.0
+
+transportation:
+  right_hand_base_pose: [1.1, -0.2, 0.83, -0.5, -0.5, 0.5, -0.5]
+  left_hand_base_pose: [1.1, 0.2, 0.87, -0.5, 0.5, 0.5, 0.5]
+  fd: 0.3
+  Kf: [2, 2, 5, 100, 100, 100]
+  Kp: [30, 30, 10, 20, 20, 20]
+  Kd: [10, 10, 60, 20, 20, 10]    
+  Ki: [0, 0, 0, 0, 0, 0]   
+  ki_delta_v: 10.0 
+  ki_delta_f: 1.0
+
+whole_body_manipulation:
+  aruco_marker_id: 0
+  contact_topic: hand_patches
+  right_hand_base_pose: [1.0, -0.3, 0.84, -0.5, -0.5, 0.5, -0.5]
+  left_hand_base_pose: [1.0, 0.3, 0.865, -0.5, 0.5, 0.5, 0.5]
+  # right_hand_marker_pose: [0, 0.22, -0.12, -0.5, 0.5, 0.5, 0.5]     # square box
+  # left_hand_marker_pose: [-0.01, -0.22, -0.11, -0.5, -0.5, 0.5, -0.5]
+  right_hand_target_marker: [0.22, -0.06, -0.15, 0, 0.7071068, 0, 0.7071068] # long box
+  left_hand_target_marker: [-0.22, -0.04, -0.14, -0.7071068, 0, 0.7071068, 0]
+  marker_base_target: [1.0, 0.0, 0.9, 0, 0, -0.7071068, 0.7071068]
+  desired_distance: 2.0 # in cm
+  desired_force: 0.3
+  calibration_duration: 10.0
+  Kf_distance: [0, 0, 0.3, 200, 200, 0]
+  Kf_force: [0, 0, 1, 200, 200, 0]
+  Kp: [30, 30, 30, 30, 30, 30]
+  Kd: [20, 20, 20, 20, 20, 20]    
+  Ki: [0, 0, 0, 0, 0, 0]   
+  ki_delta_f: 10.0
+

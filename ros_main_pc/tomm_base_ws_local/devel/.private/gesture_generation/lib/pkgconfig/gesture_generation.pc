@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/gesture_generation
+
+Name: gesture_generation
+Description: Description of gesture_generation
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/src/teleoperation/gesture_generation/include
+Libs: -L${prefix}/lib 
+Requires: 

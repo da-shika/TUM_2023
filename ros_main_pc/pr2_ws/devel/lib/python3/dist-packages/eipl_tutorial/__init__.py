@@ -1,0 +1,1 @@
+/home/genki/ros/workspace/pr2_ws/devel/.private/eipl_tutorial/lib/python3/dist-packages/eipl_tutorial/__init__.py

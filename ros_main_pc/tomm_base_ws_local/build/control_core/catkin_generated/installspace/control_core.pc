@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/install
+
+Name: control_core
+Description: Description of control_core
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcontrol_core
+Requires: roscpp tf tf_conversions control_core_msgs

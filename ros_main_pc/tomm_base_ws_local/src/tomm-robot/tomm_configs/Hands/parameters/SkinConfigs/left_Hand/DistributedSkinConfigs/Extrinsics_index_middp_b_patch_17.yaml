@@ -1,0 +1,13 @@
+# This file has been automatically generated using cellularskin_tutorials/create_new_patch.launch
+skinpatch_17_extrinsics:
+ # Reference frame for the patch TF
+ base_frame: '/l_hand_link_index_2'
+
+ # Pose of Patch index_middp_b_patch_17 wrt CF /l_hand_link_index_2
+ pose:
+  # RPY (XYZ) in DEG
+  rotation: [30, -90, 0]
+
+  # Position (XYZ) in m
+  translation: [-0.011, 0, 0.03]
+ config_file: 'index_middp_b_patch_17.ini'

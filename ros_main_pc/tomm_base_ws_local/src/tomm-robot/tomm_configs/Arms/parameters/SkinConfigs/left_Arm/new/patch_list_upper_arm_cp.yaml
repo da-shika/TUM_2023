@@ -1,0 +1,8 @@
+patch_list:
+ [
+  'cp1.xml',
+  'cp2.xml',
+  'cp3.xml',
+  'cp4.xml',
+  'cp5.xml',
+ ]

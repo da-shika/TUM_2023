@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="skin" default="true" />
+  <arg name="ns" default="tomm" />
+  <arg name="vis" default="true" />
+  
+  <!--############################ controllers ##############################-->
+
+  <group ns="$(arg ns)">
+    <rosparam command="load" file="$(find tomm_bringup)/configs/skin.yaml" subst_value="True"/> 
+
+    <!-- skin related -->
+    <group if="$(arg skin)">      
+      <group if="$(arg vis)">  
+        <include file="$(find skin_visualizer)/launch/skin_visualizer.launch">
+          <arg name="tf_prefix" type="string" default="tomm"/>
+          <arg name="target_frame" type="string" default="base_link"/>
+        </include>
+      </group>
+    </group>
+
+  </group>
+
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/install
+
+Name: udp_robot_connection
+Description: Description of udp_robot_connection
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ludp_robot_connection
+Requires: roscpp

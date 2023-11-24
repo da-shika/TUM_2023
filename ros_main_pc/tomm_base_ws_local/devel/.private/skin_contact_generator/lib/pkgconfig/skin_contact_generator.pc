@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/skin_contact_generator
+
+Name: skin_contact_generator
+Description: Description of skin_contact_generator
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/skin_contact_generator/include -I/home/genki/ros/workspaces/tomm_base_ws_local/src/skin/skin_contact_generator/include
+Libs: -L${prefix}/lib -lskin_contact_generator
+Requires: control_core control_core_msgs pcl_conversions pcl_ros roscpp skin_client tf tf_conversions rosparam_handler

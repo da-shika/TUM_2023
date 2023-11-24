@@ -1,0 +1,12 @@
+\subsubsection usage Usage
+\verbatim
+<node name="" pkg="ics_tsid_tasks" type="">
+  <param name="kp_str" type="str" value="" />
+  <param name="kd_str" type="str" value="" />
+  <param name="kp_factor" type="double" value="1.0" />
+  <param name="kd_factor" type="double" value="1.0" />
+  <param name="alpha_proximity" type="double" value="0.5" />
+  <param name="fd_normal" type="double" value="0.0" />
+</node>
+\endverbatim
+

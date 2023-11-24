@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!--############################ settings #################################-->
+  <arg name="skin" default="true" />
+  <arg name="ns" default="tomm" />
+  <arg name="vis" default="true" />
+  <arg name="controller" default="tomm"/>
+
+  <!--############################ controllers ##############################-->
+
+  <group ns="$(arg ns)">
+    <!-- wbc parameters -->
+    <rosparam command="load" file="$(find tomm_bringup)/configs/control_sim_no_mb.yaml" subst_value="True"/> 
+    <!-- task parameters --> 
+    <rosparam command="load" file="$(find tomm_bringup)/configs/behaviors.yaml" subst_value="True"/> 
+    <rosparam command="load" file="$(find tomm_bringup)/configs/tasks_no_mb.yaml" subst_value="True"/> 
+
+    <!-- skin related -->
+    <group if="$(arg skin)">      
+      <!--include file="$(find skin_contact_generator)/launch/whole_body_contacts.launch"/-->
+      <group if="$(arg vis)">  
+        <include file="$(find skin_visualizer)/launch/skin_visualizer.launch">
+          <arg name="tf_prefix" type="string" default="tomm"/>
+          <arg name="target_frame" type="string" default="base_link"/>
+        </include>
+      </group>
+    </group>
+
+  </group>
+
+  <!--######################### controller manager ##########################-->
+  <group ns="$(arg ns)">
+    <!-- Load controllers -->
+    <rosparam command="load" file="$(find tomm_control_plugin)/configs/controllers.yaml" subst_value="True"/>
+    <!-- Start controllers -->
+    <node name="controller_spawner"
+          pkg="controller_manager"
+          type="spawner"
+          output="screen"
+          args="joint_state_controller $(arg controller)"/>
+  </group>
+
+  <!--###################### visualizations #################################-->
+
+  <!-- Visualization of real robot -->
+  <group ns="$(arg ns)">
+    <!-- note: this has to be in the robot workspace to work with h1! -->
+
+    <node name="joint_state_publisher_vis" pkg="joint_state_publisher" type="joint_state_publisher">
+      <param name="rate" type="int" value="100"/>
+      <rosparam param="source_list">[/tomm/joint_states]</rosparam>
+    </node>
+    <node name="robot_state_publisher_vis" pkg="robot_state_publisher" type="robot_state_publisher">
+      <param name="joint_states" value="/tomm/joint_states"/>
+      <param name="tf_prefix" type="string" value="/tomm"/>
+      <param name="publish_frequency" type="double" value="100.0"/>
+    </node>
+  </group>
+
+  <!-- static transformation of real robot to robot model --> 
+  <node pkg="tf" type="static_transform_publisher" name="tomm_odom_world_static_transform" args="0 0 0 0 0 0 world tomm/odom 1000" />
+
+  <group if="$(arg vis)">
+    <!-- Rviz Visualization -->
+    <node type="rviz" 
+          name="tomm_rviz" 
+          pkg="rviz" 
+          args="-d $(find tomm_bringup)/rviz/rviz.rviz" />
+  </group>
+
+</launch>

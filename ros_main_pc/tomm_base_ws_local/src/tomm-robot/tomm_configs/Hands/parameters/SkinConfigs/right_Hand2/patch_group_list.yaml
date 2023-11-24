@@ -1,0 +1,31 @@
+patch_group_list:
+    # The group names should be unique
+    patch_group_names: [
+        'right_hand_index_inner',
+    ]
+
+    # Index finger inner patches
+    right_hand_index_inner:
+     # The patch group id should also be unique    
+     patch_group_id: 10001
+     patch_ids:
+      [
+       1101,
+       1102,
+       1103,
+      ]
+
+ 
+# List of all the extrinsic configuration files of the skin patches      
+patch_list: [
+    'p1101e.xml', 
+    'p1102e.xml',
+    'p1103e.xml',
+    'p1151e.xml',
+    'p1152e.xml',
+    'p1153e.xml',
+    'p1154e.xml',
+    'p1155e.xml',
+    'p1156e.xml',
+]
+

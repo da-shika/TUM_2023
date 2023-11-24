@@ -1,0 +1,22 @@
+topic_names:
+ hand_pose: '/tom/arm_right/Xef_w'
+ finger_skin: '/tom/arm_right/hand/task_learning_cell'
+ incoming_activity: 'incoming/activity'
+ incoming_task: 'incoming/task'
+ task_change: 'incoming/taskChange'
+Box:
+ x: 0.67051013617
+ y: -0.5828498549
+ z: -0.295936861547
+Free_Box:
+ x: 0.646268264757
+ y: -0.393474560215
+ z: -0.238514979061
+Squeeze_Area:
+ x: 0.542672622341
+ y: 0.013907504104
+ z: -0.466499112972
+Trash:
+ x: 0.29702347941
+ y: 0.0110837137159
+ z: -0.41238342306

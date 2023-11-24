@@ -1,0 +1,43 @@
+# Gains for the Proportional-Derivative Joint Space Controller
+# included with the Allegro Hand ROS Package.
+# P and D gains for each of the 16 joints.
+
+# proportial
+gains_pd:
+ p:
+  j00: 600.0
+  j01: 2000.0
+  j02: 1000.0
+  j03: 600.0
+  j10: 600.0
+  j11: 2000.0
+  j12: 1300.0
+  j13: 600.0
+  j20: 600.0
+  j21: 2000.0
+  j22: 1000.0
+  j23: 600.0
+  j30: 2000.0
+  j31: 1000.0
+  j32: 2000.0
+  j33: 1000.0
+#derivative
+ d:
+  j00: 60.0
+  j01: 100.0
+  j02: 60.0
+  j03: 60.0
+  j10: 60.0
+  j11: 100.0
+  j12: 60.0
+  j13: 60.0
+  j20: 60.0
+  j21: 100.0
+  j22: 60.0
+  j23: 60.0
+  j30: 100.0
+  j31: 60.0
+  j32: 100.0
+  j33: 60.0
+ lambda: 10.0
+ kappa: 10.0 

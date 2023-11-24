@@ -1,0 +1,22 @@
+skin_client_real:
+  # skin transfer function proximity to distance
+  maximum_distance: 0.06
+  f_transf_exp: -100.0
+  f_transf_offset: 0.0
+
+  # skin faulty cell detection
+  dead_cell_dist_thres: 0.02  # If a cell has less than d than this theshold at initalization we ignore it
+  dead_cell_force_thes: 1.0   # If a cell is more than f than ignore it
+  max_num_of_masked_cells: 10 # If more than this num of cells is ignored dont start at all
+
+  # skin calibration
+  force_gain: 30.0            # make force roughly 1.0 when pressed hard
+  proximity_gain: 1.0         # make proximity rougly 1.0 when covered
+
+  # skin patch messages
+  scale_by_active: true       # devide my the number of active cell and not all of them
+  force_thres: 0.08           # slighly above noisefloor 0.025
+  proximity_thres: 0.01       # slighly above noisefloor 0.01
+
+  # masked cells on patches <patch><cells>, note -1 will mask all
+  masked: []

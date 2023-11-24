@@ -1,0 +1,15 @@
+<launch>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find telerobbies_ros)/maps/tr_es1_tomm.pgm 0.05"/>
+  <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="55.2500000, 49.500000, 0.000000 0 0 1 0 world map 100" />
+
+  <include file="$(find amcl)/examples/amcl_omni.launch"/>
+	
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find tomm_nav_stack)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find tomm_nav_stack)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find tomm_nav_stack)/param/local_costmap_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find tomm_nav_stack)/param/global_costmap_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find tomm_nav_stack)/param/teb_local_planner_params.yaml" command="load" />
+    <remap from="/move_base_simple/goal" to="/tomm/move_base_simple/goal"/>
+  </node>
+</launch>

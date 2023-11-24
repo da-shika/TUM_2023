@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/install
+
+Name: ics_basic_behaviors
+Description: Description of ics_basic_behaviors
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lics_basic_behaviors
+Requires: dynamic_reconfigure ics_behavior roscpp rosparam_handler

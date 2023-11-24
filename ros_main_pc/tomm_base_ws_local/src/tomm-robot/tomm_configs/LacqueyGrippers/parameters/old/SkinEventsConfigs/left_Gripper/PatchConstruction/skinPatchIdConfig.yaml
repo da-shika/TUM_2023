@@ -1,0 +1,20 @@
+# ordered lists of patch configs
+skin_patch_id_config:
+
+ # patch file names (ommitting .xml file type)
+ filenames: [
+   'leftWrist1PatchExtTF', 'leftWrist2PatchExtTF', 'leftWrist3PatchExtTF',
+   'leftGripperRingPatchExtTF','leftGripperPalmPatchExtTF',
+   'leftGripperLeftFingerOutsidePatchExtTF','leftGripperLeftFingerInsidePatchExtTF',
+   'leftGripperRightFingerOutsidePatchExtTF','leftGripperRightFingerInsidePatchExtTF',
+   'leftGripperMidFingerOutsidePatchExtTF','leftGripperMidFingerInsidePatchExtTF'
+ ]
+
+ # ids to assign to patches
+ ids: [
+   1100, 1101, 1102,
+   1103, 1104,
+   1106, 1107,
+   1108, 1109,
+   1110, 1111
+ ]

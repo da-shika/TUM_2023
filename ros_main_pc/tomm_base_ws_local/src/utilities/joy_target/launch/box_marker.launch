@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Load parameters -->
+  <rosparam command="load" file="$(find joy_target)/configs/box_marker.yaml"/>
+
+  <!-- node -->
+  <node name="box_marker_node"
+        pkg="joy_target"
+        type="marker_target_node"
+        output="screen"/>    
+
+</launch>

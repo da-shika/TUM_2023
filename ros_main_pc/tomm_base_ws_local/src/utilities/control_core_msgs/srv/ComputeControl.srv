@@ -1,0 +1,5 @@
+RobotState state    # current robot state
+uint8 do_stop       # plugin request stop
+---
+JointState command  # current robot command
+uint8 do_stop       # client request stop

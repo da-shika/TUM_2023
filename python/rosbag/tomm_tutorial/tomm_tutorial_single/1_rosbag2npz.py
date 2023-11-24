@@ -1,0 +1,139 @@
+#
+# Copyright (c) 2023 Ogata Laboratory, Waseda University
+#
+# Released under the AGPL license.
+# see https://www.gnu.org/licenses/agpl-3.0.txt
+#
+
+import os
+import cv2
+import glob
+import rospy
+import rosbag
+import argparse
+import numpy as np
+from geometry_msgs.msg import PoseStamped
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--bag_dir", type=str)
+parser.add_argument("--freq", type=float, default=10)
+args = parser.parse_args()
+
+
+files = glob.glob(os.path.join(args.bag_dir, "*.bag"))
+files.sort()
+for file in files:
+    print(file)
+    savename = file.split(".bag")[0] + ".npz"
+
+    # Open the rosbag file
+    bag = rosbag.Bag(file)
+
+    # Get the start and end times of the rosbag file
+    start_time = bag.get_start_time()
+    end_time = bag.get_end_time()
+
+    # Get the topics in the rosbag file
+    # topics = bag.get_type_and_topic_info()[1].keys()
+    topics = [
+        "/tomm/joint_states",
+        "/tomm/teleop_left_hand/pose", "/tomm/teleop_right_hand/pose",
+        "/tomm/arm_right/hand/left_hand_back/data", "/tomm/arm_right/hand/right_hand_back/data",
+        "/usb_camera/republished/compressed"
+    ]
+
+    # Create a rospy.Time object to represent the current time
+    current_time = rospy.Time.from_sec(start_time)
+
+    joint_list = []
+    left_pos_list, right_pos_list = [], []
+    left_force_list, right_force_list = [], []
+    left_proximity_list, right_proximity_list = [], []
+    image_list = []
+
+    # Loop through the rosbag file at regular intervals (args.freq)
+    freq = 1.0 / float(args.freq)
+    while current_time.to_sec() < end_time:
+        print(current_time.to_sec())
+
+        # Get the messages for each topic at the current time
+        for topic in topics:
+            for topic_msg, msg, time in bag.read_messages(topic):
+                if time >= current_time:
+                    if topic == "/tomm/joint_states":
+                        joint_list.append(msg.position[3:15])
+                    
+                    if topic == "/tomm/teleop_left_hand/pose":
+                        pos = [msg.pose.position.x, msg.pose.position.y, msg.pose.position.z]
+                        rot = [msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z, msg.pose.orientation.w]
+                        _data = pos + rot
+                        left_pos_list.append(_data)
+                    if topic == "/tomm/teleop_right_hand/pose":
+                        pos = [msg.pose.position.x, msg.pose.position.y, msg.pose.position.z]
+                        rot = [msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z, msg.pose.orientation.w]
+                        _data = pos + rot
+                        right_pos_list.append(_data)
+
+                    if topic == "/tomm/arm_right/hand/left_hand_back/data":
+                        left_force_list.append(msg.force)
+                    if topic == "/tomm/arm_right/hand/right_hand_back/data":
+                        right_force_list.append(msg.force)
+
+                    if topic == "/tomm/arm_right/hand/left_hand_back/data":
+                        left_proximity_list.append(msg.prox)
+                    if topic == "/tomm/arm_right/hand/right_hand_back/data":
+                        right_proximity_list.append(msg.prox)
+
+                    if topic == "/usb_camera/republished/compressed":
+                        crop_x1 = int(115/2)
+                        crop_y1 = 0
+                        crop_size = int(480/2)
+                        np_arr = np.frombuffer(msg.data, np.uint8)
+                        np_img = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+                        np_img = np_img[::2, ::2]
+                        image_list.append(np_img[crop_y1 : crop_y1+crop_size, crop_x1 : crop_x1+crop_size].astype(np.uint8))
+                        
+                    break
+
+        # Wait for the next interval
+        current_time += rospy.Duration.from_sec(freq)
+        rospy.sleep(freq)
+
+    # Close the rosbag file
+    bag.close()
+
+    # Convert list to array
+    joints = np.array(joint_list, dtype=np.float32)
+    left_poses = np.array(left_pos_list, dtype=np.float32)
+    right_poses = np.array(right_pos_list, dtype=np.float32)
+    left_forces = np.array(left_force_list, dtype=np.float32)
+    right_forces = np.array(right_force_list, dtype=np.float32)
+    left_proximities = np.array(left_proximity_list, dtype=np.float32)
+    right_proximities = np.array(right_proximity_list, dtype=np.float32)
+    images = np.array(image_list, dtype=np.uint8)
+
+    # Get shorter lenght
+    shorter_length = min(len(joints), 
+                         len(left_poses), len(right_poses),
+                         len(left_forces), len(right_forces),
+                         len(left_proximities), len(right_proximities),
+                         len(images))
+
+    # Trim
+    joints = joints[:shorter_length]
+    left_poses = left_poses[:shorter_length]
+    right_poses = right_poses[:shorter_length]
+    left_forces = left_forces[:shorter_length]
+    right_forces = right_forces[:shorter_length]
+    left_proximities = left_proximities[:shorter_length]
+    right_proximities = right_proximities[:shorter_length]
+    images = images[:shorter_length]
+
+    # Concat
+    poses = np.concatenate((left_poses, right_poses), axis=1)
+    forces = np.concatenate((left_forces, right_forces), axis=1)
+    proximities = np.concatenate((left_proximities, right_proximities), axis=1)
+    
+    # Save
+    np.savez(savename, 
+             joints=joints, poses=poses, forces=forces, proximities=proximities, images=images)

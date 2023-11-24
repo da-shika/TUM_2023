@@ -1,0 +1,25 @@
+#This parameters defines the special motions: box_pose, free_box_motion, downbox_motion
+special_operational_motions:
+ min_operational_error: 0.005
+ 
+ #This represents 10mm per iteration (0.008 s)
+ constant_velocity: 0.0125
+ 
+ #x, y, z wrt torso link, and duration of motion
+ box_pose_motion: [0.820, 0.562, -0.158, 2]
+ free_box_motion: [0.820, 0.370, -0.158, 2]
+ down_box_motion: [0.820, 0.350, -0.3, 2]
+ back_box_motion: [0.820, 0.350, -0.3, 8]
+ delta_z_motion: [0.0, 0.0, -0.003, 5.0]
+
+ #tactile stop threshold
+ tactile_stop_threshold: 0.5
+
+ #max contact force threshold
+ tactile_max_force_threshold: 45.0
+
+ #Defines the min joint error to stop the STATE_JOINT_ACTIVE (intern mode)
+ dq_intern_threshold: 0.0001
+
+ #Defines the service name to synchronize the task generator
+ task_server_name: '/tom/arm_left/arm/SendNewAction'

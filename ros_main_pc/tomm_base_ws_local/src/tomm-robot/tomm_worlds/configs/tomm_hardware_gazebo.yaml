@@ -1,0 +1,18 @@
+tf_prefix: tomm
+
+force_torque:
+  left_wrist_ft:
+    sensor_joint: l_wrist_3_joint
+    frame: l_wrist_3_link
+  right_wrist_ft:
+    sensor_joint: r_wrist_3_joint
+    frame: r_wrist_3_link
+
+mobile_base:
+  joint_x_name: base_x
+  joint_y_name: base_y
+  joint_theta_name: base_theta
+  base_frame: base_link
+  odometry_frame: odom
+  odometry_topic: odom
+  odometry_rate: 500.0

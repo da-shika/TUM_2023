@@ -1,0 +1,5 @@
+## input
+
+pose
+proximity  
+image  

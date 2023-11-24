@@ -1,0 +1,36 @@
+robot:
+  h1: sim
+
+  tomm:
+    frames:
+      additional_frames:
+        hand_link_left:
+          parent: l_ee_link
+          pose: [0.075, -0.0247, 0.0247, -0.92389, 0, 0, 0.38268]
+        hand_link_right:
+          parent: r_ee_link
+          pose: [0.103, 0.0247, 0.0247, 0.92389, 0, 0, 0.38268, 1] # added a extra 1 in the end to demo error behavior 
+
+left_hand_motion:
+  type: "se3"
+  frame: "hand_link_left"
+  kp: 30
+  weight: 500
+  mask: [1,1,1,1,1,1]
+  quaternion: [1, 0, 0] # 1, 0, 0, 0
+
+
+################################################################################
+# global parameter
+################################################################################
+prefix:           tomm
+tf_prefix:        tomm
+simulation:       true
+loop_rate:        200.0
+publish_rate:     200.0
+homing_period:    2
+handprint_x:      [-0.05, 0.05]
+handprint_y:      [-0.05, 0.05]
+home_posture:     [0, 0, 0,
+                   -2.82879, -1.09472, 1.39832, -2.43066, 0.97291, -0.140744,    
+                    2.81405, -2.02808, -1.4306, -0.672856, -1.00667, 0.162432]  

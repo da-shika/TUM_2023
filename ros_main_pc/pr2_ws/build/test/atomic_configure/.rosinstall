@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/genki/ros/workspace/pr2_ws/devel/.private/test/setup.sh

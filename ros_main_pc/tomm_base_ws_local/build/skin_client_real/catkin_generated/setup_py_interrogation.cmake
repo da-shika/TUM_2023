@@ -1,0 +1,7 @@
+set(skin_client_real_SETUP_PY_SETUP_MODULE "distutils.core")
+set(skin_client_real_SETUP_PY_VERSION "0.0.0")
+set(skin_client_real_SETUP_PY_SCRIPTS "")
+set(skin_client_real_SETUP_PY_PACKAGES "")
+set(skin_client_real_SETUP_PY_PACKAGE_DIRS "")
+set(skin_client_real_SETUP_PY_MODULES "")
+set(skin_client_real_SETUP_PY_MODULE_DIRS "")

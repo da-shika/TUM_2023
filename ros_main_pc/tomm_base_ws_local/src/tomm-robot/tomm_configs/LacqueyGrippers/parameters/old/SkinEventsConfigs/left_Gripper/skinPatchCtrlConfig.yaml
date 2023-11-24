@@ -1,0 +1,27 @@
+# ordered lists of patchs with additional configs
+skin_patch_ctrl_config:
+ 
+ # patch file names (ommitting .xml file type), in PatchConstruction folder
+ filenames: [
+   'leftWrist1PatchExtTFIdDH','leftWrist2PatchExtTFIdDH','leftWrist3PatchExtTFIdDH',
+   'leftGripperRingPatchExtTFIdDH', 'leftGripperPalmPatchExtTFIdDH',
+   'leftGripperLeftFingerOutsidePatchExtTFId','leftGripperLeftFingerInsidePatchExtTFId',
+   'leftGripperRightFingerOutsidePatchExtTFId','leftGripperRightFingerInsidePatchExtTFId',
+   'leftGripperMidFingerOutsidePatchExtTFId','leftGripperMidFingerInsidePatchExtTFId'
+ ]
+ 
+ # patch namespaces
+ namespaces: [
+   'LeftWrist1','LeftWrist2', 'LeftWrist3',
+   'LeftGripperRing', LeftGripperPalm,
+   'LeftGripperLeftFinger','LeftGripperLeftFinger',
+   'LeftGripperRightFinger','LeftGripperRightFinger',
+   'LeftGripperMidFinger','LeftGripperMidFinger'
+ ]
+
+ # patch index for patches connected to the skin controller (index of filename, starts at 0) The index is according to the filenames described above, e.g.
+ # leftWrist1PatchExtTFIdDH=0 
+ control: [
+   0, 1, 2,
+   3, 4
+ ]

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!-- full body controller launch file -->
+<launch>  
+    <arg name="robot" default="full"/>
+    <arg name="skin"  default="full"/>
+    <arg name="ns"  default="tomm"/>
+
+    <rosparam command="load" file="$(find tomm_hardware_real)/configs/omnibase/omnibase_driver.yaml" />
+
+    <!-- ***************** tom arm controller ***************** -->
+    <group ns="$(arg ns)">
+
+      <node pkg="tomm_hardware_real" type="tomm_hardware_real_node" name="tomm_hardware_real_node" output="screen">
+        <rosparam file="$(find tomm_hardware_real)/configs/arm/internal_pid.yaml" command="load" />
+      </node>
+    </group>
+
+    <!-- Load the URDF into the ROS Parameter Server -->
+    <include file="$(find tomm_description)/launch/upload_tomm.launch">
+      <arg name="robot" value="$(arg robot)"/>
+      <arg name="skin_version" value="$(arg skin)"/>
+    </include>
+
+</launch>

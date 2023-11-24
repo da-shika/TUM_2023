@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+ 
+  <xacro:macro name="allegro_hand_gazebo" params="prefix finger_label"> 
+    
+    <gazebo reference="${prefix}link_${finger_label}_0">
+        <gravity>false</gravity>
+        <selfCollide>false</selfCollide>
+	    <velocity_decay>
+            <linear>0.2</linear>
+            <angular>0.4</angular>
+        </velocity_decay>
+    </gazebo>
+    
+    <gazebo reference="${prefix}link_${finger_label}_1">
+        <gravity>false</gravity>
+        <selfCollide>false</selfCollide>
+	    <velocity_decay>
+            <linear>0.2</linear>
+            <angular>0.4</angular>
+        </velocity_decay>
+    </gazebo>
+    
+    <gazebo reference="${prefix}link_${finger_label}_2">
+        <gravity>false</gravity>
+        <selfCollide>false</selfCollide>
+	    <velocity_decay>
+            <linear>0.2</linear>
+            <angular>0.4</angular>
+        </velocity_decay>
+    </gazebo>
+    
+    <gazebo reference="${prefix}link_${finger_label}_3">
+        <gravity>false</gravity>
+        <selfCollide>false</selfCollide>
+	    <velocity_decay>
+            <linear>0.2</linear>
+            <angular>0.4</angular>
+        </velocity_decay>
+    </gazebo>
+    
+    <gazebo reference="${prefix}link_${finger_label}_3_tip">
+        <gravity>false</gravity>
+        <selfCollide>false</selfCollide>
+	    <velocity_decay>
+            <linear>0.2</linear>
+            <angular>0.4</angular>
+        </velocity_decay>
+    </gazebo>
+    
+  </xacro:macro>
+
+</robot>

@@ -1,0 +1,79 @@
+# Gains for the Proportional-Derivative Joint Space Controller
+# P and D gains for each axis. Same gain for all the fingers.
+skin_torque: 
+ #proportial
+ gains_p: [100.0, 100.0, 100.0]
+ 
+ #derivative
+ gains_d: [5.0, 5.0, 5.0]
+
+ #integral
+ gains_i: [0.10, 0.10, 0.10]
+
+ #Fingers (in this case we are considering the palm as a finger part)
+ palm:
+  #proximity threshold
+  proxy_threshold: 0.05
+  
+  #force threshold
+  force_threshold: 0.08
+
+  #Proximity Gains (for each phalanx)
+  proxy_gains: [2.0, 2.0, 2.0, 2.0]
+
+  #Force Gains
+  force_gains: [40.0, 40.0, 40.0, 40.0]
+
+ index_finger:
+  #proximity threshold
+  proxy_threshold: 0.05
+  
+  #force threshold
+  force_threshold: 0.08
+
+  #Proximity Gains (for each phalanx)
+  proxy_gains: [2.0, 4.0, 2.0, 2.0]
+
+  #Force Gains
+  force_gains: [40.0, 40.0, 40.0, 40.0]
+
+ middle_finger:
+  #proximity threshold
+  proxy_threshold: 0.05
+  
+  #force threshold
+  force_threshold: 0.08
+
+  #Proximity Gains (for each phalanx)
+  proxy_gains: [2.0, 4.0, 2.0, 2.0]
+
+  #Force Gains
+  force_gains: [40.0, 40.0, 40.0, 40.0]
+
+ ring_finger:
+  #proximity threshold
+  proxy_threshold: 0.05
+  
+  #force threshold
+  force_threshold: 0.08
+
+  #Proximity Gains (for each phalanx)
+  proxy_gains: [2.0, 4.0, 2.0, 2.0]
+
+  #Force Gains
+  force_gains: [40.0, 40.0, 40.0, 40.0]
+
+ thumb_finger:
+  #proximity threshold
+  proxy_threshold: 0.05
+  
+  #force threshold
+  force_threshold: 0.08
+
+  #Proximity Gains (for each phalanx)
+  proxy_gains: [2.0, 2.0, 6.0, 3.0]
+
+  #Force Gains
+  force_gains: [40.0, 40.0, 40.0, 40.0]
+
+

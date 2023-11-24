@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspace/pr2_ws/devel/.private/vive_ros
+
+Name: vive_ros
+Description: Description of vive_ros
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

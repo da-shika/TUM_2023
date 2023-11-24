@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">
+
+	<!--Common definitions -->
+	<xacro:include filename="$(find tomm_description)/urdf/common.xacro"/>
+
+	<!-- Hand specializations -->
+	<!--xacro macros Arms-->
+	<xacro:include filename="$(find tomm_description)/urdf/arm/ur5/ur5.urdf.xacro"/>
+
+	<!-- xacro arms (right_arm=true -> right arm, false -> left arm -->
+	<xacro:macro name="tom_arm_v0" params="right_arm">
+
+		<xacro:unless value="${right_arm}">
+			<!-- left UR5 robot model -->
+			<xacro:ur5_robot prefix="l_" joint_limited="false"/>
+			<joint name="torso_to_l_arm" type="fixed">
+				<parent link="torso_link"/>
+				<child link="l_base_link"/>
+				<origin xyz="0 ${arm_joint_y_offset} 0" rpy="${arm_joint_roll_offset} ${arm_joint_pitch_offset} -2.6061"/>
+			</joint>
+			
+			<!-- This is the JR3 adapter -->
+			<link name="l_hand_base_adapter_link">
+			    <visual>
+				    <origin xyz="0 0 -${adapter_z_offset}" rpy="${M_PI/2} 0 ${M_PI/2}" />
+				    <geometry>
+				        <mesh filename="package://tomm_description/meshes/arm/hand_mount.dae"/>    
+				    </geometry>
+			    </visual>
+			    <collision>
+					<origin xyz="0 0 ${-jr3_hight/2}" rpy="0 0 0" /> 
+				    <geometry>
+				  	    <cylinder length="${jr3_hight}" radius="${jr3_radius}" />
+				    </geometry>
+				</collision>
+			</link>
+			
+			<joint name="l_hand_base_adapter_joint" type="fixed">
+				<parent link="l_ee_link"/>
+				<child link="l_hand_base_adapter_link"/>
+				<origin xyz="${adapter_joint_x_offset} 0 0" rpy="${M_PI/2} 0.785 ${M_PI/2}"/>
+			</joint>
+
+		</xacro:unless>
+
+		<xacro:if value="${right_arm}">
+			<!-- right UR5 robot model -->
+			<xacro:ur5_robot prefix="r_" joint_limited="false"/>
+			<joint name="torso_to_r_arm" type="fixed">
+				<parent link="torso_link"/>
+				<child link="r_base_link"/>
+				<origin xyz="0 -${arm_joint_y_offset} 0" rpy="${arm_joint_roll_offset} -${arm_joint_pitch_offset} -0.5355"/>
+			</joint>
+			
+			<!-- This is the JR3 adapter -->
+			 <link name="r_hand_base_adapter_link">
+			 <visual>
+				<origin xyz="0 0 -${adapter_z_offset}" rpy="${M_PI/2} 0 ${M_PI/2}" />
+				 <geometry>
+				  <mesh filename="package://tomm_description/meshes/arm/hand_mount.dae"/>    
+				 </geometry>
+			 </visual>
+			 <collision>
+					<origin xyz="0 0 ${-jr3_hight/2}" rpy="0 0 0" /> 
+				  <geometry>
+				  	<cylinder length="${jr3_hight}" radius="${jr3_radius}" />
+				  </geometry>
+				</collision>
+			</link>
+			<joint name="r_hand_base_adapter_joint" type="fixed">
+				<parent link="r_ee_link"/>
+				<child link="r_hand_base_adapter_link"/>
+				<origin xyz="${adapter_joint_x_offset} 0 0" rpy="${M_PI/2} 2.356 ${M_PI/2}"/>
+			</joint>
+			
+		</xacro:if>
+
+  </xacro:macro>	
+
+	
+
+
+</robot>

@@ -1,0 +1,31 @@
+################################################################################
+# joint states
+################################################################################
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 200
+
+################################################################################
+# whole body controller for tomm
+################################################################################
+tomm:
+  type: "tomm_control_plugin/TOMMControlPlugin"
+  joints:
+    # - base_x
+    # - base_y
+    # - base_theta
+    - l_shoulder_pan_joint
+    - l_shoulder_lift_joint
+    - l_elbow_joint
+    - l_wrist_1_joint
+    - l_wrist_2_joint
+    - l_wrist_3_joint
+    - r_shoulder_pan_joint
+    - r_shoulder_lift_joint
+    - r_elbow_joint
+    - r_wrist_1_joint
+    - r_wrist_2_joint
+    - r_wrist_3_joint
+  ft_sensors: []     
+    # - left_wrist_ft
+    # - right_wrist_ft

@@ -1,0 +1,4 @@
+## input
+
+joint angle  
+image  

@@ -1,0 +1,289 @@
+#Static Homogeneous Transformations of LEFT URDF links wrt LEFT Finger Links
+#Palm (the palm has 4 patches which for consistency purposes are named as joint_X)
+palm:
+ joint_1:
+  # Pose of l_hand_base_link WRT Finger l_ee_link (left arm end-effector) FrontPatch 1
+  pose:
+   # Position (ZYX) in m
+   translation: [0.140, 0.007, -0.007]
+
+   # RPY (XYZ) in RAD
+   rotation:
+    quat: [0.271, 0.653, 0.271, 0.653]
+    rpy: [1.571, 0.785, 1.571]
+
+  #Joint Number
+  id: 1
+   
+ joint_2:
+  # Pose of l_hand_base_link WRT Finger l_ee_link (left arm end-effector) LeftPatch 2
+  pose:
+   # Position (ZYX) in m
+   translation: [0.140, 0.007, -0.007]
+
+   # RPY (XYZ) in RAD
+   rotation:
+    quat: [0.271, 0.653, 0.271, 0.653]
+    rpy: [1.571, 0.785, 1.571]
+
+  #Joint Number
+  id: 2
+
+ joint_3:
+  # Pose of l_hand_base_link WRT Finger l_ee_link (left arm end-effector) RightPatch 3
+  pose:
+   # Position (ZYX) in m
+   translation: [0.140, 0.007, -0.007]
+
+   # RPY (XYZ) in RAD
+   rotation:
+    quat: [0.271, 0.653, 0.271, 0.653]
+    rpy: [1.571, 0.785, 1.571]
+
+  #Joint Number
+  id: 3
+
+ joint_4:
+  # Pose of l_hand_base_link WRT Finger l_ee_link (left arm end-effector) BackPatch 15
+  pose:
+   # Position (ZYX) in m
+   translation: [0.140, 0.007, -0.007]
+
+   # RPY (XYZ) in RAD
+   rotation:
+    quat: [0.271, 0.653, 0.271, 0.653]
+    rpy: [1.571, 0.785, 1.571]
+
+  #Joint Number
+  id: 4
+
+#Index Finger
+index_finger:
+ joint_1:
+  # Pose of l_hand_link_index_0 WRT Finger left_Index_1
+  pose:
+   # Position (ZYX) in m
+   translation: [0.000, 0.016, 0.000]
+
+   # RPY (XYZ) in RAD
+   rotation:
+    quat: [0.707, 0.000, 0.000, 0.707]
+    rpy: [1.571, 0.0, 0.0]
+
+  #Joint Number
+  id: 1
+
+ joint_2:
+  # Pose of l_hand_link_index_1 WRT Finger left_Index_2
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.053, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 2
+
+ joint_3:
+  # Pose of l_hand_link_index_2 WRT Finger left_Index_3
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.038, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 3
+
+ joint_4:
+  # Pose of l_hand_link_index_3_tip WRT Finger left_Index_4
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.011, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 4
+
+middle_finger:
+ joint_1:
+  # Pose of l_hand_link_index_0 WRT Finger left_Index_1
+  pose:
+   # Position (ZYX) in m
+   translation: [0.000, 0.016, 0.000]
+
+   # RPY (XYZ) in RAD
+   rotation:
+    quat: [0.707, 0.000, 0.000, 0.707]
+    rpy: [1.571, 0.0, 0.0]
+
+  #Joint Number
+  id: 1
+
+ joint_2:
+  # Pose of l_hand_link_index_1 WRT Finger left_Index_2
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.053, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 2
+
+ joint_3:
+  # Pose of l_hand_link_index_2 WRT Finger left_Index_3
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.038, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 3
+
+ joint_4:
+  # Pose of l_hand_link_index_3_tip WRT Finger left_Index_4
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.011, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 4
+
+ring_finger:
+ joint_1:
+  # Pose of l_hand_link_index_0 WRT Finger left_Index_1
+  pose:
+   # Position (ZYX) in m
+   translation: [0.000, 0.016, 0.000]
+
+   # RPY (XYZ) in RAD
+   rotation:
+    quat: [0.707, 0.000, 0.000, 0.707]
+    rpy: [1.571, 0.0, 0.0]
+
+  #Joint Number
+  id: 1
+
+ joint_2:
+  # Pose of l_hand_link_index_1 WRT Finger left_Index_2
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.053, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 2
+
+ joint_3:
+  # Pose of l_hand_link_index_2 WRT Finger left_Index_3
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.038, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 3
+
+ joint_4:
+  # Pose of l_hand_link_index_3_tip WRT Finger left_Index_4
+  pose:
+   # Position (XYZ) in m
+   translation: [-0.011, 0.000, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, 0.500, 0.500, 0.500]
+    rpy: [1.571, 0.000, 1.571]
+
+  #Joint Number
+  id: 4
+
+thumb_finger:
+ joint_1:
+  # Pose of l_hand_link_thumb_0 WRT Finger left_Thumb_1
+  pose:
+   # Position (ZYX) in m
+   translation: [0.004, 0.026, -0.000]
+
+   # RPY (XYZ) in RAD
+   rotation:
+    quat: [0.707, 0.707, 0.000, 0.000]
+    rpy: [-3.1416, 0.000, 1.5708]
+
+  #Joint Number
+  id: 1
+
+ joint_2:
+  # Pose of l_hand_link_thumb_1 WRT Finger left_Thumb_2
+  pose:
+   # Position (XYZ) in m
+   translation: [0.001, -0.011, -0.001]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.000, 0.707, 0.707, 0.000]
+    rpy: [1.571, 0.000, 3.142]
+
+  #Joint Number
+  id: 2
+
+ joint_3:
+  # Pose of l_hand_link_thumb_2 WRT Finger left_Thumb_3
+  pose:
+   # Position (XYZ) in m
+   translation: [0.048, 0.005, -0.001]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, -0.500, -0.500, 0.500]
+    rpy: [1.571, 0.000, -1.571]
+
+  #Joint Number
+  id: 3
+
+ joint_4:
+  # Pose of l_hand_link_thumb_3_tip WRT Finger left_Thumb_4
+  pose:
+   # Position (XYZ) in m
+   translation: [0.0075, 0.004, 0.000]
+
+   # RPY (ZYX) in RAD
+   rotation:
+    quat: [0.500, -0.500, -0.500, 0.500]
+    rpy: [1.571, 0.000, -1.571]
+
+  #Joint Number
+  id: 4
+
+

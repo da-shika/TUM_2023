@@ -1,0 +1,13 @@
+# This file has been automatically generated using cellularskin_tutorials/create_new_patch.launch
+skinpatch_22_extrinsics:
+ # Reference frame for the patch TF
+ base_frame: '/r_hand_link_ring_1'
+
+ # Pose of Patch ring_proxp_b_patch_22 wrt CF /r_hand_link_ring_1
+ pose:
+  # RPY (XYZ) in DEG
+  rotation: [0, -90, 27]
+
+  # Position (XYZ) in m
+  translation: [-0.011, 0, 0.0175]
+ config_file: 'ring_proxp_b_patch_22.ini'

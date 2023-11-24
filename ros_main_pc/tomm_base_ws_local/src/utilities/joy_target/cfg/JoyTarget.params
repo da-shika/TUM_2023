@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+from rosparam_handler.parameter_generator_catkin import *
+gen = ParameterGenerator()
+
+gen.add_parameter_type(package="control_core", header="types.h", namespace="cc", primitve_type="double", is_eigen=True)
+
+# topics
+gen.add("joy_topic", paramtype="std::string")
+gen.add("topic", paramtype="std::string")
+
+# frames, specify target_frame or target_pose
+gen.add("target_frame", paramtype="std::string", default="")
+gen.add("target_pose", paramtype="cc::CartesianPosition", default=[0,0,0,0,0,0,1])
+gen.add("parent_frame", paramtype="std::string")
+
+# virtual dynamics
+gen.add("mass", paramtype="cc::Vector6")
+gen.add("spring", paramtype="cc::Vector6")
+gen.add("damping", paramtype="cc::Vector6")
+
+gen.add("acc_lb", paramtype="cc::Vector6", default=[-100,-100,-100,-100,-100,-100,-100])
+gen.add("acc_ub", paramtype="cc::Vector6", default=[100,100,100,100,100,100,100])
+gen.add("vel_lb", paramtype="cc::Vector6", default=[-100,-100,-100,-100,-100,-100,-100])
+gen.add("vel_ub", paramtype="cc::Vector6", default=[100,100,100,100,100,100,100])
+gen.add("pos_lb", paramtype="cc::LinearPosition", default=[-100,-100,-100])
+gen.add("pos_ub", paramtype="cc::LinearPosition", default=[100,100,100])
+
+#Syntax : Package, Node, Config Name
+exit(gen.generate("joy_target", "joy_target_node", "JoyTarget"))

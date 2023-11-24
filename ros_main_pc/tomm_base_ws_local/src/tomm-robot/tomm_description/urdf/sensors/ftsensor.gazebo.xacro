@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="tom_ft_gazebo" params="name joint ros_topic update_rate">
+    <gazebo reference="${joint}_joint">
+      <provideFeedback>true</provideFeedback>
+    </gazebo>
+    <gazebo>
+      <plugin filename="libgazebo_ros_ft_sensor.so" name="ft_sensor">
+        <update_rate>${update_rate}</update_rate>
+        <topicName>${ros_topic}</topicName>
+        <jointName>${joint}_joint</jointName>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.003</stddev>
+        </noise>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+
+</robot>

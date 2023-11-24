@@ -1,0 +1,27 @@
+# ordered lists of patchs with additional configs
+skin_patch_ctrl_config:
+ 
+ # patch file names (ommitting .xml file type), in PatchConstruction folder
+ filenames: [
+   'p100edh','p101edh','p102edh',
+   'p103edh', 'p104edh',
+   'p106e','p107e',
+   'p108e','p109e',
+   'p110e','p111e'
+ ]
+ 
+ # patch namespaces
+ namespaces: [
+   'RightWrist1','RightWrist2', 'RightWrist3',
+   'RightGripperRing', RightGripperPalm,
+   'RightGripperLeftFinger','RightGripperLeftFinger',
+   'RightGripperRightFinger','RightGripperRightFinger',
+   'RightGripperMidFinger','RightGripperMidFinger'
+ ]
+
+ # patch index for patches connected to the skin controller (index of filename, starts at 0) The index is according to the filenames described above, e.g.
+ # rightWrist1PatchExtTFIdDH=0 
+ control: [
+   0, 1, 2,
+   3, 4
+ ]

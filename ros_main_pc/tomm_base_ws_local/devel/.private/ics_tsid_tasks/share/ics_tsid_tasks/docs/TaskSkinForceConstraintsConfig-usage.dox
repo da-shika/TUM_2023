@@ -1,0 +1,14 @@
+\subsubsection usage Usage
+\verbatim
+<node name="" pkg="ics_tsid_tasks" type="">
+  <param name="mass" type="double" value="0" />
+  <param name="gain" type="double" value="0" />
+  <param name="damp" type="double" value="0" />
+  <param name="f_max" type="double" value="0" />
+  <param name="f_min" type="double" value="0" />
+  <param name="a_max" type="double" value="0" />
+  <param name="alpha" type="double" value="0" />
+  <param name="kp_str" type="str" value="" />
+</node>
+\endverbatim
+

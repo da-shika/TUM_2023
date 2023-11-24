@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="target_frame" default="base_link" /> 
+  <arg name="tf_prefix" default=""/>
+
+  <!-- add a visualization for proximity pointcloud -->
+  <node type="skin_visualizer_node" 
+        name="skin_visulization" 
+        pkg="skin_visualizer" 
+        args="$(arg target_frame) $(arg tf_prefix)" 
+        output="screen"/>
+
+</launch>

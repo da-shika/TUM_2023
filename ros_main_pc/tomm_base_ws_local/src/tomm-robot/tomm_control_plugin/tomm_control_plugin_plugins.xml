@@ -1,0 +1,11 @@
+<library path="lib/libtomm_control_plugin"> 
+
+  <class name="tomm_control_plugin/TOMMControlPlugin"
+         type="tomm_control_plugin::TOMMControlPlugin" 
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+        Controller plugin to interface with ros_control.
+    </description>
+  </class>
+
+</library>

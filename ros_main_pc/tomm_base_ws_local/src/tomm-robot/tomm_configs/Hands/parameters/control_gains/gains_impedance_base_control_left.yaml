@@ -1,0 +1,12 @@
+# Gains for the Proportional-Derivative Joint Space Controller
+# P and D gains for each axis. Same gain for all the fingers.
+impedance: 
+ #proportial
+ gains_p: [150.0, 150.0, 150.0]
+ 
+ #derivative
+ gains_d: [10.0, 10.0, 10.0]
+
+ #integral
+ gains_i: [0.10, 0.10, 0.10]
+

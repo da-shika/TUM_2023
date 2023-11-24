@@ -1,0 +1,8 @@
+#pragma once
+
+#include <stdint.h>
+
+namespace udp
+{
+  static const uint8_t InitData[8] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+}

@@ -1,0 +1,128 @@
+play_motion:
+  motions:
+    head_up_tum:
+      joints: [head_1_joint, head_2_joint]
+      points:
+      - positions: [0.0, 0.0]
+        time_from_start: 0.0
+    head_down_tum:
+      joints: [head_1_joint, head_2_joint]
+      points:
+      - positions: [0.0, 0.30]
+        time_from_start: 0.0
+    both_arms_up_tum:
+      joints: [arm_left_1_joint,arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint,arm_left_7_joint,
+               arm_right_1_joint, arm_right_2_joint, arm_right_3_joint,arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint,
+               hand_left_thumb_joint, hand_left_index_joint, hand_left_mrl_joint,
+               hand_right_thumb_joint,hand_right_index_joint, hand_right_mrl_joint, 
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [0.0, 0.94,1.57, 2.20, 0.0, 0.0, 0.0,
+                    0.0, 0.94,1.57, 2.20, 0.0, 0.0, 0.0,
+                    0.0, 0.0, 0.0,
+                    0.0, 0.0, 0.0,
+                    0.0, 0.0]
+        time_from_start: 0.0
+    ready_to_reach_tum:
+      joints: [arm_left_1_joint,arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint,arm_left_7_joint,
+               arm_right_1_joint, arm_right_2_joint, arm_right_3_joint, arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint,
+               hand_left_thumb_joint, hand_left_index_joint, hand_left_mrl_joint,
+               hand_right_thumb_joint,hand_right_index_joint, hand_right_mrl_joint,
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [0.45, 0.34,-0.06, 1.91, 0.54, -0.28, -1.53,
+                    0.45, 0.34,-0.06, 1.91, 0.54, -0.28, -1.53,
+                    0.0, 0.0, 0.0,
+                    0.0, 0.0, 0.0,
+                    0.0, 0.0]
+        time_from_start: 0.0
+    reach_knife_right_tum:
+      joints: [arm_right_1_joint, arm_right_2_joint, arm_right_3_joint, arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint,
+               hand_right_thumb_joint,hand_right_index_joint, hand_right_mrl_joint,
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [0.72, 0.34, -0.36, 1.06, 0.54, 1.39, -1.54,
+                    0.70, 0.70, 0.0,
+                    0.0, 0.0]
+        time_from_start: 0.0
+      - positions: [0.72, 0.34, -0.36, 1.06, 1.74, 1.39, -1.54,
+                    0.70, 0.70, 0.0,
+                    0.0, 0.0]
+        time_from_start: 7.0
+    reach_bread_left_tum:
+      joints: [arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint,
+               hand_left_thumb_joint, hand_left_index_joint, hand_left_mrl_joint,
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [0.80, 0.04,-0.71, 1.08, 0.54, 0.14, -1.54,
+                    0.0, 0.0, 0.0,
+                    0.0, 0.0]
+        time_from_start: 0.0
+    grasp_bread_left_tum:
+      joints: [arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint,
+               hand_left_index_joint, hand_left_mrl_joint, hand_left_thumb_joint,
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [0.80, 0.04, -0.71, 1.08, 0.54, 0.14, -1.54,
+                    0.59, 0.94, 0.80,
+                    0.0, 0.0]
+        time_from_start: 0.0
+    grasp_knife_right_tum:
+      joints: [arm_right_1_joint, arm_right_2_joint, arm_right_3_joint, arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint,
+               hand_right_index_joint, hand_right_mrl_joint, hand_right_thumb_joint,
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [0.72, 0.34,-0.36, 1.06, 0.54, 0.28, -1.54,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 0.0
+    move_knife_right_tum:
+      joints: [arm_right_1_joint, arm_right_2_joint, arm_right_3_joint, arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint,
+               hand_right_index_joint, hand_right_mrl_joint, hand_right_thumb_joint,
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [0.72, 0.34,-0.36, 1.31, 0.54, 0.28, -1.54,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 0.0
+      - positions: [1.11, -0.03,-1.02, 0.95, 0.54, 0.89, -1.71,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 7.0
+      - positions: [1.11, -0.03,-1.02, 0.79, 0.54, 0.89, -1.71,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 12.0
+    cut_right_tum:
+      joints: [arm_right_1_joint, arm_right_2_joint, arm_right_3_joint, arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint,
+               hand_right_index_joint, hand_right_mrl_joint, hand_right_thumb_joint,
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [1.11, -0.03,-1.02, 0.66, 0.54, 0.89, -1.78,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 0.0
+    move_back_knife_right_tum:
+      joints: [arm_right_1_joint, arm_right_2_joint, arm_right_3_joint, arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint,
+               hand_right_index_joint, hand_right_mrl_joint, hand_right_thumb_joint,
+               torso_1_joint, torso_2_joint]
+      points:
+      - positions: [1.11, -0.03,-1.02, 0.79, 0.54, 0.89, -1.71,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 0.0
+      - positions: [1.11, -0.03,-1.02, 0.95, 0.54, 0.89, -1.71,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 7.0
+      - positions: [0.72, 0.34,-0.36, 1.31, 0.54, 0.28, -1.54,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 12.0
+      - positions: [0.72, 0.34,-0.36, 1.06, 0.54, 0.28, -1.54,
+                    1.67, 1.65, 0.89,
+                    0.0, 0.0]
+        time_from_start: 20.0
+      
+      
+    

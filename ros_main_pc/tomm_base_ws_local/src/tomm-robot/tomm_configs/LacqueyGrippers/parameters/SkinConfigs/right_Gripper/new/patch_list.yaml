@@ -1,0 +1,15 @@
+patch_list:
+ [
+  'p100.xml',
+  'p101.xml',
+  'p102.xml',
+  'p103.xml',
+  'p104.xml',
+
+  'p106.xml',
+  'p107.xml',
+  'p108.xml',
+  'p109.xml',
+  'p110.xml',
+  'p111.xml',
+ ]

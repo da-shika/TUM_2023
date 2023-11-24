@@ -1,0 +1,460 @@
+# generated from genmsg/cmake/pkg-genmsg.cmake.em
+
+message(STATUS "walking_core_msgs: 4 messages, 1 services")
+
+set(MSG_I_FLAGS "-Iwalking_core_msgs:/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Icontrol_core_msgs:/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg")
+
+# Find all generators
+find_package(gencpp REQUIRED)
+find_package(geneus REQUIRED)
+find_package(genlisp REQUIRED)
+find_package(gennodejs REQUIRED)
+find_package(genpy REQUIRED)
+
+add_custom_target(walking_core_msgs_generate_messages ALL)
+
+# verify that message/service dependencies have not changed since configure
+
+
+
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg" NAME_WE)
+add_custom_target(_walking_core_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "walking_core_msgs" "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg" "std_msgs/Float64:std_msgs/Bool:control_core_msgs/Contact:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Polygon:std_msgs/Int64:geometry_msgs/Point32:geometry_msgs/Pose"
+)
+
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg" NAME_WE)
+add_custom_target(_walking_core_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "walking_core_msgs" "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg" "std_msgs/Float64:walking_core_msgs/FootStep:std_msgs/Bool:control_core_msgs/Contact:std_msgs/Header:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Polygon:std_msgs/Int64:geometry_msgs/Point32:geometry_msgs/Pose"
+)
+
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg" NAME_WE)
+add_custom_target(_walking_core_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "walking_core_msgs" "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg" ""
+)
+
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg" NAME_WE)
+add_custom_target(_walking_core_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "walking_core_msgs" "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg" "std_msgs/Float64:walking_core_msgs/FootStep:geometry_msgs/Point32:std_msgs/Bool:control_core_msgs/Contact:control_core_msgs/BodyId:std_msgs/Header:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Polygon:std_msgs/Int64:walking_core_msgs/WalkingPhase:geometry_msgs/Pose"
+)
+
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv" NAME_WE)
+add_custom_target(_walking_core_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "walking_core_msgs" "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv" "std_msgs/Bool:std_msgs/Int64:std_msgs/Float64"
+)
+
+#
+#  langs = gencpp;geneus;genlisp;gennodejs;genpy
+#
+
+### Section generating for lang: gencpp
+### Generating Messages
+_generate_msg_cpp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_cpp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_cpp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_cpp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/BodyId.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Services
+_generate_srv_cpp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Module File
+_generate_module_cpp(walking_core_msgs
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/walking_core_msgs
+  "${ALL_GEN_OUTPUT_FILES_cpp}"
+)
+
+add_custom_target(walking_core_msgs_generate_messages_cpp
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_cpp}
+)
+add_dependencies(walking_core_msgs_generate_messages walking_core_msgs_generate_messages_cpp)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_cpp _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_cpp _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_cpp _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_cpp _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_cpp _walking_core_msgs_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(walking_core_msgs_gencpp)
+add_dependencies(walking_core_msgs_gencpp walking_core_msgs_generate_messages_cpp)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS walking_core_msgs_generate_messages_cpp)
+
+### Section generating for lang: geneus
+### Generating Messages
+_generate_msg_eus(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_eus(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_eus(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_eus(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/BodyId.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Services
+_generate_srv_eus(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Module File
+_generate_module_eus(walking_core_msgs
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/walking_core_msgs
+  "${ALL_GEN_OUTPUT_FILES_eus}"
+)
+
+add_custom_target(walking_core_msgs_generate_messages_eus
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_eus}
+)
+add_dependencies(walking_core_msgs_generate_messages walking_core_msgs_generate_messages_eus)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_eus _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_eus _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_eus _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_eus _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_eus _walking_core_msgs_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(walking_core_msgs_geneus)
+add_dependencies(walking_core_msgs_geneus walking_core_msgs_generate_messages_eus)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS walking_core_msgs_generate_messages_eus)
+
+### Section generating for lang: genlisp
+### Generating Messages
+_generate_msg_lisp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_lisp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_lisp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_lisp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/BodyId.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Services
+_generate_srv_lisp(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Module File
+_generate_module_lisp(walking_core_msgs
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/walking_core_msgs
+  "${ALL_GEN_OUTPUT_FILES_lisp}"
+)
+
+add_custom_target(walking_core_msgs_generate_messages_lisp
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_lisp}
+)
+add_dependencies(walking_core_msgs_generate_messages walking_core_msgs_generate_messages_lisp)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_lisp _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_lisp _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_lisp _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_lisp _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_lisp _walking_core_msgs_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(walking_core_msgs_genlisp)
+add_dependencies(walking_core_msgs_genlisp walking_core_msgs_generate_messages_lisp)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS walking_core_msgs_generate_messages_lisp)
+
+### Section generating for lang: gennodejs
+### Generating Messages
+_generate_msg_nodejs(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_nodejs(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_nodejs(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_nodejs(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/BodyId.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Services
+_generate_srv_nodejs(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Module File
+_generate_module_nodejs(walking_core_msgs
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/walking_core_msgs
+  "${ALL_GEN_OUTPUT_FILES_nodejs}"
+)
+
+add_custom_target(walking_core_msgs_generate_messages_nodejs
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_nodejs}
+)
+add_dependencies(walking_core_msgs_generate_messages walking_core_msgs_generate_messages_nodejs)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_nodejs _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_nodejs _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_nodejs _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_nodejs _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_nodejs _walking_core_msgs_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(walking_core_msgs_gennodejs)
+add_dependencies(walking_core_msgs_gennodejs walking_core_msgs_generate_messages_nodejs)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS walking_core_msgs_generate_messages_nodejs)
+
+### Section generating for lang: genpy
+### Generating Messages
+_generate_msg_py(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_py(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_py(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs
+)
+_generate_msg_py(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/Contact.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/control_core_msgs/msg/BodyId.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Services
+_generate_srv_py(walking_core_msgs
+  "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Int64.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Float64.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs
+)
+
+### Generating Module File
+_generate_module_py(walking_core_msgs
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs
+  "${ALL_GEN_OUTPUT_FILES_py}"
+)
+
+add_custom_target(walking_core_msgs_generate_messages_py
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_py}
+)
+add_dependencies(walking_core_msgs_generate_messages walking_core_msgs_generate_messages_py)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_py _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_py _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_py _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_py _walking_core_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv" NAME_WE)
+add_dependencies(walking_core_msgs_generate_messages_py _walking_core_msgs_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(walking_core_msgs_genpy)
+add_dependencies(walking_core_msgs_genpy walking_core_msgs_generate_messages_py)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS walking_core_msgs_generate_messages_py)
+
+
+
+if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/walking_core_msgs)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/walking_core_msgs
+    DESTINATION ${gencpp_INSTALL_DIR}
+  )
+endif()
+if(TARGET std_msgs_generate_messages_cpp)
+  add_dependencies(walking_core_msgs_generate_messages_cpp std_msgs_generate_messages_cpp)
+endif()
+if(TARGET control_core_msgs_generate_messages_cpp)
+  add_dependencies(walking_core_msgs_generate_messages_cpp control_core_msgs_generate_messages_cpp)
+endif()
+if(TARGET geometry_msgs_generate_messages_cpp)
+  add_dependencies(walking_core_msgs_generate_messages_cpp geometry_msgs_generate_messages_cpp)
+endif()
+
+if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/walking_core_msgs)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/walking_core_msgs
+    DESTINATION ${geneus_INSTALL_DIR}
+  )
+endif()
+if(TARGET std_msgs_generate_messages_eus)
+  add_dependencies(walking_core_msgs_generate_messages_eus std_msgs_generate_messages_eus)
+endif()
+if(TARGET control_core_msgs_generate_messages_eus)
+  add_dependencies(walking_core_msgs_generate_messages_eus control_core_msgs_generate_messages_eus)
+endif()
+if(TARGET geometry_msgs_generate_messages_eus)
+  add_dependencies(walking_core_msgs_generate_messages_eus geometry_msgs_generate_messages_eus)
+endif()
+
+if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/walking_core_msgs)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/walking_core_msgs
+    DESTINATION ${genlisp_INSTALL_DIR}
+  )
+endif()
+if(TARGET std_msgs_generate_messages_lisp)
+  add_dependencies(walking_core_msgs_generate_messages_lisp std_msgs_generate_messages_lisp)
+endif()
+if(TARGET control_core_msgs_generate_messages_lisp)
+  add_dependencies(walking_core_msgs_generate_messages_lisp control_core_msgs_generate_messages_lisp)
+endif()
+if(TARGET geometry_msgs_generate_messages_lisp)
+  add_dependencies(walking_core_msgs_generate_messages_lisp geometry_msgs_generate_messages_lisp)
+endif()
+
+if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/walking_core_msgs)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/walking_core_msgs
+    DESTINATION ${gennodejs_INSTALL_DIR}
+  )
+endif()
+if(TARGET std_msgs_generate_messages_nodejs)
+  add_dependencies(walking_core_msgs_generate_messages_nodejs std_msgs_generate_messages_nodejs)
+endif()
+if(TARGET control_core_msgs_generate_messages_nodejs)
+  add_dependencies(walking_core_msgs_generate_messages_nodejs control_core_msgs_generate_messages_nodejs)
+endif()
+if(TARGET geometry_msgs_generate_messages_nodejs)
+  add_dependencies(walking_core_msgs_generate_messages_nodejs geometry_msgs_generate_messages_nodejs)
+endif()
+
+if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs)
+  install(CODE "execute_process(COMMAND \"/usr/bin/python3\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs\")")
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/walking_core_msgs
+    DESTINATION ${genpy_INSTALL_DIR}
+  )
+endif()
+if(TARGET std_msgs_generate_messages_py)
+  add_dependencies(walking_core_msgs_generate_messages_py std_msgs_generate_messages_py)
+endif()
+if(TARGET control_core_msgs_generate_messages_py)
+  add_dependencies(walking_core_msgs_generate_messages_py control_core_msgs_generate_messages_py)
+endif()
+if(TARGET geometry_msgs_generate_messages_py)
+  add_dependencies(walking_core_msgs_generate_messages_py geometry_msgs_generate_messages_py)
+endif()

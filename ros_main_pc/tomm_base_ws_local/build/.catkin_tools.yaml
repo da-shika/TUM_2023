@@ -1,0 +1,6 @@
+devel_space: /home/genki/ros/workspaces/tomm_base_ws_local/devel
+install: false
+install_space: /home/genki/ros/workspaces/tomm_base_ws_local/install
+profile: default
+source_space: /home/genki/ros/workspaces/tomm_base_ws_local/src
+workspace: /home/genki/ros/workspaces/tomm_base_ws_local

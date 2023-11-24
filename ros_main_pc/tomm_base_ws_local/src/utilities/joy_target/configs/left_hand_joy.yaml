@@ -1,0 +1,9 @@
+# Control over right hand frame
+joy_target:
+  topic: /teleop/hand_link_left
+  joy_topic: /joy_exp_mng
+  target_frame: hand_link_left
+  parent_frame: base_link
+  mass: [1,1,1,1,1,1]
+  spring: [2,2,2,2,2,2]
+  damping: [6,6,6,6,6,6]

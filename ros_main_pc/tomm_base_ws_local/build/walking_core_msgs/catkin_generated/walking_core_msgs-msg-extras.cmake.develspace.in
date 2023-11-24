@@ -1,0 +1,2 @@
+set(walking_core_msgs_MESSAGE_FILES "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootStep.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/FootSteps.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingPhase.msg;/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/msg/WalkingStates.msg")
+set(walking_core_msgs_SERVICE_FILES "/home/genki/ros/workspaces/tomm_base_ws_local/src/utilities/walking_core_msgs/srv/PlanFootsteps.srv")

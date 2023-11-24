@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~v_damp" : \b [double]  min: 0.0, default: 0, max: 0.5
+- \b "~v_max" : \b [double]  min: 0.0, default: 0, max: 0.5
+- \b "~d_min" : \b [double]  min: 0.01, default: 0, max: 0.06
+- \b "~d_start" : \b [double]  min: 0.03, default: 0, max: 0.1
+- \b "~alpha" : \b [double]  min: 0.0, default: 0, max: 0.999
+- \b "~kp_str" : \b [str]  min: , default: , max: 
+

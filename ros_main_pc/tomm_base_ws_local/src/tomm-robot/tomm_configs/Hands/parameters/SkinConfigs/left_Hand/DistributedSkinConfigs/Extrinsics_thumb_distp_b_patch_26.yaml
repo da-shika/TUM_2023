@@ -1,0 +1,13 @@
+# This file has been automatically generated using cellularskin_tutorials/create_new_patch.launch
+skinpatch_26_extrinsics:
+ # Reference frame for the patch TF
+ base_frame: '/l_hand_link_thumb_3_tip'
+
+ # Pose of Patch thumb_distp_b_patch_26 wrt CF /l_hand_link_thumb_3_tip
+ pose:
+  # RPY (XYZ) in DEG
+  rotation: [0, 0, 0]
+
+  # Position (XYZ) in m
+  translation: [0, 0, 0.013]
+ config_file: 'thumb_distp_b_patch_26.ini'

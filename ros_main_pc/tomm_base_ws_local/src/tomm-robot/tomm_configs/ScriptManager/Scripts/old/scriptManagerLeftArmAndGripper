@@ -1,0 +1,360 @@
+def driverProg():
+  HOSTNAME             = "192.168.1.3"
+  MANAGER_PORT         = 50004
+  TRAJ_PORT            = 50005
+  GRIPPER_PORT         = 50006
+
+  START_GRIPPER_CMD    = 0
+  STOP_GRIPPER_CMD     = 1
+  START_TRAJ_POS_CMD   = 2
+  STOP_TRAJ_POS_CMD    = 3
+  START_TRAJ_VEL_CMD   = 4
+  STOP_TRAJ_VEL_CMD    = 5
+  QUIT_CMD             = 6
+  
+  ACTIVATE_GRIPPER_CMD    = 20
+  DEACTIVATE_GRIPPER_CMD  = 21
+  OPEN_GRIPPER_CMD        = 22
+  CLOSE_GRIPPER_CMD       = 23
+
+  OK_RESP      = 1
+  ERROR_RESP   = 2
+
+  GRIPPER_THREAD_STATE   = False
+  TRAJ_POS_THREAD_STATE  = False
+  TRAJ_VEL_THREAD_STATE  = False
+
+  MULT_jointstate = 100000000.0
+  MULT_time = 1000000.0
+  MULT_blend = 1000.0
+
+  VEL_MAX = 2.0
+
+  q=[0,0,0,0,0,0]
+  r=0
+
+  TRAJ_POS_FLAG = False
+  TRAJ_VEL_FLAG = False 
+
+  qp=[0,0,0,0,0,0]
+
+
+  def send_resp(msg):
+    enter_critical
+    socket_send_int(msg)
+    exit_critical
+  end
+
+  def setGripperThreadState(newVal):
+    enter_critical
+    GRIPPER_THREAD_STATE = newVal
+    exit_critical
+  end
+
+  def setTrajPosThreadState(newVal):
+    enter_critical
+    TRAJ_POS_THREAD_STATE = newVal
+    exit_critical
+  end
+
+  def setTrajPosFlag(newVal):
+    enter_critical
+    TRAJ_POS_FLAG = newVal
+    exit_critical
+  end
+
+  def setTrajVelFlag(newVal):
+    enter_critical
+    TRAJ_VEL_FLAG = newVal
+    exit_critical
+  end
+
+  def setTrajVelThreadState(newVal):
+    enter_critical
+    TRAJ_VEL_THREAD_STATE = newVal
+    exit_critical
+  end 
+
+  thread gripperThread():
+    textmsg("Started gripper thread.")
+    textmsg("Wait for connection to gripper server ...")
+    ret = socket_open(HOSTNAME, GRIPPER_PORT, "socket_gripper")
+    if ret == False:
+      send_resp(ERROR_RESP)
+      return True
+    else:
+      send_resp(OK_RESP)
+    end
+    textmsg("Gripper socket opened")
+
+    # init: open, inactive
+    set_tool_voltage(12)
+    set_digital_out(9,False)
+    set_digital_out(8,True)
+    sleep(1)
+    set_tool_voltage(0)
+    set_digital_out(9,True)
+
+    while GRIPPER_THREAD_STATE:
+      params = socket_read_binary_integer(1, "socket_gripper")
+      if params[0] == 0:
+        textmsg("Socket gripper read timed out.")
+      else:
+        mtype = params[1]
+        if mtype == ACTIVATE_GRIPPER_CMD:
+          textmsg("Received ACTIVATE_GRIPPER_CMD")
+          set_tool_voltage(12)
+          set_digital_out(9,False)
+
+        elif mtype == DEACTIVATE_GRIPPER_CMD:
+          textmsg("Received DEACTIVATE_GRIPPER_CMD")
+          set_tool_voltage(0)
+          set_digital_out(9,True)
+
+        elif mtype == OPEN_GRIPPER_CMD:
+          textmsg("Received OPEN_GRIPPER_CMD")
+          set_digital_out(8,True)
+
+        elif mtype == CLOSE_GRIPPER_CMD:
+          textmsg("Received CLOSE_GRIPPER_CMD")
+          set_digital_out(8,False)
+
+        else:
+          textmsg("Gripper: Unknown command")
+        end
+      end
+    end
+
+    textmsg("Close gripper socket ...")
+    socket_close("socket_gripper")
+    textmsg("Socket closed.")
+    textmsg("Stopped gripper thread.")
+  end
+
+  thread trajPosThread():
+    textmsg("Started traj pos thread.")
+    textmsg("Wait for connection to traj server ...")
+    ret = socket_open(HOSTNAME, TRAJ_PORT, "socket_traj")
+    if ret == False:
+      setTrajPosThreadState(False)
+      send_resp(ERROR_RESP)
+      return True
+    else:
+      send_resp(OK_RESP)
+    end
+    textmsg("Traj pos socket opened.")
+
+    while TRAJ_POS_THREAD_STATE:
+      params = socket_read_binary_integer(1+6+4, "socket_traj")
+      if params[0] == 0:
+        textmsg("Socket traj pos read timed out.")
+      else:
+        # Unpacks the parameters
+        waypoint_id = params[1]
+        #textmsg("waypoint_id: ", waypoint_id)
+        q = [params[2] / MULT_jointstate,
+             params[3] / MULT_jointstate,
+             params[4] / MULT_jointstate,
+             params[5] / MULT_jointstate,
+             params[6] / MULT_jointstate,
+             params[7] / MULT_jointstate]
+
+        a = params[8] / MULT_jointstate
+        v = params[9] / MULT_jointstate
+        t = params[10] / MULT_time
+        r = params[11] / MULT_blend
+
+      if TRAJ_POS_FLAG == False:
+        setTrajPosFlag(True)
+      else:
+      end
+
+      end
+    end
+    textmsg("Close traj socket ...")
+    socket_close("socket_traj")
+    textmsg("Socket closed.")
+    textmsg("Stopped traj pos thread.")
+  end
+
+  thread trajPosCmdThread():
+    textmsg("Started traj pos cmd thread.")
+
+    while TRAJ_POS_THREAD_STATE:
+
+      if TRAJ_POS_FLAG == False:
+        sleep(0.008)
+        continue
+      else:
+      end
+
+      textmsg("q")
+      textmsg(q[0])
+      textmsg(q[1])
+      textmsg(q[2])
+      textmsg(q[3])
+      textmsg(q[4])
+      textmsg(q[5])
+      sleep(1)
+
+      #movej(q, 100.0, 27.0, 0.002, r)
+    end
+    textmsg("Stopped traj pos cmd thread.")
+  end
+
+  thread trajVelThread():
+    textmsg("Started traj vel thread.")
+    textmsg("Wait for connection to traj server ...")
+    ret = socket_open(HOSTNAME, TRAJ_PORT, "socket_traj")
+    if ret == False:
+      setTrajVelThreadState(False)
+      send_resp(ERROR_RESP)
+      return True
+    else:
+      send_resp(OK_RESP)
+    end
+    textmsg("Traj vel socket opened.")
+
+    while TRAJ_VEL_THREAD_STATE:
+      params = socket_read_binary_integer(1+6+4, "socket_traj")
+      if params[0] == 0:
+        textmsg("Socket traj vel read timed out.")
+      else:
+        # Unpacks the parameters
+        waypoint_id = params[1]
+        #textmsg("waypoint_id: ", waypoint_id)
+        if waypoint_id > 2:
+          qp = [params[2] / MULT_jointstate,
+               params[3] / MULT_jointstate,
+               params[4] / MULT_jointstate,
+               params[5] / MULT_jointstate,
+               params[6] / MULT_jointstate,
+               params[7] / MULT_jointstate]
+
+          if TRAJ_VEL_FLAG == False:
+            setTrajVelFlag(True)
+          else:
+          end
+
+        else:
+        qp = [0,0,0,0,0,0]
+        textmsg("ZerosRead")
+        end
+
+
+
+      end
+    end
+    qp = [0,0,0,0,0,0]
+    textmsg("Close traj socket ...")
+    socket_close("socket_traj")
+    textmsg("Socket closed.")
+    textmsg("Stopped traj vel thread.")
+  end
+
+  thread trajVelCmdThread():
+    textmsg("Started traj vel cmd thread.")
+    qp = [0,0,0,0,0,0]
+
+    while TRAJ_VEL_THREAD_STATE:
+
+      if TRAJ_VEL_FLAG == False:
+        sleep(0.008)
+      else:
+        i = 0
+        while i < 6:
+          if qp[i] > VEL_MAX:
+            #textmsg("qp")
+            #textmsg(qp[0])
+            #textmsg(qp[1])
+            #textmsg(qp[2])
+            #textmsg(qp[3])
+            #textmsg(qp[4])
+            #textmsg(qp[5])
+            qp = [0,0,0,0,0,0] 
+            break
+          else:
+          end
+          i = i + 1
+        end
+				#qp=[0,0,0,0,0,0]
+        speedj(qp,11,0.008)
+      end
+    end
+      qpl = [0,0,0,0,0,0]
+      speedj(qpl,11,0.008)
+    textmsg("Stopped traj vel cmd thread.")
+  end
+
+  
+  socket_open(HOSTNAME, MANAGER_PORT, "socket_0")
+  sync()
+
+  while True:
+    params = socket_read_binary_integer(1)
+    
+    if params[0] == 0:
+      #textmsg("Main Thread Received nothing")
+    elif params[0] > 1:
+      textmsg("Manager: The cmd is too long.")
+    else:
+      mtype = params[1]
+      if mtype == QUIT_CMD:
+        textmsg("Mgr: QUIT_CMD")
+        break
+
+      elif mtype == START_GRIPPER_CMD:
+        textmsg("Mgr: START_GRIPPER_CMD")
+        setGripperThreadState(True)
+        thread_gripper = run gripperThread()
+
+      elif mtype == STOP_GRIPPER_CMD:
+        textmsg("Mgr: STOP_GRIPPER_CMD")
+        setGripperThreadState(False)
+        send_resp(OK_RESP)
+
+      elif mtype == START_TRAJ_POS_CMD:
+        textmsg("Mgr: START_TRAJ_POS_CMD")
+        setTrajPosThreadState(True)
+        setTrajPosFlag(False) 
+        thread_traj_pos = run trajPosThread()
+        thread_traj_pos_cmd = run trajPosCmdThread()
+
+      elif mtype == STOP_TRAJ_POS_CMD:
+        textmsg("Mgr: STOP_TRAJ_POS_CMD")
+        setTrajPosThreadState(False)
+        send_resp(OK_RESP)
+
+      elif mtype == START_TRAJ_VEL_CMD:
+        textmsg("Mgr: START_TRAJ_VEL_CMD")
+        setTrajVelFlag(False) 
+        setTrajVelThreadState(True)
+        thread_traj_vel = run trajVelThread()
+        thread_traj_vel_cmd = run trajVelCmdThread()
+
+      elif mtype == STOP_TRAJ_VEL_CMD:
+        textmsg("Mgr: STOP_TRAJ_VEL_CMD")
+        setTrajVelThreadState(False)
+        send_resp(OK_RESP)
+
+      else:
+        textmsg("Manager: Unknown command")
+        textmsg(mtype)
+      end
+    end
+  end
+
+  # Stop threads
+  setGripperThreadState(False)
+  setTrajPosThreadState(False)
+  setTrajVelThreadState(False)
+  sleep(1)
+
+  textmsg("Close manager socket ...")
+  socket_close("socket_0")
+  textmsg("Socket closed.")
+
+  sleep(1)
+  textmsg("Clean exit.")
+end
+driverProg()

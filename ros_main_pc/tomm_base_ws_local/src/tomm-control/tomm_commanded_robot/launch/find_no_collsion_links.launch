@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!-- find_no_collision_links -->
+  <node name="find_no_collision_links" 
+        pkg="ics_robot_wrapper" 
+        type="find_no_collision_links" 
+        output="screen" 
+        args="$(find tomm_bringup)/robots/tomm.urdf $(find tomm_bringup)/robots/tomm.srdf $(find tomm_description)"/>
+
+</launch>
+

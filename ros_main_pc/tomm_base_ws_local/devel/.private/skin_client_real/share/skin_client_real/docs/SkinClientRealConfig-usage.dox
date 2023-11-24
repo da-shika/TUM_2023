@@ -1,0 +1,6 @@
+\subsubsection usage Usage
+\verbatim
+<node name="skin_client_real_node" pkg="skin_client_real" type="skin_client_real_node">
+</node>
+\endverbatim
+

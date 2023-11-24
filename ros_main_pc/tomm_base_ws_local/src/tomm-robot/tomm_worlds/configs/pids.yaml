@@ -1,0 +1,13 @@
+gazebo_ros_control/pid_gains:
+  r_shoulder_pan_joint: {p: 10000, i: 0, d: 0}
+  r_shoulder_lift_joint: {p: 10000, i: 0, d: 0}
+  r_elbow_joint: {p: 10000, i: 0, d: 0}
+  r_wrist_1_joint: {p: 10000, i: 0, d: 0}
+  r_wrist_2_joint: {p: 10000, i: 0, d: 0}
+  r_wrist_3_joint: {p: 10000, i: 0, d: 0}
+  l_shoulder_pan_joint: {p: 10000, i: 0, d: 0}
+  l_shoulder_lift_joint: {p: 10000, i: 0, d: 0}
+  l_elbow_joint: {p: 10000, i: 0, d: 0}
+  l_wrist_1_joint: {p: 10000, i: 0, d: 0}
+  l_wrist_2_joint: {p: 10000, i: 0, d: 0}
+  l_wrist_3_joint: {p: 10000, i: 0, d: 0}

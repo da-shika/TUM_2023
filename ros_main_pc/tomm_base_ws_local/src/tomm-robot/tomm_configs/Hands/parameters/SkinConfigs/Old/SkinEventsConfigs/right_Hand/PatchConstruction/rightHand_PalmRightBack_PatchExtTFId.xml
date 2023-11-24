@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE scfg>
+<SkinConfig numberOfCells="3" numberOfPatchExtrinsics="1">
+    <patchExtrinsics patchId="228" baseFrame="/r_hand_base_link" dhFrame="dh_1" jointId="0">
+        <tf_rootCell_base>
+            <pos>
+                <matrix rows="3" cols="1">
+                    <element row="0" col="0">-0.022338891402</element>
+                    <element row="1" col="0">-0.057443961501</element>
+                    <element row="2" col="0">-0.019484750926</element>
+                </matrix>
+            </pos>
+            <rot>
+                <matrix rows="3" cols="3">
+                    <element row="0" col="0">-0.007686320458</element>
+                    <element row="0" col="1">-0.997627484347</element>
+                    <element row="0" col="2">0.068412885865</element>
+                    <element row="1" col="0">-0.081781807519</element>
+                    <element row="1" col="1">-0.067558574112</element>
+                    <element row="1" col="2">-0.994357870700</element>
+                    <element row="2" col="0">0.996620618107</element>
+                    <element row="2" col="1">-0.013237882708</element>
+                    <element row="2" col="2">-0.081068502050</element>
+                </matrix>
+            </rot>
+        </tf_rootCell_base>
+        <tf_base_dh>
+            <pos>
+                <matrix rows="3" cols="1">
+                    <element row="0" col="0">0.000000000000</element>
+                    <element row="1" col="0">0.000000000000</element>
+                    <element row="2" col="0">0.000000000000</element>
+                </matrix>
+            </pos>
+            <rot>
+                <matrix rows="3" cols="3">
+                    <element row="0" col="0">1.000000000000</element>
+                    <element row="0" col="1">0.000000000000</element>
+                    <element row="0" col="2">0.000000000000</element>
+                    <element row="1" col="0">0.000000000000</element>
+                    <element row="1" col="1">1.000000000000</element>
+                    <element row="1" col="2">0.000000000000</element>
+                    <element row="2" col="0">0.000000000000</element>
+                    <element row="2" col="1">0.000000000000</element>
+                    <element row="2" col="2">1.000000000000</element>
+                </matrix>
+            </rot>
+        </tf_base_dh>
+    </patchExtrinsics>
+    <cell id="46" patch="228" segment="1">
+        <rootCellId>45</rootCellId>
+        <neighbors id="46" size="4">
+            <neighbor port="1" id="45"/>
+            <neighbor port="2" id="47"/>
+            <neighbor port="3" id="0"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">-0.023753910219</element>
+                <element row="1" col="0">-0.014393127399</element>
+                <element row="2" col="0">0.000432737599</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.999174476202</element>
+                <element row="0" col="1">-0.033740499410</element>
+                <element row="0" col="2">0.022626197298</element>
+                <element row="1" col="0">0.033230949019</element>
+                <element row="1" col="1">0.999193715885</element>
+                <element row="1" col="2">0.022530471849</element>
+                <element row="2" col="0">-0.023368143526</element>
+                <element row="2" col="1">-0.021759982400</element>
+                <element row="2" col="2">0.999490086511</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="47" patch="228" segment="1">
+        <rootCellId>45</rootCellId>
+        <neighbors id="47" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="46"/>
+            <neighbor port="4" id="0"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">0.000374531004</element>
+                <element row="1" col="0">-0.027923359284</element>
+                <element row="2" col="0">0.002107182176</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">0.995109172330</element>
+                <element row="0" col="1">0.005592293698</element>
+                <element row="0" col="2">-0.098622823912</element>
+                <element row="1" col="0">0.003160765749</element>
+                <element row="1" col="1">0.996082350109</element>
+                <element row="1" col="2">0.088373985769</element>
+                <element row="2" col="0">0.098730667500</element>
+                <element row="2" col="1">-0.088253487478</element>
+                <element row="2" col="2">0.991193007059</element>
+            </matrix>
+        </rot>
+    </cell>
+    <cell id="45" patch="228" segment="1">
+        <rootCellId>45</rootCellId>
+        <neighbors id="45" size="4">
+            <neighbor port="1" id="0"/>
+            <neighbor port="2" id="0"/>
+            <neighbor port="3" id="35"/>
+            <neighbor port="4" id="46"/>
+        </neighbors>
+        <pos>
+            <matrix rows="3" cols="1">
+                <element row="0" col="0">-0.022338891402</element>
+                <element row="1" col="0">-0.057443961501</element>
+                <element row="2" col="0">-0.019484750926</element>
+            </matrix>
+        </pos>
+        <rot>
+            <matrix rows="3" cols="3">
+                <element row="0" col="0">-0.007686320458</element>
+                <element row="0" col="1">-0.997627484347</element>
+                <element row="0" col="2">0.068412885865</element>
+                <element row="1" col="0">-0.081781807519</element>
+                <element row="1" col="1">-0.067558574112</element>
+                <element row="1" col="2">-0.994357870700</element>
+                <element row="2" col="0">0.996620618107</element>
+                <element row="2" col="1">-0.013237882708</element>
+                <element row="2" col="2">-0.081068502050</element>
+            </matrix>
+        </rot>
+    </cell>
+</SkinConfig>

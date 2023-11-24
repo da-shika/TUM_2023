@@ -1,0 +1,10 @@
+# omnibase admittance interface parameters
+omnibase:
+  m_adm:  [10, 10, 2.5]         # virtual mass 10kg, 2.5kg/s^2
+  d_adm:  [20, 20, 8]           # virtual damping 20 N/m/s
+  base_frame: "/base_footprint" # frame attached to base center
+  world_frame: "/odom"          # parent of base frame
+  width: 1.0                    # base size in x direction
+  lenght: 0.7                   # base size in y direction
+  height: 0.5                   # base height in z base axis
+  inflation: 0.3                # infation distance

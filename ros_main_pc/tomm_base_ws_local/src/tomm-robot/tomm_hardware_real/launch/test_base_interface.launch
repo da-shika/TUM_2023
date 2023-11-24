@@ -1,0 +1,14 @@
+<!-- full body controller launch file -->
+<launch>
+
+  <!-- omnibase driver parameter -->
+  <rosparam command="load" file="$(find tomm_hardware_real)/configs/omnibase/omnibase_driver.yaml" />
+
+    <!-- ***************** tom both arm controller ***************** -->
+    <group ns="tomm">
+        <!-- ics control framework -->
+        <node pkg="tomm_hardware_real" type="test_base_interface" name="test_base_interface" output="screen">
+        </node>
+    </group>
+
+</launch>

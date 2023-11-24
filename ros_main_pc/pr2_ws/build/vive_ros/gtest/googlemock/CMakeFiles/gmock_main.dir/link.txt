@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -include /home/genki/libraries/openvr/samples/shared/compat.h  -shared -Wl,-soname,libgmock_main.so -o ../lib/libgmock_main.so CMakeFiles/gmock_main.dir/src/gmock_main.cc.o  -Wl,-rpath,/home/genki/ros/workspace/pr2_ws/build/vive_ros/gtest/lib ../lib/libgmock.so ../lib/libgtest.so -lpthread 

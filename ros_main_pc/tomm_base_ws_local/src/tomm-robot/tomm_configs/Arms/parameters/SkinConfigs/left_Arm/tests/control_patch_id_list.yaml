@@ -1,0 +1,6 @@
+# list of patch ids of patches which are used in control
+control_patch_id_list:
+ [
+  200,
+  201,
+ ]

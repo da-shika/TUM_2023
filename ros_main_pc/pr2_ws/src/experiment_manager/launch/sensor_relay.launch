@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="depth_image_unpacker" 
+        type="republish" 
+        pkg="image_transport" 
+        args="compressed in:=/camera/depth/image_repub raw out:=/camera/depth/image_raw_local" /> 
+
+  <node name="rgb_image_unpacker" 
+        type="republish" 
+        pkg="image_transport" 
+        args="compressed in:=/camera/rgb/image_repub raw out:=/camera/rgb/image_raw_local" /> 
+
+</launch>

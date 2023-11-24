@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot name="reemc" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find tomm_description)/urdf/sensors/skin.gazebo.xacro" />
+  <xacro:property name="update_rate"       value="100.0" />
+  <xacro:property name="min_range"       value="0.0" />
+  <xacro:property name="max_range"       value="0.1" />
+
+  <!-- right arm -->
+  <xacro:reemc_skin name="tomm_p101e" parent="torso_link" update_rate="${update_rate}" min_range="${min_range}" max_range="${max_range}"/>
+  <xacro:reemc_skin name="tomm_p102e" parent="r_upper_arm_link" update_rate="${update_rate}" min_range="${min_range}" max_range="${max_range}"/>
+  <xacro:reemc_skin name="tomm_p103e" parent="r_forearm_link" update_rate="${update_rate}" min_range="${min_range}" max_range="${max_range}"/>
+
+</robot>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!-- empty strings are not allowed for namespace ! -> "/" -->
+  <arg name="ns" default="/tomm" />
+  
+  <!-- Load all parameter -->
+  <group ns="$(arg ns)">
+
+    <!-- control parameters -->
+    <rosparam command="load" file="$(find tomm_bringup)/configs/control_sim.yaml" subst_value="True"/> 
+   
+    <!-- task parameters --> 
+    <rosparam command="load" file="$(find tomm_bringup)/configs/tasks.yaml" subst_value="True"/> 
+
+  </group>  
+
+  <!-- test -->
+  <node name="test_loading" pkg="tomm_commanded_robot" type="loading" output="screen"/>
+
+</launch>
+

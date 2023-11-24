@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- upload all skin configurations to param server -->
+  <include file="$(find tomm_skin)/launch/upload_skin.launch"/>
+
+  <group ns="skin_real">
+
+    <!-- load real skin parameter into node namespace -->
+    <rosparam command="load" file="$(find skin_client_real)/configs/config.yaml"/>
+
+    <!-- real skin servers -->
+    <node name="skin_client_real_node" pkg="skin_client_real" type="skin_client_real_node"
+          args=" 
+            $(find tomm_skin)/launch/configs/left_hand/left_hand_back.xml
+            $(find tomm_skin)/launch/configs/left_hand/left_hand_inside.xml
+            $(find tomm_skin)/launch/configs/left_hand/left_hand_outside.xml
+            $(find tomm_skin)/launch/configs/left_hand/left_hand_palm.xml
+            $(find tomm_skin)/launch/configs/right_hand/right_hand_back.xml
+            $(find tomm_skin)/launch/configs/right_hand/right_hand_inside.xml
+            $(find tomm_skin)/launch/configs/right_hand/right_hand_outside.xml
+            $(find tomm_skin)/launch/configs/right_hand/right_hand_palm.xml" output="screen" >
+    </node>
+
+  </group>
+
+</launch>

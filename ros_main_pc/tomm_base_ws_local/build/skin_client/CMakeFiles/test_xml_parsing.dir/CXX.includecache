@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/genki/ros/workspaces/tomm_base_ws_local/src/skin/skin_client/include/skin_client/pugixml/pugiconfig.h
+
+/home/genki/ros/workspaces/tomm_base_ws_local/src/skin/skin_client/include/skin_client/pugixml/pugixml.h
+skin_client/pugixml/pugiconfig.h
+-
+stddef.h
+-
+exception
+-
+iterator
+-
+iosfwd
+-
+string
+-
+
+/home/genki/ros/workspaces/tomm_base_ws_local/src/skin/skin_client/include/skin_client/utilities.h
+skin_client/pugixml/pugixml.h
+-
+eigen3/Eigen/Dense
+-
+vector
+-
+numeric
+-
+
+/home/genki/ros/workspaces/tomm_base_ws_local/src/skin/skin_client/src/tests/test_xml_parsing.cpp
+skin_client/utilities.h
+-
+iostream
+-
+

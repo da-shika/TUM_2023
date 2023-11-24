@@ -1,0 +1,7 @@
+set(gesture_generation_SETUP_PY_SETUP_MODULE "distutils.core")
+set(gesture_generation_SETUP_PY_VERSION "0.0.0")
+set(gesture_generation_SETUP_PY_SCRIPTS "")
+set(gesture_generation_SETUP_PY_PACKAGES "gesture_generation")
+set(gesture_generation_SETUP_PY_PACKAGE_DIRS "include/gesture_generation")
+set(gesture_generation_SETUP_PY_MODULES "")
+set(gesture_generation_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,5 @@
+uint8 CONNECTION_STATE_INIT
+uint8 CONNECTION_STATE_START
+uint8 connection_state          # connection state
+---
+RobotState state                # robot state

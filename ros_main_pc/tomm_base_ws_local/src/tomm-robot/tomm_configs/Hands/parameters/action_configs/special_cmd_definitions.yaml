@@ -1,0 +1,4 @@
+#definitions for the special commands for each ACTION that use them
+hand_actions_special_cmds:
+ STATE_JOINT:
+  s_cmd: ['none', 'round_trip']

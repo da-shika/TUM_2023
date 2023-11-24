@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Contact generation over whole body -->
+  <node type="whole_body_contact_gen_node" 
+        name="whole_body_contact" 
+        pkg="skin_contact_generator" 
+        output="screen"/>
+
+</launch>

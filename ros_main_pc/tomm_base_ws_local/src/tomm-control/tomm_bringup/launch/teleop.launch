@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="ns" default="tomm" />
+
+    <group ns="$(arg ns)">
+        <!-- Load parameters -->
+        <rosparam command="load" file="$(find tomm_bringup)/configs/teleop.yaml"/>
+
+        <!-- node -->
+        <node name="robot_markers_node"
+                pkg="joy_target"
+                type="marker_target_node"
+                output="screen"/>    
+    </group>
+
+</launch>

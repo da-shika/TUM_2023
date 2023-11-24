@@ -1,0 +1,13 @@
+# ordered lists of patchs with additional configs
+skin_patch_ctrl_config:
+ 
+ # patch file names (ommitting .xml file type), in PatchConstruction folder
+ filenames: [
+   'p1e','p2edh','p3edh'
+ ]
+ 
+ # patch namespaces
+ namespaces: ['Torso', 'RightUpperArm', 'RightForeArm']
+
+ # patch index for patches connected to the skin controller (index of filename, starts at 0)
+ control: [1, 2]

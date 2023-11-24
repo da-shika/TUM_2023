@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<robot name="reemc" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="reemc_skin" params="name parent update_rate min_range max_range">
+
+    <gazebo reference="${parent}">
+      <sensor type="skin" name="${name}_patch">
+        <always_on>true</always_on>
+        <pose>0 0 0 0 0 0</pose>
+        <visualize>false</visualize>
+        <update_rate>${update_rate}</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>0</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>${min_range}</min>
+            <max>${max_range}</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+        <plugin name="gazebo_skin_plugin" filename="libgazebo_skin_plugin.so">
+          <frameName>/${parent}</frameName>
+          <topicName>${name}</topicName>
+          <gaussianNoise>0.0</gaussianNoise>
+          <updateRate>${update_rate}</updateRate>
+          <alwaysOn>true</alwaysOn>
+        </plugin>
+      </sensor>
+    </gazebo>
+
+  </xacro:macro>
+
+</robot>

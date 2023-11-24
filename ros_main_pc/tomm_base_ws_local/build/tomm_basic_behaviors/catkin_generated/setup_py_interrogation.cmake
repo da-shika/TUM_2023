@@ -1,0 +1,7 @@
+set(tomm_basic_behaviors_SETUP_PY_SETUP_MODULE "distutils.core")
+set(tomm_basic_behaviors_SETUP_PY_VERSION "0.0.0")
+set(tomm_basic_behaviors_SETUP_PY_SCRIPTS "")
+set(tomm_basic_behaviors_SETUP_PY_PACKAGES "")
+set(tomm_basic_behaviors_SETUP_PY_PACKAGE_DIRS "")
+set(tomm_basic_behaviors_SETUP_PY_MODULES "")
+set(tomm_basic_behaviors_SETUP_PY_MODULE_DIRS "")

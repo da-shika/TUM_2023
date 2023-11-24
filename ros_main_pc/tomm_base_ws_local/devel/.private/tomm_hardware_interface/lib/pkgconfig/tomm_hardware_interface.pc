@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/tomm_hardware_interface
+
+Name: tomm_hardware_interface
+Description: Description of tomm_hardware_interface
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/tomm_hardware_interface/include -I/home/genki/ros/workspaces/tomm_base_ws_local/src/tomm-control/tomm_hardware_interface/include
+Libs: -L${prefix}/lib -ltomm_hardware_interface
+Requires: dynamic_reconfigure roscpp rosparam_handler tomm_interfaces

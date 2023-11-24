@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/walking_core_msgs
+
+Name: walking_core_msgs
+Description: Description of walking_core_msgs
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/walking_core_msgs/include
+Libs: -L${prefix}/lib 
+Requires: 

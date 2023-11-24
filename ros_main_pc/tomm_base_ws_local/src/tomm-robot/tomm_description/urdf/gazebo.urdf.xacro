@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <gazebo>
+    <plugin name="ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/tomm</robotNamespace>
+      <controlPeriod>0.001</controlPeriod>
+      <!--robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType-->
+      <robotSimType>tomm_hardware_gazebo/TOMMHardwareGazebo</robotSimType>
+    </plugin>
+  </gazebo>
+
+</robot>

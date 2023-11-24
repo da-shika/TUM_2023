@@ -1,0 +1,17 @@
+# ordered lists of patchs with additional configs
+skin_patch_ctrl_config:
+ 
+ # patch file names (ommitting .xml file type), in PatchConstruction folder
+ filenames: [
+   'rightGripperRingPatchExtTFIdDH', 'rightGripperPalmPatchExtTFIdDH'
+ ]
+ 
+ # patch namespaces
+ namespaces: [
+   'RightGripperRing', RightGripperPalm
+ ]
+
+ # patch index for patches connected to the skin controller (index of filename, starts at 0)
+ control: [
+   0, 1
+ ]

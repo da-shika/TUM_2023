@@ -1,0 +1,19 @@
+# omnibase driver parameters
+omnibase_driver:
+  type: sim # sim real
+  interface: enp4s0
+  cmd_topic: /cmd_vel_smooth
+  wheel_limit: 1.0
+  cart_limit: 0.5
+  radius: 0.7
+  cmd_acc_limit: 4.0
+  cmd_vel_limit: 1.0
+  odom_pub_freq: 100.0
+  pub_tf: true
+  pub_odom_msg: true
+  frame_id: tomm/odom
+  child_frame_id: tomm/base_link
+  joint_names:
+    - base_x
+    - base_y
+    - base_theta

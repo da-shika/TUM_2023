@@ -1,0 +1,74 @@
+# ordered lists of patch configs (for adding dh trafos)
+skin_patch_dh_config:
+
+ # patch file names (ommitting .xml file type)
+ filenames: [
+   'rightHand_IndexDistralBack_PatchExtTFId', 'rightHand_IndexDistralFront_PatchExtTFId',
+   'rightHand_IndexMidBack_PatchExtTFId', 'rightHand_IndexMidFront_PatchExtTFId',
+   'rightHand_IndexProximalBack_PatchExtTFId', 'rightHand_IndexProximalFront_PatchExtTFId',
+
+   'rightHand_MiddleDistralBack_PatchExtTFId', 'rightHand_MiddleDistralFront_PatchExtTFId',
+   'rightHand_MiddleMidBack_PatchExtTFId', 'rightHand_MiddleMidFront_PatchExtTFId',
+   'rightHand_MiddleProximalBack_PatchExtTFId', 'rightHand_MiddleProximalFront_PatchExtTFId',
+
+   'rightHand_RingDistralBack_PatchExtTFId', 'rightHand_RingDistralFront_PatchExtTFId',
+   'rightHand_RingMidBack_PatchExtTFId', 'rightHand_RingMidFront_PatchExtTFId',
+   'rightHand_RingProximalBack_PatchExtTFId', 'rightHand_RingProximalFront_PatchExtTFId',
+
+   'rightHand_ThumbDistralBack_PatchExtTFId', 'rightHand_ThumbDistralFront_PatchExtTFId',
+   'rightHand_ThumbDistralMidBack_PatchExtTFId', 'rightHand_ThumbDistralMidFront_PatchExtTFId',
+   'rightHand_ThumbMidBack_PatchExtTFId', 'rightHand_ThumbMidFront_PatchExtTFId',
+
+   'rightHand_PalmBack_PatchExtTFId', 'rightHand_PalmFront_PatchExtTFId',
+   'rightHand_PalmLeftBack_PatchExtTFId',
+   'rightHand_PalmRightBack_PatchExtTFId',
+ ]
+ 
+ # dh frame names
+ dh_frames: [
+   'right_Index_4', 'right_Index_4',
+   'right_Index_3', 'right_Index_3',
+   'right_Index_2', 'right_Index_2',
+
+   'right_Middle_4', 'right_Middle_4',
+   'right_Middle_3', 'right_Middle_3',
+   'right_Middle_2', 'right_Middle_2',
+
+   'right_Ring_4', 'right_Ring_4',
+   'right_Ring_3', 'right_Ring_3',
+   'right_Ring_2', 'right_Ring_2',
+
+   'right_Thumb_4', 'right_Thumb_4',
+   'right_Thumb_4', 'right_Thumb_4',
+   'right_Thumb_3', 'right_Thumb_3',
+
+   'r_ee_link', 'r_ee_link',
+   'r_ee_link',
+   'r_ee_link',
+ 
+ ]
+
+ # parameter names for urdf links wrt dh links in 'tstatic_URDFi_linki.yaml'
+ dh_params: [
+   '~index_finger/joint_4', '~index_finger/joint_4',
+   '~index_finger/joint_3', '~index_finger/joint_3',
+   '~index_finger/joint_2', '~index_finger/joint_2',
+
+   '~middle_finger/joint_4', '~middle_finger/joint_4',
+   '~middle_finger/joint_3', '~middle_finger/joint_3',
+   '~middle_finger/joint_2', '~middle_finger/joint_2',
+
+   '~ring_finger/joint_4', '~ring_finger/joint_4',
+   '~ring_finger/joint_3', '~ring_finger/joint_3',
+   '~ring_finger/joint_2', '~ring_finger/joint_2',
+
+   '~thumb_finger/joint_4', '~thumb_finger/joint_4',
+   '~thumb_finger/joint_4', '~thumb_finger/joint_4',
+   '~thumb_finger/joint_3', '~thumb_finger/joint_3',
+
+   '~palm/joint_4', '~palm/joint_1',
+   '~palm/joint_2',
+   '~palm/joint_3',
+
+ ]
+

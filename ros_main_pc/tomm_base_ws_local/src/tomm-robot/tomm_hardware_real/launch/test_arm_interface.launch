@@ -1,0 +1,12 @@
+<!-- full body controller launch file -->
+<launch>
+
+    <!-- ***************** tom both arm controller ***************** -->
+    <group ns="tomm">
+        <!-- ics control framework -->
+        <node pkg="tomm_hardware_real" type="test_arm_interface" name="test_arm_interface" output="screen">
+          <rosparam file="$(find tomm_hardware_real)/configs/arm/internal_pid.yaml" command="load" />
+        </node>
+    </group>
+
+</launch>

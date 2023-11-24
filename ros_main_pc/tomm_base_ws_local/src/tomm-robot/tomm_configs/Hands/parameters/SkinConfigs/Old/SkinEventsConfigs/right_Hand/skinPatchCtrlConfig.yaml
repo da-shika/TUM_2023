@@ -1,0 +1,73 @@
+# ordered lists of patchs with additional configs
+skin_patch_ctrl_config:
+ 
+ # patch file names (ommitting .xml file type), in PatchConstruction folder
+ filenames: [
+   'rightHand_IndexDistralBack_PatchExtTFIdDH', 'rightHand_IndexDistralFront_PatchExtTFIdDH',
+   'rightHand_IndexMidBack_PatchExtTFIdDH', 'rightHand_IndexMidFront_PatchExtTFIdDH',
+   'rightHand_IndexProximalBack_PatchExtTFIdDH', 'rightHand_IndexProximalFront_PatchExtTFIdDH',
+
+   'rightHand_MiddleDistralBack_PatchExtTFIdDH', 'rightHand_MiddleDistralFront_PatchExtTFIdDH',
+   'rightHand_MiddleMidBack_PatchExtTFIdDH', 'rightHand_MiddleMidFront_PatchExtTFIdDH',
+   'rightHand_MiddleProximalBack_PatchExtTFIdDH', 'rightHand_MiddleProximalFront_PatchExtTFIdDH',
+
+   'rightHand_RingDistralBack_PatchExtTFIdDH', 'rightHand_RingDistralFront_PatchExtTFIdDH',
+   'rightHand_RingMidBack_PatchExtTFIdDH', 'rightHand_RingMidFront_PatchExtTFIdDH',
+   'rightHand_RingProximalBack_PatchExtTFIdDH', 'rightHand_RingProximalFront_PatchExtTFIdDH',
+
+   'rightHand_ThumbDistralBack_PatchExtTFIdDH', 'rightHand_ThumbDistralFront_PatchExtTFIdDH',
+   'rightHand_ThumbDistralMidBack_PatchExtTFIdDH', 'rightHand_ThumbDistralMidFront_PatchExtTFIdDH',
+   'rightHand_ThumbMidBack_PatchExtTFIdDH', 'rightHand_ThumbMidFront_PatchExtTFIdDH',
+
+   'rightHand_PalmBack_PatchExtTFIdDH', 'rightHand_PalmFront_PatchExtTFIdDH',
+   'rightHand_PalmLeftBack_PatchExtTFIdDH',
+   'rightHand_PalmRightBack_PatchExtTFIdDH',
+ ]
+ 
+ # patch namespaces
+ namespaces: [
+   'RightIndex', 'RightIndex',
+   'RightIndex', 'RightIndex',
+   'RightIndex', 'RightIndex',
+
+   'RightMiddle', 'RightMiddle',
+   'RightMiddle', 'RightMiddle',
+   'RightMiddle', 'RightMiddle',
+
+   'RightRing', 'RightRing',
+   'RightRing', 'RightRing',
+   'RightRing', 'RightRing',
+
+   'RightThumb', 'RightThumb',
+   'RightThumb', 'RightThumb',
+   'RightThumb', 'RightThumb',
+
+   'RightPalm', 'RightPalm',
+   'RightPalm',
+   'RightPalm',
+
+ ]
+
+ # patch index for patches connected to the skin controller (index of filename, starts at 0)
+ control: [
+   0, 1,
+   2, 3,
+   4, 5,
+
+   6, 7,
+   8, 9,
+   10, 11,
+
+   12, 13,
+   14, 15,
+   16, 17,
+
+   18, 19,
+   20, 21,
+   22, 23,
+
+   24, 25,
+   26,
+   27,
+
+ ]

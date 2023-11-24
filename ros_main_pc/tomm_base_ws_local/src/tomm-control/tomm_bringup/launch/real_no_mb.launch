@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!--############################ settings #################################-->
+  <arg name="skin" default="true" />
+  <arg name="ns" default="tomm" />
+  <arg name="vis" default="true" />
+  <arg name="controller" default="tomm"/>
+
+  <!--############################ controllers ##############################-->
+
+  <group ns="$(arg ns)">
+    <!-- wbc parameters -->
+    <rosparam command="load" file="$(find tomm_bringup)/configs/control_real_no_mb.yaml" subst_value="True"/> 
+    <!-- task parameters --> 
+    <rosparam command="load" file="$(find tomm_bringup)/configs/behaviors.yaml" subst_value="True"/> 
+    <rosparam command="load" file="$(find tomm_bringup)/configs/tasks_no_mb.yaml" subst_value="True"/> 
+  </group>
+
+  <!--######################### controller manager ##########################-->
+  <group ns="$(arg ns)">
+    <!-- Load controllers -->
+    <rosparam command="load" file="$(find tomm_control_plugin)/configs/controllers.yaml" subst_value="True"/>
+    <!-- Start controllers -->
+    <node name="controller_spawner"
+          pkg="controller_manager"
+          type="spawner"
+          output="screen"
+          args="joint_state_controller $(arg controller)"/>
+  </group>
+
+</launch>

@@ -1,0 +1,11 @@
+patch_list:
+ [
+  'p6edh.xml',
+  'p7edh.xml',
+  'p8edh.xml',
+  'p9edh.xml',
+  'p10edh.xml',
+  'p11edh.xml',
+  'p12edh.xml',
+  'p13edh.xml',
+ ]

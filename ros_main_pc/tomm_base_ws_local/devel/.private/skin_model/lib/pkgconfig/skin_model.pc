@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/skin_model
+
+Name: skin_model
+Description: Description of skin_model
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/src/skin/skin_model/include
+Libs: -L${prefix}/lib -lskin_model
+Requires: control_core control_core_msgs roscpp ics_tsid_common skin_client

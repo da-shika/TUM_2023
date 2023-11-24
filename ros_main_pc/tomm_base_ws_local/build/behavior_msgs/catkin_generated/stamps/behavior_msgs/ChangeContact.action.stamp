@@ -1,0 +1,8 @@
+control_core_msgs/Contact contact
+std_msgs/String contact_task
+std_msgs/Float64 period_shift
+std_msgs/Float64 period_move
+---
+geometry_msgs/PoseStamped pose
+---
+geometry_msgs/PoseStamped pose

@@ -1,0 +1,1 @@
+/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/skin_client/share/common-lisp/ros/skin_client/msg/_package.lisp

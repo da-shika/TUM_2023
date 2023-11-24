@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/install
+
+Name: yaml_parameters
+Description: Description of yaml_parameters
+Version: 0.0.0
+Cflags: -I${prefix}/include -I/usr/local/include
+Libs: -L${prefix}/lib /usr/local/lib/libyaml-cpp.so
+Requires: roslib

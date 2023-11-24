@@ -1,0 +1,15 @@
+patch_list:
+ [
+  'p100edh.xml',
+  'p101edh.xml',
+  'p102edh.xml',
+  'p103edh.xml',
+  'p104edh.xml',
+
+  'p106e.xml',
+  'p107e.xml',
+  'p108e.xml',
+  'p109e.xml',
+  'p110e.xml',
+  'p111e.xml',
+ ]

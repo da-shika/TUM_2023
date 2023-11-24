@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/install
+
+Name: tomm_commanded_robot
+Description: Description of tomm_commanded_robot
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ltomm_commanded_robot
+Requires: roscpp ics_tsid_wrapper tomm_core tomm_interfaces walking_core

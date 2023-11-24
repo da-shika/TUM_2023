@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">
+
+	<!--Common definitions -->
+	<xacro:include filename="$(find tomm_description)/urdf/common.xacro"/>
+
+	<!-- Hand specializations -->
+	<xacro:include filename="$(find tomm_description)/urdf/hand/allegro_hand/allegro_hand_right.urdf.xacro"/>
+  <xacro:include filename="$(find tomm_description)/urdf/hand/allegro_hand/allegro_hand_left.urdf.xacro"/>
+
+	<!-- xacro hands (right_hand=true -> right hand, false -> left hand -->
+	<xacro:macro name="tom_hand_v0" params="right_hand">
+
+		<xacro:unless value="${right_hand}">
+			<xacro:allegro_hand_left prefix="l_hand_"/>
+			<joint name="l_hand_base_joint" type="fixed">
+		  	<parent link="l_hand_base_adapter_link"/>
+		  	<child link="l_hand_base_link"/>
+		  	<origin xyz="0.01 0 0.095" rpy="0 0 0"/>
+  		</joint>
+		</xacro:unless>
+		<xacro:if value="${right_hand}">
+			<xacro:allegro_hand_right prefix="r_hand_"/>
+			<joint name="r_hand_base_joint" type="fixed">
+		  	<parent link="r_hand_base_adapter_link"/>
+		  	<child link="r_hand_base_link"/>
+		  	<origin xyz="0.01 0 0.095" rpy="0 0 0"/>
+  		</joint>	
+		</xacro:if>
+
+  </xacro:macro>	
+
+	
+
+
+</robot>

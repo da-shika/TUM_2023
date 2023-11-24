@@ -1,0 +1,1 @@
+/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/skin_model/share/skin_model/cmake/skin_modelConfig.cmake

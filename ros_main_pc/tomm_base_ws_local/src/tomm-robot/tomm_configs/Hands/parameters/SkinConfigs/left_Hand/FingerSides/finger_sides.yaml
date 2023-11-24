@@ -1,0 +1,32 @@
+#defines the skinpatch number and cell ids for the fingers
+finger_tips:
+ force_threshold: 0.015
+ proxy_threshold: 0.015
+ index:
+  # [patch_number,cell_id]
+  front: [5, 0]
+  top: [17, 0]
+  back: [17, 1]
+  right: [17, 2]
+  left: [17, 3]
+
+ middle:
+  front: [8, 0]
+  top: [20, 0]
+  back: [20, 1]
+  right: [20, 2]
+  left: [20, 3]
+
+ ring:
+  front: [11, 0]
+  top: [23, 0]
+  back: [23, 1]
+  right: [23, 2]
+  left: [23, 3]
+
+ thumb:
+  front: [13, 0, 1]
+  top: [25, 0]
+  back: [25, 1]
+  right: [25, 2]
+  left: [25, 3]

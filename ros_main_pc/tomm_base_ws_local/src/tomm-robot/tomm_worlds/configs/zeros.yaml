@@ -1,0 +1,13 @@
+zeros:
+  l_shoulder_pan_joint: -2.82866
+  l_shoulder_lift_joint: -1.09345
+  l_elbow_joint: 1.40255
+  l_wrist_1_joint: -2.4274
+  l_wrist_2_joint: 0.976163
+  l_wrist_3_joint: -0.14399
+  r_shoulder_pan_joint: 2.8201
+  r_shoulder_lift_joint: -2.03558
+  r_elbow_joint: -1.43484
+  r_wrist_1_joint: -0.676141
+  r_wrist_2_joint: -1.00985
+  r_wrist_3_joint: 0.165806

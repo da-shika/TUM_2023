@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+         
+    <gazebo reference="${name}_link">
+        <material>Gazebo/White</material>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    
+    <gazebo reference="torso_link">
+        <material>Gazebo/Green</material>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+
+    <gazebo reference="ICS_logo_blue_link">
+        <material>Gazebo/Blue</material>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    
+    <gazebo reference="ICS_logo_grey_link">
+        <material>Gazebo/Grey</material>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+       
+       
+    <!-- Add this line to add self collisions in the simulator (Must be inside <gazebo tag>) -->
+    
+    <!--    <selfCollide>true</selfCollide>     -->
+       
+</robot>

@@ -1,0 +1,21 @@
+orange_color_range:
+ left_camera :
+  H: [1, 95]
+  S: [16, 255]
+  V: [207, 255]
+  x_start_crop: 120
+  y_start_crop: 210
+  x_end_crop: 470
+  y_end_crop: 220
+ right_camera :
+  H: [1, 95]
+  S: [29, 255]
+  V: [201, 255]
+  x_start_crop: 120
+  y_start_crop: 210
+  x_end_crop: 470
+  y_end_crop: 220
+ blob_min_area: 500
+ x_offset: 0
+ y_offset: 0
+ z_offset: 0

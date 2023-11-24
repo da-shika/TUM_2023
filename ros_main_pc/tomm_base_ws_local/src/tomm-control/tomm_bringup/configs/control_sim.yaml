@@ -1,0 +1,56 @@
+################################################################################
+# global parameter
+################################################################################
+prefix:           tomm
+tf_prefix:        tomm
+simulation:       true
+loop_rate:        200.0
+publish_rate:     200.0
+homing_period:    2
+handprint_x:      [-0.05, 0.05]
+handprint_y:      [-0.05, 0.05]
+home_posture:     [0, 0, 0,
+                   -2.82879, -1.09472, 1.39832, -2.43066, 0.97291, -0.140744,    
+                    2.81405, -2.02808, -1.4306, -0.672856, -1.00667, 0.162432]
+
+################################################################################
+# robot model parameter
+################################################################################
+robot:
+  base_type: mobile                                                             
+  has_collision_model: true
+  has_skin_model: false
+  urdf_file: $(find tomm_bringup)/robots/tomm.urdf
+  srdf_file: $(find tomm_bringup)/robots/tomm.srdf
+  package_path: $(find tomm_description)
+  additional_frames:
+    hand_link_left:
+      parent: l_ee_link
+      pose: [0.075, -0.0247, 0.0247, -0.92389, 0, 0, 0.38268]
+    hand_link_right:
+      parent: r_ee_link
+      pose: [0.103, 0.0247, 0.0247, 0.92389, 0, 0, 0.38268]
+
+################################################################################
+# inverse dynamics formulation parameter
+################################################################################
+formulation:
+  use_close_loop: true
+  tasks:
+    posture: posture_task
+    base: base_motion
+    bounds: bounds
+    left_hand:
+      contact: left_hand_contact
+      motion: left_hand_motion
+    right_hand:
+      contact: right_hand_contact
+      motion: right_hand_motion
+    additional_tasks:
+      - self_collision_constraint 
+
+################################################################################
+# hardware interface
+################################################################################
+hardware_interface:
+  joint_discontinuity_theshold: 0.1

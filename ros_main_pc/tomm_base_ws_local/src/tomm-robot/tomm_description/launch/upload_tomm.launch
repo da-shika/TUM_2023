@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="robot" default="full"/>
+  <arg name="skin_version"  default="full"/>
+  <arg name="ns"  default="tomm"/>
+
+  <!-- Robot description -->
+  <param name="robot_description"
+    command="$(find xacro)/xacro --inorder '$(find tomm_description)/robots/tom_$(arg robot).urdf.xacro' skin_version:=$(arg skin_version)"/>
+
+  <!-- Robot description in namespace -->
+  <group ns="$(arg ns)">
+    <param name="robot_description"
+      command="$(find xacro)/xacro --inorder '$(find tomm_description)/robots/tom_$(arg robot).urdf.xacro' skin_version:=$(arg skin_version)"/>
+  </group> 
+
+  <!-- Joint limits -->
+  <rosparam command="load" file="$(find tomm_description)/config/joint_limits.yaml"/>
+
+</launch>

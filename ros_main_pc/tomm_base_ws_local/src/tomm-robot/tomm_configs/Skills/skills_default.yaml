@@ -1,0 +1,82 @@
+skill_list:
+ skill_1:
+  name: 'IDLE'
+  load: [GCtrl]
+  unload: [GCtrl]
+
+ skill_2:
+  name: 'REACH_JOINT'
+  load: [GCtrl,JointCtrl]
+
+ skill_3:
+  name: 'REACH_JOINT_GOAL'
+  load: [GCtrl,SplineJointCtrl]
+
+ skill_4:
+  name: 'REACH_JOINT_COMP'
+  load: [GCtrl,JointCtrl,SkinJointCtrl]
+
+ skill_5:
+  name: 'REACH_JOINT_GOAL_COMP'
+  load: [GCtrl,SkinJointCtrl,SplineJointCtrl]
+
+ skill_6:
+  name: 'REACH_CART'
+  load: [GCtrl,CartesianCtrl]
+
+ skill_7:
+  name: 'REACH_CART_GOAL'
+  load: [GCtrl,SplineCartesianCtrl]
+
+ skill_8:
+  name: 'REACH_CART_COMP'
+  load: [GCtrl,CartesianCtrl,SkinJointCtrl]
+
+ skill_9:
+  name: 'REACH_CART_GOAL_COMP'
+  load: [GCtrl,SplineCartesianCtrl,SkinJointCtrl]
+
+ skill_10:
+  name: 'KINESTHETIC_JOINT'
+  load: [GCtrl,SkinJointCtrl]
+
+ skill_11:
+  name: 'KINESTHETIC_CART'
+  load: [GCtrl,SkinCartesianCtrl,CartesianCtrl]
+
+ skill_12:
+  name: 'COMPLIANT_JOINT'
+  load: [GCtrl,ImpJointCtrl]
+
+ skill_13:
+  name: 'COMPLIANT_CART'
+  load: [GCtrl,ImpCartesianCtrl]
+
+ skill_14:
+  name: 'TRIANGULATE_OBJECT'
+  load: [GCtrl,TriGripperCtrl]
+
+ skill_15:
+  name: 'SQUEEZE_OBJECT'
+  load: [SqueezeCtrl]
+
+ skill_16:
+  name: 'SOFT_TOUCH'
+  load: [GCtrl,SoftTouchCtrl,CartesianCtrl]
+
+ skill_17:
+  name: 'KINESTHETIC_CART_PSYCH'
+  load: [GCtrl,SkinCartesianCtrlPsych,CartesianCtrl]
+
+ skill_18:
+  name: 'WB_COMP'
+  load: [GCtrl,SimpleWholeBodySkinControl]
+
+ skill_19:
+  name: 'WB_COMP2'
+  load: [GCtrl,SimpleWholeBodySkinControl2]
+
+ skill_20:
+  name: 'KINESTHETIC_DSTB_JOINT'
+  load: [GCtrl,SkinDistributedJointCtrl]
+

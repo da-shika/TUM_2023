@@ -1,0 +1,28 @@
+#Allegro Hand (Left) Configuration Parameters
+#This parameters define topics, etc.
+
+hand_parameters:
+ hand_name: 'right'
+ joint_cmd_topic: '/right_fingers_joint_states_cmd'
+ x_cmd_topic: '/tom/arm_right/hand/x_desired_cmd'
+ joint_ct_init_idx: 0
+ DOF: 16
+ publish_fk: true
+ #              tx  ty        tz      a_x(Deg) 
+ Index_offset: [0, 0.044981, 0.014102, -5.0]
+ Middle_offset: [0, 0, 0.0164, 0.0]
+ Ring_offset: [0, -0.044981, 0.014102, 5.0]
+ Thumb_offset: [-0.0182, 0.019333, -0.044987, 175.0]
+
+home_position: [90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0]
+
+position_filter_coefficients_A: [0.0, 0.3695, 0.1958]
+position_filter_coefficients_B: [0.3913, 0.7827, 0.3913]
+
+velocity_filter_coefficients_A: [0.0, -1.7786, 0.8008]
+velocity_filter_coefficients_B: [0.0055, 0.0111, 0.0055]
+
+fingerIMR_mass: [0.05, 0.18, 0.16, 0.07]
+fingerTHB_mass: [0.08, 0.05, 0.15, 0.15]
+
+gravity_w: [0.0, 0.0, -9.81]

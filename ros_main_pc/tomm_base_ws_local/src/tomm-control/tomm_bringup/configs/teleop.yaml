@@ -1,0 +1,15 @@
+marker_target:
+  mass: [1,1,1,1,1,1]
+  spring: [10,10,10,10,10,10]
+  damping: [6,6,6,6,6,6]
+  parent_frame: world # base_link # world
+  topic_pre_fix: teleop
+  tf_pre_fix: 'tomm' # tomm
+  frames:
+    - hand_link_left
+    - hand_link_right
+    - torso_link
+  acc_lb: [-1000,-1000,-1000,-1000,-1000,-1000]
+  acc_ub: [1000,1000,1000,1000,1000,1000]
+  vel_lb: [-100, -100, -100,-100, -100, -100]
+  vel_ub: [100, 100, 100, 100, 100, 100]

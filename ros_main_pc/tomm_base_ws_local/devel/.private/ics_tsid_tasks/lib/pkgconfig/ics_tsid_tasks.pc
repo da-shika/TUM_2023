@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/ics_tsid_tasks
+
+Name: ics_tsid_tasks
+Description: Description of ics_tsid_tasks
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/ics_tsid_tasks/include -I/home/genki/ros/workspaces/tomm_base_ws_local/src/ics/ics_tsid_tasks/include
+Libs: -L${prefix}/lib -lics_tsid_tasks
+Requires: control_core control_core_msgs dynamic_reconfigure ics_tsid_task_msgs ics_tsid_common roscpp rosparam_handler skin_client

@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~kp_str" : \b [str]  min: , default: , max: 
+- \b "~kd_str" : \b [str]  min: , default: , max: 
+- \b "~kp_factor" : \b [double]  min: 0.0, default: 1.0, max: 5.0
+- \b "~kd_factor" : \b [double]  min: 0.0, default: 1.0, max: 5.0
+- \b "~alpha_proximity" : \b [double]  min: 0.0, default: 0.5, max: 1.0
+- \b "~fd_normal" : \b [double]  min: -1.6, default: 0.0, max: 1.5
+

@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspaces/tomm_base_ws_local/devel/.private/tomm_skin
+
+Name: tomm_skin
+Description: Description of tomm_skin
+Version: 0.0.0
+Cflags: -I/home/genki/ros/workspaces/tomm_base_ws_local/src/tomm-robot/tomm_skin/include
+Libs: -L${prefix}/lib -ltomm_skin
+Requires: roscpp std_msgs control_core control_core_msgs tum_ics_skin_msgs tum_ics_skin_bridge tum_ics_skin_descr

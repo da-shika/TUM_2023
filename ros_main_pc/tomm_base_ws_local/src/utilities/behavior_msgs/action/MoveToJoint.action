@@ -1,0 +1,8 @@
+control_core_msgs/Vector target         # target joint pose
+control_core_msgs/Vector intermediate   # optional intermediate target
+std_msgs/String motion_task             # motion task for the movement
+std_msgs/Float64 period                 # time period of the motion
+---
+control_core_msgs/Vector pose
+---
+control_core_msgs/Vector pose

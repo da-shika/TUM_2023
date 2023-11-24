@@ -1,0 +1,8 @@
+prefix=/home/genki/ros/workspace/pr2_ws/install
+
+Name: real_test
+Description: Description of real_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
