@@ -1,0 +1,8 @@
+prefix=/home/chen/ros/workspace_genki/pr2_ws/install
+
+Name: experiment_manager
+Description: Description of experiment_manager
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

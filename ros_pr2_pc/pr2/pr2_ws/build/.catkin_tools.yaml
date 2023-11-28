@@ -1,0 +1,6 @@
+devel_space: /home/chen/ros/workspace_genki/pr2_ws/devel
+install: false
+install_space: /home/chen/ros/workspace_genki/pr2_ws/install
+profile: default
+source_space: /home/chen/ros/workspace_genki/pr2_ws/src
+workspace: /home/chen/ros/workspace_genki/pr2_ws

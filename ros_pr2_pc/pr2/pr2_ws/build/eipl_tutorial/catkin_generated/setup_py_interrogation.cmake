@@ -1,0 +1,7 @@
+set(eipl_tutorial_SETUP_PY_SETUP_MODULE "distutils.core")
+set(eipl_tutorial_SETUP_PY_VERSION "0.0.0")
+set(eipl_tutorial_SETUP_PY_SCRIPTS "")
+set(eipl_tutorial_SETUP_PY_PACKAGES "eipl_tutorial")
+set(eipl_tutorial_SETUP_PY_PACKAGE_DIRS "include/eipl_tutorial")
+set(eipl_tutorial_SETUP_PY_MODULES "")
+set(eipl_tutorial_SETUP_PY_MODULE_DIRS "")

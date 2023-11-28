@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/chen/ros/workspace_genki/pr2_ws/install/setup.sh

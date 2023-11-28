@@ -1,0 +1,8 @@
+prefix=/home/chen/ros/workspace_genki/pr2_ws/install
+
+Name: eipl_tutorial
+Description: Description of eipl_tutorial
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
