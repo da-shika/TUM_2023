@@ -82,7 +82,7 @@ for file in files:
                         right_proximity_list.append(msg.prox)
 
                     if topic == "/usb_camera/republished/compressed":
-                        crop_x1 = 0
+                        crop_x1 = int(100/2)
                         crop_y1 = int(120/2)
                         crop_size = int(320/2)
                         np_arr = np.frombuffer(msg.data, np.uint8)
