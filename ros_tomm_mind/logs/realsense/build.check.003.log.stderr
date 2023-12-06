@@ -1,0 +1,6 @@
+[31m[1mCMake Error[0m at /home/student/ros/workspaces/perception_ws/src/realsense/CMakeLists.txt:154 (target_link_libraries):
+  Cannot specify link libraries for target "realsense_node" which is not
+  built by this project.
+
+
+make: *** [Makefile:334: cmake_check_build_system] Error 1

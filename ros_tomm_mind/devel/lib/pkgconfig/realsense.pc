@@ -1,0 +1,8 @@
+prefix=/home/student/ros/workspaces/perception_ws/devel/.private/realsense
+
+Name: realsense
+Description: Description of realsense
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

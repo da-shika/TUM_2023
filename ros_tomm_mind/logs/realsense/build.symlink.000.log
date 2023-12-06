@@ -1,0 +1,3 @@
+Symlinking /home/student/ros/workspaces/perception_ws/devel/lib/pkgconfig/realsense.pc
+Symlinking /home/student/ros/workspaces/perception_ws/devel/share/realsense/cmake/realsenseConfig-version.cmake
+Symlinking /home/student/ros/workspaces/perception_ws/devel/share/realsense/cmake/realsenseConfig.cmake

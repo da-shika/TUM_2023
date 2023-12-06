@@ -1,0 +1,12 @@
+<launch>
+
+  <!--Start USB camera publisher node-->
+  <node name="usb_camera_node" pkg="realsense" type="usb_camera_node" output="screen"/>
+
+  <!--Republish camera topic-->
+  <node name="image_republisher" 
+        pkg="image_transport" 
+        type="republish" 
+        output="screen"
+        args="raw in:=usb_camera/image_raw out:=usb_camera/republished"/>
+</launch>

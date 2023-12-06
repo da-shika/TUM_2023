@@ -1,0 +1,8 @@
+prefix=/home/student/ros/workspaces/perception_ws/install
+
+Name: camera_launcher
+Description: Description of camera_launcher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

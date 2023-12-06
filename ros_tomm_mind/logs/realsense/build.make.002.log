@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target usb_camera_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/usb_camera_node.dir/cpp_src/camera_pub.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/student/ros/workspaces/perception_ws/devel/.private/realsense/lib/realsense/usb_camera_node[0m
+[100%] Built target usb_camera_node

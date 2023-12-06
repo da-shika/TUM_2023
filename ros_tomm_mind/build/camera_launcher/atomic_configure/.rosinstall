@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/student/ros/workspaces/perception_ws/devel/.private/camera_launcher/setup.sh

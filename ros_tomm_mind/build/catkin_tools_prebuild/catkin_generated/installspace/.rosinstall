@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/student/ros/workspaces/perception_ws/install/setup.sh
