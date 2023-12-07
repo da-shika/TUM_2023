@@ -1,6 +1,5 @@
 ## data content
-!!! There is some force sensor error !!!
-old_data
+Solve the force sensor error problem
 
 ### teach
 big box
